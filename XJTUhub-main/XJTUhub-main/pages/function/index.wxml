@@ -1,0 +1,31 @@
+<view class="theme-{{themeMode}}">
+  <cu-custom bgColor="bg-nav-theme">
+    <view slot="content">功能中心</view>
+  </cu-custom>
+
+  <view class="container ios-page {{pageReady ? 'is-ready' : ''}}">
+    <view class="hero card-shell">
+      <view class="hero-title">功能中心</view>
+      <view class="hero-desc">成绩、考勤与DDL等学习工具统一入口</view>
+    </view>
+
+    <view class="feature-list">
+      <view
+        wx:for="{{featureList}}"
+        wx:key="title"
+        class="feature-item card-shell ios-tap"
+        bindtap="navFeature"
+        data-path="{{item.path}}"
+      >
+        <view class="feature-left">
+          <view class="feature-icon {{item.icon}}"></view>
+          <view>
+            <view class="feature-title">{{item.title}}</view>
+            <view class="feature-desc">{{item.desc}}</view>
+          </view>
+        </view>
+        <text class="feature-arrow cuIcon-right"></text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+<view class="theme-{{themeMode}}">
+  <cu-custom bgColor="bg-nav-theme">
+    <view slot="content">课程资料共享</view>
+  </cu-custom>
+  <view class="container ios-page {{pageReady ? 'is-ready' : ''}}">
+    <view class="hero card">
+      <view class="hero-left">
+        <view class="hero-title">课程资料共享</view>
+        <view class="hero-subtitle">课件 · 笔记 · 真题一站式浏览</view>
+      </view>
+      <view class="hero-icon cuIcon-copy"></view>
+    </view>
+
+    <view class="search-wrap card">
+      <view class="search-input-box">
+        <text class="search-icon cuIcon-search"></text>
+        <input
+          class="search-input"
+          placeholder="搜索课程、资料标题"
+          placeholder-class="search-placeholder"
+          value="{{keywordInput}}"
+          bindinput="onKeywordInput"
+          bindconfirm="doSearch"
+          confirm-type="search"
+        />
+        <text wx:if="{{keywordInput}}" class="search-clear cuIcon-close" bindtap="clearSearch"></text>
+      </view>
+      <view class="search-btn ios-tap" bindtap="doSearch">搜索</view>
+    </view>
+
+    <view class="category-list card">
+      <view
+        wx:for="{{categoryList}}"
+        wx:key="value"
+        data-category="{{item.value}}"
+        bindtap="switchCategory"
+        class="category-item ios-tap {{activeCategory === item.value ? 'active' : ''}}"
+      >
+        {{item.label}}
+      </view>
+    </view>
+
+    <view class="loading-wrap" wx:if="{{isInitLoading}}">
+      <text class="cuIcon-loading2 loading-icon"></text>
+      <text>正在加载资料...</text>
+    </view>
+
+    <view class="resource-list" wx:elif="{{resourceList.length}}">
+      <view
+        wx:for="{{resourceList}}"
+        wx:key="id"
+        data-id="{{item.id}}"
+        bindtap="openResource"
+        class="resource-item card ios-tap"
+      >
+        <view class="resource-top">
+          <view class="resource-title">{{item.title}}</view>
+          <view class="resource-tag">{{item.typeText}}</view>
+        </view>
+        <view class="resource-desc">{{item.desc}}</view>
+        <view class="resource-meta">
+          <text>{{item.course}}</text>
+          <text>{{item.uploader}}</text>
+          <text>{{item.updatedAt}}</text>
+        </view>
+      </view>
+
+      <view class="list-footer" wx:if="{{isLoading}}">加载中...</view>
+      <view class="list-footer" wx:elif="{{!hasMore}}">没有更多资料了</view>
+    </view>
+
+    <view class="empty-box card" wx:else>
+      <view class="empty-icon cuIcon-safe"></view>
+      <view class="empty-title">该分类暂时没有资料</view>
+      <view class="empty-desc">你可以切换分类或稍后再看</view>
+    </view>
+  </view>
+</view>

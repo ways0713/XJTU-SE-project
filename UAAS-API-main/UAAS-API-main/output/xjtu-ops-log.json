@@ -1,0 +1,5545 @@
+{
+  "meta": {
+    "fetchedAt": "2026-04-18T14:51:40.464Z",
+    "totalEvents": 769
+  },
+  "pages": [
+    {
+      "index": 0,
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+      "title": "西安交通大学本科教务"
+    },
+    {
+      "index": 1,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry#/cjcx",
+      "title": "成绩查询"
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+          "title": "西安交通大学本科教务",
+          "debugLabel": "monitor-checkpoint-1-page-0"
+        },
+        {
+          "pageIndex": 1,
+          "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry#/xskcb",
+          "title": "我的课表",
+          "debugLabel": "monitor-checkpoint-1-page-1"
+        }
+      ],
+      "at": "2026-04-18T14:51:14.006Z"
+    },
+    {
+      "checkpointIndex": 2,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+          "title": "西安交通大学本科教务",
+          "debugLabel": "monitor-checkpoint-2-page-0"
+        },
+        {
+          "pageIndex": 1,
+          "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry#/cjcx",
+          "title": "成绩查询",
+          "debugLabel": "monitor-checkpoint-2-page-1"
+        }
+      ],
+      "at": "2026-04-18T14:51:36.975Z"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-04-18T14:50:28.007Z",
+      "type": "page-attached",
+      "label": "main",
+      "url": "about:blank"
+    },
+    {
+      "at": "2026-04-18T14:50:28.007Z",
+      "type": "trace-start",
+      "url": "about:blank"
+    },
+    {
+      "at": "2026-04-18T14:50:28.053Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/"
+    },
+    {
+      "at": "2026-04-18T14:50:28.067Z",
+      "type": "response",
+      "label": "main",
+      "status": 301,
+      "url": "https://ehall.xjtu.edu.cn/"
+    },
+    {
+      "at": "2026-04-18T14:50:28.067Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:28.079Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:28.099Z",
+      "type": "framenavigated",
+      "label": "main",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery-2.1.1.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.messagestore.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.fallbacks.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.parser.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.emitter.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.language.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/school.json"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/plugins/changeSkin.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/font-awesome/iconfont.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/compatibility.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/webcomponents-lite.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/css/school.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/progressbar.gif"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/img/logo/logo-mini.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/user-role-teacher.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/welcome.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/pop4.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/FAQ.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/constant.json"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/niceScroll/jquery.nicescroll.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/sortable/Sortable-1.3.0.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/amp.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/separatePlugins.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal_custom/js/amp_custom.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/ua-parser.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSend.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendData.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSendNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendDataNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery.jcryption-1.1.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.104Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/base64.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.113Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery-2.1.1.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.123Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/css/school.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.124Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/font-awesome/iconfont.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.126Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.messagestore.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.126Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/progressbar.gif"
+    },
+    {
+      "at": "2026-04-18T14:50:28.126Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.fallbacks.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.128Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.128Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.parser.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.128Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.emitter.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.129Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.language.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.129Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/compatibility.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.129Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/plugins/changeSkin.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.130Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/img/logo/logo-mini.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.130Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/school.json"
+    },
+    {
+      "at": "2026-04-18T14:50:28.130Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/amp.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.131Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/skin.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.131Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.132Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/webcomponents-lite.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.134Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/welcome.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.137Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/skin.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.223Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/amp.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:28.223Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/pop4.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.223Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/user-role-teacher.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.227Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/FAQ.png"
+    },
+    {
+      "at": "2026-04-18T14:50:28.231Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/constant.json"
+    },
+    {
+      "at": "2026-04-18T14:50:28.241Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal_custom/js/amp_custom.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.241Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/sortable/Sortable-1.3.0.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.242Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/niceScroll/jquery.nicescroll.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.242Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/ua-parser.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.242Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSend.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.242Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendData.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.242Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/separatePlugins.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.243Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSendNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.243Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendDataNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.243Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery.jcryption-1.1.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.243Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/base64.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.243Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/amp.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:28.258Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/images/bg/login_bg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:28.258Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/images/bg/login_bg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:28.388Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getCurrentLocale.json?_=1776523828122"
+    },
+    {
+      "at": "2026-04-18T14:50:28.388Z",
+      "type": "domcontentloaded",
+      "label": "main",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:28.393Z",
+      "type": "load",
+      "label": "main",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:28.429Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getCurrentLocale.json?_=1776523828122"
+    },
+    {
+      "at": "2026-04-18T14:50:28.429Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/i18n/zh_CN.json"
+    },
+    {
+      "at": "2026-04-18T14:50:28.429Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceRoleApp.json?serviceRoleId=1__2&type=all&_=1776523828123"
+    },
+    {
+      "at": "2026-04-18T14:50:28.429Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceCenterData.json?containLabels=true&searchKey=&_=1776523828124"
+    },
+    {
+      "at": "2026-04-18T14:50:28.429Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/portal.ico"
+    },
+    {
+      "at": "2026-04-18T14:50:28.449Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/i18n/zh_CN.json"
+    },
+    {
+      "at": "2026-04-18T14:50:28.450Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/portal.ico"
+    },
+    {
+      "at": "2026-04-18T14:50:28.455Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceRoleApp.json?serviceRoleId=1__2&type=all&_=1776523828123"
+    },
+    {
+      "at": "2026-04-18T14:50:28.473Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceCenterData.json?containLabels=true&searchKey=&_=1776523828124"
+    },
+    {
+      "at": "2026-04-18T14:50:29.200Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/login?service=https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:29.206Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://ehall.xjtu.edu.cn/login?service=https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:29.206Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/amp-auth-adapter/login?service=https%3A%2F%2Fehall.xjtu.edu.cn%3A443%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.xjtu.edu.cn%2Fnew%2Findex.html%3Fbrowser%3Dno"
+    },
+    {
+      "at": "2026-04-18T14:50:29.210Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://ehall.xjtu.edu.cn/amp-auth-adapter/login?service=https%3A%2F%2Fehall.xjtu.edu.cn%3A443%2Flogin%3Fservice%3Dhttps%3A%2F%2Fehall.xjtu.edu.cn%2Fnew%2Findex.html%3Fbrowser%3Dno"
+    },
+    {
+      "at": "2026-04-18T14:50:29.210Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://org.xjtu.edu.cn/openplatform/oauth/authorize?appId=1030&redirectUri=http%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&responseType=code&scope=user_info&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:29.230Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://org.xjtu.edu.cn/openplatform/oauth/authorize?appId=1030&redirectUri=http%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&responseType=code&scope=user_info&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:29.230Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://login.xjtu.edu.cn/cas/oauth2.0/authorize?response_type=code&client_id=1030&redirect_uri=https%3A%2F%2Forg.xjtu.edu.cn%2Fopenplatform%2Foauth%2Fauthorizesw%3Fredirect_uri%3Dhttp%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:29.280Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://login.xjtu.edu.cn/cas/oauth2.0/authorize?response_type=code&client_id=1030&redirect_uri=https%3A%2F%2Forg.xjtu.edu.cn%2Fopenplatform%2Foauth%2Fauthorizesw%3Fredirect_uri%3Dhttp%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:29.280Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://login.xjtu.edu.cn/cas/login?service=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D1030%26redirect_uri%3Dhttps%253A%252F%252Forg.xjtu.edu.cn%252Fopenplatform%252Foauth%252Fauthorizesw%253Fredirect_uri%253Dhttp%253A%252F%252Fehall.xjtu.edu.cn%252Famp-auth-adapter%252FloginSuccess%26response_type%3Dcode%26client_name%3DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:29.320Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://login.xjtu.edu.cn/cas/login?service=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D1030%26redirect_uri%3Dhttps%253A%252F%252Forg.xjtu.edu.cn%252Fopenplatform%252Foauth%252Fauthorizesw%253Fredirect_uri%253Dhttp%253A%252F%252Fehall.xjtu.edu.cn%252Famp-auth-adapter%252FloginSuccess%26response_type%3Dcode%26client_name%3DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:29.324Z",
+      "type": "framenavigated",
+      "label": "main",
+      "url": "https://login.xjtu.edu.cn/cas/login?service=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D1030%26redirect_uri%3Dhttps%253A%252F%252Forg.xjtu.edu.cn%252Fopenplatform%252Foauth%252Fauthorizesw%253Fredirect_uri%253Dhttp%253A%252F%252Fehall.xjtu.edu.cn%252Famp-auth-adapter%252FloginSuccess%26response_type%3Dcode%26client_name%3DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:29.648Z",
+      "type": "domcontentloaded",
+      "label": "main",
+      "url": "https://login.xjtu.edu.cn/cas/login?service=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D1030%26redirect_uri%3Dhttps%253A%252F%252Forg.xjtu.edu.cn%252Fopenplatform%252Foauth%252Fauthorizesw%253Fredirect_uri%253Dhttp%253A%252F%252Fehall.xjtu.edu.cn%252Famp-auth-adapter%252FloginSuccess%26response_type%3Dcode%26client_name%3DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:29.655Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://hm.baidu.com/hm.gif?hca=A14CDDF038438B8F&cc=1&ck=1&cl=32-bit&ds=1280x720&vl=720&et=0&ja=0&ln=zh-cn&lo=0&rnd=1564941317&si=d605d8df6bf5ca8a54fe078683196518&su=https%3A%2F%2Fehall.xjtu.edu.cn%2F&v=1.3.2&lv=1&sn=1050&r=0&ww=1280&u=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Flogin%3Fservice%3Dhttps%253A%252F%252Flogin.xjtu.edu.cn%252Fcas%252Foauth2.0%252FcallbackAuthorize%253Fclient_id%253D1030%2526redirect_uri%253Dhttps%25253A%25252F%25252Forg.xjtu.edu.cn%25252Fopenplatform%25252Foauth%25252Fauthorizesw%25253Fredirect_uri%25253Dhttp%25253A%25252F%25252Fehall.xjtu.edu.cn%25252Famp-auth-adapter%25252FloginSuccess%2526response_type%253Dcode%2526client_name%253DCasOAuthClient&tt=%E7%99%BB%E5%BD%95%20-%20%E8%A5%BF%E5%AE%89%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E7%BB%9F%E4%B8%80%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81%E7%BD%91%E5%85%B3"
+    },
+    {
+      "at": "2026-04-18T14:50:29.690Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://hm.baidu.com/hm.gif?hca=A14CDDF038438B8F&cc=1&ck=1&cl=32-bit&ds=1280x720&vl=720&et=0&ja=0&ln=zh-cn&lo=0&rnd=1564941317&si=d605d8df6bf5ca8a54fe078683196518&su=https%3A%2F%2Fehall.xjtu.edu.cn%2F&v=1.3.2&lv=1&sn=1050&r=0&ww=1280&u=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Flogin%3Fservice%3Dhttps%253A%252F%252Flogin.xjtu.edu.cn%252Fcas%252Foauth2.0%252FcallbackAuthorize%253Fclient_id%253D1030%2526redirect_uri%253Dhttps%25253A%25252F%25252Forg.xjtu.edu.cn%25252Fopenplatform%25252Foauth%25252Fauthorizesw%25253Fredirect_uri%25253Dhttp%25253A%25252F%25252Fehall.xjtu.edu.cn%25252Famp-auth-adapter%25252FloginSuccess%2526response_type%253Dcode%2526client_name%253DCasOAuthClient&tt=%E7%99%BB%E5%BD%95%20-%20%E8%A5%BF%E5%AE%89%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E7%BB%9F%E4%B8%80%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81%E7%BD%91%E5%85%B3"
+    },
+    {
+      "at": "2026-04-18T14:50:29.904Z",
+      "type": "load",
+      "label": "main",
+      "url": "https://login.xjtu.edu.cn/cas/login?service=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D1030%26redirect_uri%3Dhttps%253A%252F%252Forg.xjtu.edu.cn%252Fopenplatform%252Foauth%252Fauthorizesw%253Fredirect_uri%253Dhttp%253A%252F%252Fehall.xjtu.edu.cn%252Famp-auth-adapter%252FloginSuccess%26response_type%3Dcode%26client_name%3DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:30.312Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "input",
+      "id": "",
+      "cls": "el-input__inner",
+      "text": "",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:50:30.944Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "2"
+    },
+    {
+      "at": "2026-04-18T14:50:31.114Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "22"
+    },
+    {
+      "at": "2026-04-18T14:50:31.301Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "223"
+    },
+    {
+      "at": "2026-04-18T14:50:31.470Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "2233"
+    },
+    {
+      "at": "2026-04-18T14:50:31.731Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "22332"
+    },
+    {
+      "at": "2026-04-18T14:50:31.977Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "223321"
+    },
+    {
+      "at": "2026-04-18T14:50:32.189Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "2233211"
+    },
+    {
+      "at": "2026-04-18T14:50:32.378Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "22332111"
+    },
+    {
+      "at": "2026-04-18T14:50:32.565Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "223321111"
+    },
+    {
+      "at": "2026-04-18T14:50:33.171Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "text",
+      "valuePreview": "2233211113"
+    },
+    {
+      "at": "2026-04-18T14:50:34.130Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "input",
+      "id": "",
+      "cls": "el-input__inner",
+      "text": "",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:50:34.357Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:34.575Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:34.808Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:35.210Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:35.377Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:35.571Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:35.832Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:36.033Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:36.801Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:36.965Z",
+      "type": "ui",
+      "label": "main",
+      "event": "input",
+      "tag": "input",
+      "name": "",
+      "inputType": "password",
+      "valuePreview": "<masked>"
+    },
+    {
+      "at": "2026-04-18T14:50:37.593Z",
+      "type": "ui",
+      "label": "main",
+      "event": "keydown",
+      "key": "Enter",
+      "tag": "input",
+      "name": ""
+    },
+    {
+      "at": "2026-04-18T14:50:38.734Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "input",
+      "id": "",
+      "cls": "",
+      "text": "",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:50:38.741Z",
+      "type": "request",
+      "label": "main",
+      "method": "POST",
+      "url": "https://login.xjtu.edu.cn/cas/login?service=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D1030%26redirect_uri%3Dhttps%253A%252F%252Forg.xjtu.edu.cn%252Fopenplatform%252Foauth%252Fauthorizesw%253Fredirect_uri%253Dhttp%253A%252F%252Fehall.xjtu.edu.cn%252Famp-auth-adapter%252FloginSuccess%26response_type%3Dcode%26client_name%3DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:38.793Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "button",
+      "id": "",
+      "cls": "el-button login-btn el-button--primary el-button--default is-round",
+      "text": "登录",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:50:38.809Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://login.xjtu.edu.cn/cas/login?service=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Foauth2.0%2FcallbackAuthorize%3Fclient_id%3D1030%26redirect_uri%3Dhttps%253A%252F%252Forg.xjtu.edu.cn%252Fopenplatform%252Foauth%252Fauthorizesw%253Fredirect_uri%253Dhttp%253A%252F%252Fehall.xjtu.edu.cn%252Famp-auth-adapter%252FloginSuccess%26response_type%3Dcode%26client_name%3DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:38.809Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://login.xjtu.edu.cn/cas/oauth2.0/callbackAuthorize?client_id=1030&redirect_uri=https%3A%2F%2Forg.xjtu.edu.cn%2Fopenplatform%2Foauth%2Fauthorizesw%3Fredirect_uri%3Dhttp%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&response_type=code&client_name=CasOAuthClient&ticket=ST-755007-F1uiKRa7Jzcjj4YkRz4IO91XKRYcas-server-webapp-6d76ccf7f5-jssc8"
+    },
+    {
+      "at": "2026-04-18T14:50:38.830Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://login.xjtu.edu.cn/cas/oauth2.0/callbackAuthorize?client_id=1030&redirect_uri=https%3A%2F%2Forg.xjtu.edu.cn%2Fopenplatform%2Foauth%2Fauthorizesw%3Fredirect_uri%3Dhttp%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&response_type=code&client_name=CasOAuthClient&ticket=ST-755007-F1uiKRa7Jzcjj4YkRz4IO91XKRYcas-server-webapp-6d76ccf7f5-jssc8"
+    },
+    {
+      "at": "2026-04-18T14:50:38.830Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://login.xjtu.edu.cn/cas/oauth2.0/authorize?response_type=code&client_id=1030&redirect_uri=https%3A%2F%2Forg.xjtu.edu.cn%2Fopenplatform%2Foauth%2Fauthorizesw%3Fredirect_uri%3Dhttp%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:38.848Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://login.xjtu.edu.cn/cas/oauth2.0/authorize?response_type=code&client_id=1030&redirect_uri=https%3A%2F%2Forg.xjtu.edu.cn%2Fopenplatform%2Foauth%2Fauthorizesw%3Fredirect_uri%3Dhttp%3A%2F%2Fehall.xjtu.edu.cn%2Famp-auth-adapter%2FloginSuccess&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:38.848Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://org.xjtu.edu.cn/openplatform/oauth/authorizesw?redirect_uri=http://ehall.xjtu.edu.cn/amp-auth-adapter/loginSuccess&code=OC-954935-X1qimWm-HMEwt8s9IeW-W2dtrOJBgVEX&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:38.888Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://org.xjtu.edu.cn/openplatform/oauth/authorizesw?redirect_uri=http://ehall.xjtu.edu.cn/amp-auth-adapter/loginSuccess&code=OC-954935-X1qimWm-HMEwt8s9IeW-W2dtrOJBgVEX&state=8a16029cc8fe45f2abe324a6bf175bfc"
+    },
+    {
+      "at": "2026-04-18T14:50:38.888Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "http://ehall.xjtu.edu.cn/amp-auth-adapter/loginSuccess?code=SW-OC-954935-X1qimWm-HMEwt8s9IeW-W2dtrOJBgVEXappId_1030&state=8a16029cc8fe45f2abe324a6bf175bfc&userType=1&employeeNo=2233211113"
+    },
+    {
+      "at": "2026-04-18T14:50:38.904Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "http://ehall.xjtu.edu.cn/amp-auth-adapter/loginSuccess?code=SW-OC-954935-X1qimWm-HMEwt8s9IeW-W2dtrOJBgVEXappId_1030&state=8a16029cc8fe45f2abe324a6bf175bfc&userType=1&employeeNo=2233211113"
+    },
+    {
+      "at": "2026-04-18T14:50:38.904Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/amp-auth-adapter/loginSuccess?code=SW-OC-954935-X1qimWm-HMEwt8s9IeW-W2dtrOJBgVEXappId_1030&state=8a16029cc8fe45f2abe324a6bf175bfc&userType=1&employeeNo=2233211113"
+    },
+    {
+      "at": "2026-04-18T14:50:39.275Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://ehall.xjtu.edu.cn/amp-auth-adapter/loginSuccess?code=SW-OC-954935-X1qimWm-HMEwt8s9IeW-W2dtrOJBgVEXappId_1030&state=8a16029cc8fe45f2abe324a6bf175bfc&userType=1&employeeNo=2233211113"
+    },
+    {
+      "at": "2026-04-18T14:50:39.276Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "http://ehall.xjtu.edu.cn/login?service=http://ehall.xjtu.edu.cn/new/index.html?browser=no&ticket=633d5f82-8fbe-44bb-899c-f083faa9cb72"
+    },
+    {
+      "at": "2026-04-18T14:50:39.278Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "http://ehall.xjtu.edu.cn/login?service=http://ehall.xjtu.edu.cn/new/index.html?browser=no&ticket=633d5f82-8fbe-44bb-899c-f083faa9cb72"
+    },
+    {
+      "at": "2026-04-18T14:50:39.278Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/login?service=http://ehall.xjtu.edu.cn/new/index.html?browser=no&ticket=633d5f82-8fbe-44bb-899c-f083faa9cb72"
+    },
+    {
+      "at": "2026-04-18T14:50:39.290Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://ehall.xjtu.edu.cn/login?service=http://ehall.xjtu.edu.cn/new/index.html?browser=no&ticket=633d5f82-8fbe-44bb-899c-f083faa9cb72"
+    },
+    {
+      "at": "2026-04-18T14:50:39.290Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/login?service=http://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.346Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "https://ehall.xjtu.edu.cn/login?service=http://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.346Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "http://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.348Z",
+      "type": "response",
+      "label": "main",
+      "status": 302,
+      "url": "http://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.348Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.354Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.356Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://hm.baidu.com/hm.gif?hca=A14CDDF038438B8F&cc=1&ck=1&cl=32-bit&ds=1280x720&vl=720&ep=9706%2C9706&et=3&ja=0&ln=zh-cn&lo=0&rnd=280240676&si=d605d8df6bf5ca8a54fe078683196518&su=https%3A%2F%2Fehall.xjtu.edu.cn%2F&v=1.3.2&lv=1&sn=1050&r=0&ww=1280&u=https%3A%2F%2Flogin.xjtu.edu.cn%2Fcas%2Flogin%3Fservice%3Dhttps%253A%252F%252Flogin.xjtu.edu.cn%252Fcas%252Foauth2.0%252FcallbackAuthorize%253Fclient_id%253D1030%2526redirect_uri%253Dhttps%25253A%25252F%25252Forg.xjtu.edu.cn%25252Fopenplatform%25252Foauth%25252Fauthorizesw%25253Fredirect_uri%25253Dhttp%25253A%25252F%25252Fehall.xjtu.edu.cn%25252Famp-auth-adapter%25252FloginSuccess%2526response_type%253Dcode%2526client_name%253DCasOAuthClient"
+    },
+    {
+      "at": "2026-04-18T14:50:39.358Z",
+      "type": "framenavigated",
+      "label": "main",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery-2.1.1.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery-2.1.1.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.messagestore.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.messagestore.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.fallbacks.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.fallbacks.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.parser.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.parser.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.emitter.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.emitter.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.language.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/i18n/jquery.i18n.language.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/school.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/plugins/changeSkin.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/plugins/changeSkin.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/font-awesome/iconfont.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/font-awesome/iconfont.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/compatibility.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/compatibility.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.365Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/webcomponents-lite.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.366Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/widget/webcomponents/webcomponents-lite.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.366Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/css/school.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.366Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/css/school.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.366Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/progressbar.gif"
+    },
+    {
+      "at": "2026-04-18T14:50:39.366Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/img/logo/logo-mini.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.366Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/user-role-teacher.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/welcome.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/pop4.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/FAQ.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/constant.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/niceScroll/jquery.nicescroll.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/niceScroll/jquery.nicescroll.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/sortable/Sortable-1.3.0.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/plugins/sortable/Sortable-1.3.0.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.368Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/amp.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/amp.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/separatePlugins.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/js/separatePlugins.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal_custom/js/amp_custom.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal_custom/js/amp_custom.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/ua-parser.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/ua-parser.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSend.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSend.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendData.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendData.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSendNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/AmpUserActionDataSendNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendDataNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/openAppSendDataNew.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery.jcryption-1.1.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/jquery.jcryption-1.1.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/base64.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/resources/js/base64.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/progressbar.gif"
+    },
+    {
+      "at": "2026-04-18T14:50:39.369Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/custom/img/logo/logo-mini.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.371Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/personalCenter/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.371Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/welcome.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.372Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/pop4.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.372Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/school.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.374Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/amp.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.374Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/amp.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.374Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/skin.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.374Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/skin.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.374Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/user-role-teacher.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.374Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/bootPage/FAQ.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.378Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/images/bg/login_bg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.378Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/images/bg/login_bg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.378Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/constant.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.489Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getCurrentLocale.json?_=1776523839364"
+    },
+    {
+      "at": "2026-04-18T14:50:39.489Z",
+      "type": "domcontentloaded",
+      "label": "main",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.489Z",
+      "type": "load",
+      "label": "main",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:50:39.492Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/portal.ico"
+    },
+    {
+      "at": "2026-04-18T14:50:39.493Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/icons/portal.ico"
+    },
+    {
+      "at": "2026-04-18T14:50:39.498Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getCurrentLocale.json?_=1776523839364"
+    },
+    {
+      "at": "2026-04-18T14:50:39.498Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/i18n/zh_CN.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.498Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/userDesktopInfo.json?type=&_=1776523839365"
+    },
+    {
+      "at": "2026-04-18T14:50:39.499Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/i18n/zh_CN.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.633Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/userDesktopInfo.json?type=&_=1776523839365"
+    },
+    {
+      "at": "2026-04-18T14:50:39.633Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getTopExtendList?_=1776523839366"
+    },
+    {
+      "at": "2026-04-18T14:50:39.633Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getUserSkin.json?_=1776523839367"
+    },
+    {
+      "at": "2026-04-18T14:50:39.633Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/userFavoriteApps.json?_=1776523839368"
+    },
+    {
+      "at": "2026-04-18T14:50:39.633Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.637Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.637Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.640Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.641Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.644Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.644Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.655Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/card.json"
+    },
+    {
+      "at": "2026-04-18T14:50:39.655Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getUserCategoryAppList.json?_=1776523839369"
+    },
+    {
+      "at": "2026-04-18T14:50:39.655Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getTaskSideCard.json?_=1776523839370"
+    },
+    {
+      "at": "2026-04-18T14:50:39.655Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getTaskMessageCount?_=1776523839371"
+    },
+    {
+      "at": "2026-04-18T14:50:39.655Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/images/bg/bg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.655Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getUserFirstLogin?_=1776523839372"
+    },
+    {
+      "at": "2026-04-18T14:50:39.655Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceCenterData.json?containLabels=true&searchKey=&_=1776523839373"
+    },
+    {
+      "at": "2026-04-18T14:50:39.656Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.656Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.656Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.656Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.663Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getUserSkin.json?_=1776523839367"
+    },
+    {
+      "at": "2026-04-18T14:50:39.663Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/teal-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.663Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/indigo-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.663Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/millennium-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.663Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/cherry-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.663Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/magenta-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.663Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/golden-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.664Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/css/dark/cherry/images/bg/bg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.664Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getTopExtendList?_=1776523839366"
+    },
+    {
+      "at": "2026-04-18T14:50:39.666Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/userFavoriteApps.json?_=1776523839368"
+    },
+    {
+      "at": "2026-04-18T14:50:39.672Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getUserFirstLogin?_=1776523839372"
+    },
+    {
+      "at": "2026-04-18T14:50:39.674Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.674Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/polymer/polymer.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.674Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-frame.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.674Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/resources/css/recommend.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.675Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/millennium-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.675Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/golden-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.677Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.677Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/resources/css/myFavorite.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.678Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/cherry-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.679Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.679Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/resources/css/hots.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.682Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getTaskSideCard.json?_=1776523839370"
+    },
+    {
+      "at": "2026-04-18T14:50:39.682Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/taskcenterapp/sys/taskCenter/portalDataReceive/getTaskCount.do?callback=jQuery2110059743444973644144_1776523839374&_=1776523839375"
+    },
+    {
+      "at": "2026-04-18T14:50:39.682Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/magenta-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.683Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/teal-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.683Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/theme/indigo-gauss-small.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:39.687Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/card.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.687Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/resources/css/card.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.687Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/polymer/polymer.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.692Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-frame.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.692Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-setting.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.692Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-setting-item.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.692Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/widget-app-item.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.692Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-frame.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.693Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/resources/css/recommend.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.694Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/resources/css/hots.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.694Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/resources/css/myFavorite.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.699Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/polymer/polymer-mini.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.700Z",
+      "type": "response",
+      "label": "main",
+      "status": 502,
+      "url": "https://ehall.xjtu.edu.cn/taskcenterapp/sys/taskCenter/portalDataReceive/getTaskCount.do?callback=jQuery2110059743444973644144_1776523839374&_=1776523839375"
+    },
+    {
+      "at": "2026-04-18T14:50:39.701Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/resources/css/card.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.702Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-setting.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.702Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-setting-item.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.707Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/widget-app-item.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.708Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/public/tagHtml/amp-w-frame.css"
+    },
+    {
+      "at": "2026-04-18T14:50:39.708Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/polymer/polymer-mini.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.710Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/polymer/polymer-micro.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.716Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/framework/polymer/polymer-micro.html"
+    },
+    {
+      "at": "2026-04-18T14:50:39.736Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceCenterData.json?containLabels=true&searchKey=&_=1776523839373"
+    },
+    {
+      "at": "2026-04-18T14:50:39.748Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.754Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.766Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceRoleApp.json?serviceRoleId=all&type=1&_=1776523839376"
+    },
+    {
+      "at": "2026-04-18T14:50:39.766Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/resources/img/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.766Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.771Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/resources/img/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.773Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.779Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/userFavoriteApps.json?_=1776523839377"
+    },
+    {
+      "at": "2026-04-18T14:50:39.779Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.790Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/userFavoriteApps.json?_=1776523839377"
+    },
+    {
+      "at": "2026-04-18T14:50:39.790Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getUserCategoryAppList.json?_=1776523839369"
+    },
+    {
+      "at": "2026-04-18T14:50:39.790Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.796Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceRoleApp.json?serviceRoleId=all&type=1&_=1776523839376"
+    },
+    {
+      "at": "2026-04-18T14:50:39.797Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768651907791216/4.0.3_TR2/icon_72.png?_=1714460824000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.797Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.797Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4766960573884517/4.0.3_TR3/icon_72.png?_=1714460775000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.797Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/6588187938512421/4.0.0_TR1/icon_72.png?_=1714460739000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.798Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/getTaskMessageCount?_=1776523839371"
+    },
+    {
+      "at": "2026-04-18T14:50:39.810Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceRoleApp.json?serviceRoleId=all&type=2&_=1776523839378"
+    },
+    {
+      "at": "2026-04-18T14:50:39.810Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/resources/img/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.810Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.810Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768651907791216/4.0.3_TR2/icon_72.png?_=1714460824000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.810Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.811Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4766960573884517/4.0.3_TR3/icon_72.png?_=1714460775000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.811Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/6588187938512421/4.0.0_TR1/icon_72.png?_=1714460739000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.816Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/resources/img/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.818Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/resources/js/card.js"
+    },
+    {
+      "at": "2026-04-18T14:50:39.827Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/recUseServiceList.json?_=1776523839379"
+    },
+    {
+      "at": "2026-04-18T14:50:39.827Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/resources/img/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.831Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/resources/img/no-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:39.850Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/recUseServiceList.json?_=1776523839379"
+    },
+    {
+      "at": "2026-04-18T14:50:39.856Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.856Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/5591103004184670/1.0_TR1/icon_72.png?_=1714460839000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.856Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4766859113956613/xsfacx_V4.0.6_TR2/icon_72.png?_=1714460762000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.856Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/5856333445645704/4.0.0_TR1/icon_72.png?_=1714460862000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.856Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/6521657458028967/5.2.1_R5/icon_72.png?_=1727405209000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.857Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768687067472349/studentWdksapApp_V4.0.4_TR1/icon_72.png?_=1714460717000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.861Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.861Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/5591103004184670/1.0_TR1/icon_72.png?_=1714460839000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.863Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/5856333445645704/4.0.0_TR1/icon_72.png?_=1714460862000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.863Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4766859113956613/xsfacx_V4.0.6_TR2/icon_72.png?_=1714460762000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.864Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/6521657458028967/5.2.1_R5/icon_72.png?_=1727405209000"
+    },
+    {
+      "at": "2026-04-18T14:50:39.864Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768687067472349/studentWdksapApp_V4.0.4_TR1/icon_72.png?_=1714460717000"
+    },
+    {
+      "at": "2026-04-18T14:50:45.830Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/serviceRoleApp.json?serviceRoleId=all&type=2&_=1776523839378"
+    },
+    {
+      "at": "2026-04-18T14:50:49.244Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "div",
+      "id": "",
+      "cls": "widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01",
+      "text": "我的本研课表",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:50:49.256Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/appIntroduction.json?appId=4770397878132218&_=1776523839380"
+    },
+    {
+      "at": "2026-04-18T14:50:49.336Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/appIntroduction.json?appId=4770397878132218&_=1776523839380"
+    },
+    {
+      "at": "2026-04-18T14:50:49.336Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/prompt/null-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:49.341Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/new/portal/images/prompt/null-data.png"
+    },
+    {
+      "at": "2026-04-18T14:50:50.157Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "div",
+      "id": "ampDetailEnter",
+      "cls": "amp-detail-enter amp-active",
+      "text": "进入服务",
+      "ampTitle": "我的本研课表",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:50:50.183Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/sendRecUseApp.json?appId=4770397878132218&_=1776523839381"
+    },
+    {
+      "at": "2026-04-18T14:50:50.214Z",
+      "type": "page-attached",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4770397878132218"
+    },
+    {
+      "at": "2026-04-18T14:50:50.214Z",
+      "type": "new-page",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4770397878132218"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/sentsinLayer/skin.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh-scenes.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/bower_components/jquery/dist/jquery.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh_utils.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/amp/utils.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/js/conf/constant.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/selectRole/selectRole.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.217Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:50:50.220Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/sentsinLayer/skin.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.223Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.224Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.226Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh-scenes.min.css"
+    },
+    {
+      "at": "2026-04-18T14:50:50.260Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/bower_components/jquery/dist/jquery.min.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.273Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/js/conf/constant.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.284Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:50:50.291Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/img/selectRoleBgImg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:50.291Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/selectRole/selectRole.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.291Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh_utils.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.291Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/amp/utils.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.295Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/img/selectRoleBgImg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:50:50.296Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/sendRecUseApp.json?appId=4770397878132218&_=1776523839381"
+    },
+    {
+      "at": "2026-04-18T14:50:50.362Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.js"
+    },
+    {
+      "at": "2026-04-18T14:50:50.366Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/appMultiGroupEntranceList?r_t=1776523850365&appId=4770397878132218&param="
+    },
+    {
+      "at": "2026-04-18T14:50:50.406Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/appMultiGroupEntranceList?r_t=1776523850365&appId=4770397878132218&param="
+    },
+    {
+      "at": "2026-04-18T14:50:50.406Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000"
+    },
+    {
+      "at": "2026-04-18T14:50:50.406Z",
+      "type": "domcontentloaded",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4770397878132218"
+    },
+    {
+      "at": "2026-04-18T14:50:50.407Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000"
+    },
+    {
+      "at": "2026-04-18T14:50:50.408Z",
+      "type": "load",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4770397878132218"
+    },
+    {
+      "at": "2026-04-18T14:50:51.025Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:50:51.043Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:50:51.047Z",
+      "type": "framenavigated",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:50:51.053Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot_before.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.053Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.053Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/widget/weekUnitTableInfo/weekUnitTableInfo.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.053Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/js/ggFunctions.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.053Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/js/jwpublic.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.054Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/js/printArea.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.054Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/widget/weekUnitTableInfo/weekUnitTableInfo.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.054Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicExport.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.054Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicFunction.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.054Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/widget/weekUnitTableInfo/html2canvas.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.058Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot_before.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.061Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/widget/weekUnitTableInfo/weekUnitTableInfo.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.061Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/js/jwpublic.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.061Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/js/printArea.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.063Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.063Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/js/ggFunctions.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.077Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/widget/weekUnitTableInfo/weekUnitTableInfo.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.079Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicFunction.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.082Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicExport.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.168Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/widget/weekUnitTableInfo/html2canvas.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.170Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.170Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroImporter2/zeroImporter2.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.170Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/lib/jquery.cookie.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.176Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/lib/jquery.cookie.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.187Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroImporter2/zeroImporter2.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.206Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.385Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/css/publicStyle.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.385Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.385Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/doc/doc.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.385Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/jwPackagingMethod.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.385Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/vue2.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.385Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/public-frreport.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.385Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwcommon.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.386Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/stateapp/public/js/common.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.386Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwrzlb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.386Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwPackagingMethod.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.386Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfingerPlugins.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.386Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfinger.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.386Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jsloader.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.392Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/css/publicStyle.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.395Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/public-frreport.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.395Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/doc/doc.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.401Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.401Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/jwPackagingMethod.css?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.402Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwcommon.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.407Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwrzlb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.407Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/stateapp/public/js/common.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.416Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfinger.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.419Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jsloader.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.424Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/vue2.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.443Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfingerPlugins.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.450Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwPackagingMethod.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.452Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwekPackagingMethod.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.459Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwekPackagingMethod.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.461Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_common.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_page.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_utils.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_auth.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_translate.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.md5.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw-theme-patch/jw-theme-patch.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_security.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jquery.binding.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/xgjsutil.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/pubFunctions.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-audit-flows/jw-audit-flows.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-auth-tab/index.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-bhFormOutline/jw-bhFormOutline.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-upload-auth/jw-upload-auth.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.463Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicPrintFR.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.466Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/config.js"
+    },
+    {
+      "at": "2026-04-18T14:50:51.467Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_auth.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.468Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_page.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.471Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.md5.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.474Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_utils.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.481Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw-theme-patch/jw-theme-patch.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.481Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jquery.binding.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.485Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/xgjsutil.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.490Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_security.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.495Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_common.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.497Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/tableconfig/queryTableConfig.do"
+    },
+    {
+      "at": "2026-04-18T14:50:51.515Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/tableconfig/queryTableConfig.do"
+    },
+    {
+      "at": "2026-04-18T14:50:51.516Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/api/appOperatingManual/getMenuOperatingManual/wdkb.do"
+    },
+    {
+      "at": "2026-04-18T14:50:51.545Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/api/appOperatingManual/getMenuOperatingManual/wdkb.do"
+    },
+    {
+      "at": "2026-04-18T14:50:51.546Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-auth-tab/index.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.547Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-bhFormOutline/jw-bhFormOutline.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.547Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-audit-flows/jw-audit-flows.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.548Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/pubFunctions.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.548Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-upload-auth/jw-upload-auth.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.548Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.548Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicPrintFR.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.548Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.555Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/config.js"
+    },
+    {
+      "at": "2026-04-18T14:50:51.558Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_translate.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.562Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.css?v=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.567Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.css?v=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.569Z",
+      "type": "domcontentloaded",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:50:51.570Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/wdkb-4770397878132218.do?v=0375430886410439"
+    },
+    {
+      "at": "2026-04-18T14:50:51.613Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/wdkb-4770397878132218.do?v=0375430886410439"
+    },
+    {
+      "at": "2026-04-18T14:50:51.614Z",
+      "type": "load",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:50:51.623Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/css/base.css?av1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.623Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/css/style.css?av1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.631Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.base64.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.631Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/CryptoJS.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.631Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/icon/omoiconfont.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.636Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/css/style.css?av1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.636Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/css/base.css?av1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.641Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.base64.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.672Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/modules/bb/cxjwggbbdqx.do"
+    },
+    {
+      "at": "2026-04-18T14:50:51.734Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/modules/bb/cxjwggbbdqx.do"
+    },
+    {
+      "at": "2026-04-18T14:50:51.736Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/CryptoJS.min.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:51.913Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/icon/omoiconfont.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.079Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emappagelog/config/wdkb.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.095Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emappagelog/config/wdkb.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.244Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:50:52.244Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:50:52.244Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.css?v=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.244Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/pub/setJwCommonAppRole.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.255Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/pub/setJwCommonAppRole.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.257Z",
+      "type": "framenavigated",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry#/xskcb"
+    },
+    {
+      "at": "2026-04-18T14:50:52.258Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.css?v=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.264Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.html?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.271Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/modules/xskcb/xskcb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.272Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.html?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.276Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/modules/xskcb/xskcb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.277Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kbck/kbck.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.286Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kbck/kbck.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.287Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/zttk/zttk.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.287Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kblb/kblb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.292Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/zttk/zttk.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.292Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kblb/kblb.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.292Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/zttk/zttkBS.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.297Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/zttk/zttkBS.js?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.298Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/jshkcb/dqxnxq.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.325Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/jshkcb/dqxnxq.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.325Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/cxxsjbxx.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.366Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/cxxsjbxx.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.366Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/jshkcb/dqzc.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.409Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/jshkcb/dqzc.do"
+    },
+    {
+      "at": "2026-04-18T14:50:52.409Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kbck/kbckIndexPage.html?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.424Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kbck/kbckIndexPage.html?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:52.424Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/xskcb.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.697Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/xskcb.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.698Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/jshkcb/cxjcs.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.734Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/jshkcb/cxjcs.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.734Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kbck/wptk.html?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:53.744Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/public/commonpage/kbck/wptk.html?av=1775794956759"
+    },
+    {
+      "at": "2026-04-18T14:50:53.744Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/xswpkc.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.847Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/xswpkc.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.847Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/xsdkkc.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.897Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/modules/xskcb/xsdkkc.do"
+    },
+    {
+      "at": "2026-04-18T14:50:53.897Z",
+      "type": "ui",
+      "label": "popup",
+      "event": "click",
+      "tag": "div",
+      "id": "",
+      "cls": "bh-color-primary",
+      "text": "学期课表",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:50:53.898Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/images/u422.png"
+    },
+    {
+      "at": "2026-04-18T14:50:53.908Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/public/images/u422.png"
+    },
+    {
+      "at": "2026-04-18T14:51:01.600Z",
+      "type": "after-login",
+      "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no"
+    },
+    {
+      "at": "2026-04-18T14:51:12.100Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emappagelog/push.do"
+    },
+    {
+      "at": "2026-04-18T14:51:12.111Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emappagelog/push.do"
+    },
+    {
+      "at": "2026-04-18T14:51:14.006Z",
+      "type": "monitor-checkpoint",
+      "checkpointIndex": 1,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+          "title": "西安交通大学本科教务",
+          "debugLabel": "monitor-checkpoint-1-page-0"
+        },
+        {
+          "pageIndex": 1,
+          "url": "https://ehall.xjtu.edu.cn/jwapp/sys/wdkb/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry#/xskcb",
+          "title": "我的课表",
+          "debugLabel": "monitor-checkpoint-1-page-1"
+        }
+      ]
+    },
+    {
+      "at": "2026-04-18T14:51:24.370Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "div",
+      "id": "",
+      "cls": "widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01",
+      "text": "成绩查询",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:51:24.377Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/appIntroduction.json?appId=4768574631264620&_=1776523839382"
+    },
+    {
+      "at": "2026-04-18T14:51:24.378Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000"
+    },
+    {
+      "at": "2026-04-18T14:51:24.378Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000"
+    },
+    {
+      "at": "2026-04-18T14:51:24.448Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/appIntroduction.json?appId=4768574631264620&_=1776523839382"
+    },
+    {
+      "at": "2026-04-18T14:51:25.154Z",
+      "type": "ui",
+      "label": "main",
+      "event": "click",
+      "tag": "div",
+      "id": "ampDetailEnter",
+      "cls": "amp-detail-enter amp-active",
+      "text": "进入服务",
+      "ampTitle": "成绩查询",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:51:25.188Z",
+      "type": "request",
+      "label": "main",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jsonp/sendRecUseApp.json?appId=4768574631264620&_=1776523839383"
+    },
+    {
+      "at": "2026-04-18T14:51:25.224Z",
+      "type": "page-attached",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4768574631264620"
+    },
+    {
+      "at": "2026-04-18T14:51:25.224Z",
+      "type": "new-page",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4768574631264620"
+    },
+    {
+      "at": "2026-04-18T14:51:25.226Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/sentsinLayer/skin.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.227Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh.min.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh-scenes.min.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/bower_components/jquery/dist/jquery.min.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh_utils.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/amp/utils.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/js/conf/constant.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/selectRole/selectRole.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:51:25.228Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/sentsinLayer/skin.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.230Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.230Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh.min.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.230Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/jqwidget/blue/bh-scenes.min.css"
+    },
+    {
+      "at": "2026-04-18T14:51:25.232Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:51:25.232Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/js/conf/constant.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.232Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/selectRole/selectRole.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.232Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh_utils.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.232Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/js/src/amp/utils.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.233Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/bower_components/jquery/dist/jquery.min.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.238Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/img/selectRoleBgImg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:51:25.239Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/img/selectRoleBgImg.jpg"
+    },
+    {
+      "at": "2026-04-18T14:51:25.239Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/localRes/fe_components/bh.js"
+    },
+    {
+      "at": "2026-04-18T14:51:25.241Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/appMultiGroupEntranceList?r_t=1776523885241&appId=4768574631264620&param="
+    },
+    {
+      "at": "2026-04-18T14:51:25.270Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/appMultiGroupEntranceList?r_t=1776523885241&appId=4768574631264620&param="
+    },
+    {
+      "at": "2026-04-18T14:51:25.270Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000"
+    },
+    {
+      "at": "2026-04-18T14:51:25.270Z",
+      "type": "domcontentloaded",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4768574631264620"
+    },
+    {
+      "at": "2026-04-18T14:51:25.271Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000"
+    },
+    {
+      "at": "2026-04-18T14:51:25.273Z",
+      "type": "load",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/portal/html/select_role.html?appId=4768574631264620"
+    },
+    {
+      "at": "2026-04-18T14:51:25.291Z",
+      "type": "response",
+      "label": "main",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jsonp/sendRecUseApp.json?appId=4768574631264620&_=1776523839383"
+    },
+    {
+      "at": "2026-04-18T14:51:26.013Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:51:26.027Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:51:26.029Z",
+      "type": "framenavigated",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:51:26.035Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot_before.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.035Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.035Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/public/js/radialIndicator.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.035Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/js/jwpublic.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.036Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/js/ggFunctions.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.046Z",
+      "type": "response",
+      "label": "popup",
+      "status": 404,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/js/ggFunctions.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.046Z",
+      "type": "response",
+      "label": "popup",
+      "status": 404,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/js/jwpublic.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.046Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot_before.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.049Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/public/js/radialIndicator.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.049Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/boot/js/boot.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.133Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.133Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroImporter2/zeroImporter2.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.133Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/lib/jquery.cookie.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.141Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/lib/jquery.cookie.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.150Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroImporter2/zeroImporter2.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.166Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/css/publicStyle.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/doc/doc.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/jwPackagingMethod.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/vue2.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/public-frreport.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwcommon.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/stateapp/public/js/common.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwrzlb.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwPackagingMethod.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfingerPlugins.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfinger.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.172Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jsloader.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.180Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/css/publicStyle.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.185Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/doc/doc.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.185Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/public-frreport.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.186Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/zeroPlugin/dist/zero-plugin.min.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.190Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwcommon.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.196Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/jwrzlb.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.204Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfinger.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.206Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/jwPackagingMethod.css?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.207Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jsloader.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.218Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicfrreport/vue2.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.234Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/goldenfinger/goldenfingerPlugins.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.234Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwPackagingMethod.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.453Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/stateapp/public/js/common.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.460Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwekPackagingMethod.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.468Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/jwekPackagingMethod.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_common.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_page.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_utils.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_auth.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_translate.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.md5.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw-theme-patch/jw-theme-patch.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_security.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jquery.binding.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.470Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/xgjsutil.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/pubFunctions.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-audit-flows/jw-audit-flows.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-auth-tab/index.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-bhFormOutline/jw-bhFormOutline.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-upload-auth/jw-upload-auth.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.471Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicPrintFR.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.476Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/config.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.478Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_page.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.484Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_auth.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.484Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.md5.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.485Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw-theme-patch/jw-theme-patch.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.485Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_utils.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.491Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jquery.binding.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.491Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/xgjsutil.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.496Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_security.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.506Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-auth-tab/index.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.509Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-bhFormOutline/jw-bhFormOutline.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.515Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_common.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.517Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/tableconfig/queryTableConfig.do"
+    },
+    {
+      "at": "2026-04-18T14:51:26.573Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/tableconfig/queryTableConfig.do"
+    },
+    {
+      "at": "2026-04-18T14:51:26.574Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/api/appOperatingManual/getMenuOperatingManual/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:26.590Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/api/appOperatingManual/getMenuOperatingManual/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:26.591Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-upload-auth/jw-upload-auth.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.591Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.591Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/public/script/publicPrintFR.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.591Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-audit-flows/jw-audit-flows.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.591Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/pubFunctions.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.591Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.598Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/config.js"
+    },
+    {
+      "at": "2026-04-18T14:51:26.601Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/jw_translate.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.604Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.css?v=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.609Z",
+      "type": "domcontentloaded",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:51:26.610Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/cjcx-4768574631264620.do?v=08452050553983737"
+    },
+    {
+      "at": "2026-04-18T14:51:26.636Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/cjcx-4768574631264620.do?v=08452050553983737"
+    },
+    {
+      "at": "2026-04-18T14:51:26.636Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-breadcrumb/jw-breadcrumb.css?v=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.637Z",
+      "type": "load",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry"
+    },
+    {
+      "at": "2026-04-18T14:51:26.645Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/css/base.css?av1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.645Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/css/style.css?av1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.654Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/css/style.css?av1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.655Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/public/css/base.css?av1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.656Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.base64.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.657Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/CryptoJS.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.657Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/icon/omoiconfont.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.669Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/jquery.base64.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.676Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/css/icon/omoiconfont.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.696Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/lib/CryptoJS.min.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:26.710Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/modules/bb/cxjwggbbdqx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:26.736Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/modules/bb/cxjwggbbdqx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.030Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emappagelog/config/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.043Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emappagelog/config/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.193Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:51:27.193Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/portal/custom/img/school/logo/logo.png"
+    },
+    {
+      "at": "2026-04-18T14:51:27.193Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.css?v=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.193Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/pub/setJwCommonAppRole.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.200Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwpubapp/pub/setJwCommonAppRole.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.203Z",
+      "type": "framenavigated",
+      "label": "popup",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry#/cjcx"
+    },
+    {
+      "at": "2026-04-18T14:51:27.203Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.css?v=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.209Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.214Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcx.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.217Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/jwcommon/public/script/common/components/jw-user-manual/jw-user-manual.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.223Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcx.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.225Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcxBS.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.225Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/dqxq/dqxq.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.225Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/qb/qb.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.232Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcxBS.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.234Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/qb/qb.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.234Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/dqxq/dqxq.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.234Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/qb/qbBS.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.235Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/dqxq/dqxqBS.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.241Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/dqxq/dqxqBS.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.241Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/qb/qbBS.js?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.243Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcxIndexPage.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.251Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcxIndexPage.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.251Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxcjcxsfkf.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.564Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxcjcxsfkf.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.565Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxsfwfcsj.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.588Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxsfwfcsj.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.589Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxdqxnxqhsygxnxq.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.629Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxdqxnxqhsygxnxq.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.629Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxxtcs.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.646Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxxtcs.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.646Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.678Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.678Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/xscjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.696Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/xscjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.696Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/code/5b280d89-7e89-42ba-8731-8def27542750.do?_=1776523887691"
+    },
+    {
+      "at": "2026-04-18T14:51:27.696Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emapcomponent/schema/getList.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.712Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emapcomponent/schema/getList.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.712Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcxTabTpl.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.733Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/cjcxTabTpl.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.733Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/dqxq/dqxqIndexPage.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.740Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/dqxq/dqxqIndexPage.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:27.740Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxdqxnxqhsygxnxq.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.772Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxdqxnxqhsygxnxq.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.772Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/code/5b280d89-7e89-42ba-8731-8def27542750.do?_=1776523887767"
+    },
+    {
+      "at": "2026-04-18T14:51:27.772Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.802Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.802Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emapcomponent/schema/getList.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.823Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emapcomponent/schema/getList.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.824Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/jddzpjcxcj.do"
+    },
+    {
+      "at": "2026-04-18T14:51:27.829Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/code/5b280d89-7e89-42ba-8731-8def27542750.do?_=1776523887691"
+    },
+    {
+      "at": "2026-04-18T14:51:27.829Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/code/5b280d89-7e89-42ba-8731-8def27542750.do?_=1776523887767"
+    },
+    {
+      "at": "2026-04-18T14:51:27.865Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/jddzpjcxcj.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.295Z",
+      "type": "ui",
+      "label": "popup",
+      "event": "click",
+      "tag": "div",
+      "id": "",
+      "cls": "jqx-tabs-titleContentWrapper jqx-disableselect",
+      "text": "全部",
+      "ampTitle": "",
+      "href": ""
+    },
+    {
+      "at": "2026-04-18T14:51:29.297Z",
+      "type": "request",
+      "label": "popup",
+      "method": "GET",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/qb/qbIndexPage.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:29.304Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/modules/cjcx/qb/qbIndexPage.html?av=1776068620929"
+    },
+    {
+      "at": "2026-04-18T14:51:29.304Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxxtcs.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.331Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/cxxtcs.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.331Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.355Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.355Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emapcomponent/schema/getList.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.373Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/emapcomponent/schema/getList.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.373Z",
+      "type": "request",
+      "label": "popup",
+      "method": "POST",
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/xscjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:29.876Z",
+      "type": "response",
+      "label": "popup",
+      "status": 200,
+      "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/modules/cjcx/xscjcx.do"
+    },
+    {
+      "at": "2026-04-18T14:51:36.975Z",
+      "type": "monitor-checkpoint",
+      "checkpointIndex": 2,
+      "pages": [
+        {
+          "pageIndex": 0,
+          "url": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+          "title": "西安交通大学本科教务",
+          "debugLabel": "monitor-checkpoint-2-page-0"
+        },
+        {
+          "pageIndex": 1,
+          "url": "https://ehall.xjtu.edu.cn/jwapp/sys/cjcx/*default/index.do?amp_sec_version_=1&gid_=dGVrQk94OGpxdFhkaklvKzBhYmxWeldJVFUrRmdNOWZGMGZBMGdUNHMvWEIxcWIzanVIbVc4Q3RTa2VpTlVSVC93eWlEU2RXZWJObDIycE5XUVlnVWc9PQ&EMAP_LANG=zh&THEME=cherry#/cjcx",
+          "title": "成绩查询",
+          "debugLabel": "monitor-checkpoint-2-page-1"
+        }
+      ]
+    },
+    {
+      "at": "2026-04-18T14:51:40.464Z",
+      "type": "monitor-finish",
+      "currentUrl": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+      "pageCount": 2,
+      "checkpointCount": 2
+    }
+  ]
+}

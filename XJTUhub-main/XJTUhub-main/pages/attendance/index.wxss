@@ -1,0 +1,85 @@
+page {
+  background: var(--bg-page);
+}
+
+.container {
+  padding: 24rpx;
+}
+
+.card-shell {
+  border-radius: 16rpx;
+  border: 1rpx solid var(--border-color);
+  background: var(--bg-card);
+  box-shadow: 0 12rpx 26rpx -22rpx var(--shadow-color);
+}
+
+.tips {
+  padding: 20rpx;
+  color: var(--text-secondary);
+  font-size: 24rpx;
+}
+
+.list {
+  margin-top: 20rpx;
+}
+
+.item {
+  margin-bottom: 18rpx;
+  padding: 22rpx;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.risk {
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+}
+
+.risk.normal {
+  color: #1f9d66;
+  background: rgba(34, 197, 94, 0.16);
+}
+
+.risk.warning {
+  color: #c98613;
+  background: rgba(245, 158, 11, 0.18);
+}
+
+.risk.danger {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.16);
+}
+
+.meta {
+  margin-top: 10rpx;
+  color: var(--text-secondary);
+  font-size: 24rpx;
+}
+
+.stats {
+  margin-top: 18rpx;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-primary);
+  font-size: 26rpx;
+}
+
+.sync-btn {
+  margin-top: 14rpx;
+  width: 100%;
+  height: 88rpx;
+  border-radius: 14rpx;
+  background: var(--theme);
+  color: #ffffff;
+}

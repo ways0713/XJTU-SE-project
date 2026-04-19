@@ -1,0 +1,23 @@
+<view class="theme-{{themeMode}}">
+  <cu-custom bgColor="bg-nav-theme" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">DDL提醒</view>
+  </cu-custom>
+
+  <view class="container ios-page {{pageReady ? 'is-ready' : ''}}">
+    <view class="tips card-shell">支持离线查看与完成状态标记，后续可接入课表/作业接口自动生成。</view>
+
+    <view class="list">
+      <view class="item card-shell ios-tap {{item.done ? 'done' : ''}}" wx:for="{{list}}" wx:key="id">
+        <view class="header-row">
+          <view class="title">{{item.title}}</view>
+          <switch class="theme" checked="{{item.done}}" data-id="{{item.id}}" bindchange="toggleDone" />
+        </view>
+        <view class="meta">课程：{{item.course}}</view>
+        <view class="meta">截止：{{item.deadline}}</view>
+      </view>
+    </view>
+
+    <button class="cu-btn reset-btn ios-btn" bindtap="resetDemoData">重置演示数据</button>
+  </view>
+</view>

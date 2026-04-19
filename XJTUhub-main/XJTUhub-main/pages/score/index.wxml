@@ -1,0 +1,58 @@
+<view class="theme-{{themeMode}}">
+  <cu-custom bgColor="bg-nav-theme" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">成绩查询</view>
+  </cu-custom>
+  <view class="container ios-page {{pageReady ? 'is-ready' : ''}}">
+    <view class="header card-shell">
+      <view class="score-term ios-tap">
+        <picker mode="selector" range="{{list}}" range-key="termName" value="{{termIndex}}" bindchange="changeTerm">
+          选择学期 <text class="cuIcon-unfold"></text>
+        </picker>
+      </view>
+      <view bindtap="update" class="update-btn ios-tap">
+        <text class="cuIcon-refresh"></text>
+      </view>
+    </view>
+    <view class="score-list card-shell" wx:if="{{list.length}}">
+      <view class="term-name">{{list[termIndex].termName}}</view>
+      <view class="list">
+        <view class="score-item ios-tap" wx:for="{{list[termIndex].scoreList}}" wx:key="num" data-index="{{index}}" bindtap="openScoreDetail">
+          <view class="course-name">
+            <view>{{item.name}}</view>
+            <view class="score-item__hint">点击查看原始成绩明细</view>
+          </view>
+          <view class="course-score {{item.score < 60 ? 'fail' : ''}}">{{item.score}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="score-empty card-shell" wx:else>
+      暂无成绩数据
+    </view>
+  </view>
+  <van-popup
+    show="{{showScoreDetail}}"
+    position="center"
+    round
+    overlay-style="background: rgba(2, 6, 23, 0.44);"
+    custom-style="width: 84%; max-height: 72vh; border-radius: 24rpx; overflow: hidden;"
+    bind:close="hideScoreDetail"
+  >
+    <view class="score-detail theme-{{themeMode}}" wx:if="{{activeScoreDetail}}">
+      <view class="score-detail__head">
+        <view class="score-detail__title">{{activeScoreDetail.name}}</view>
+        <view class="score-detail__subtitle">{{activeScoreDetail.termName}}</view>
+        <view class="score-detail__badge">有效成绩 {{activeScoreDetail.finalScore}}</view>
+      </view>
+      <view class="score-detail__body">
+        <view class="score-detail__row" wx:for="{{activeScoreDetail.detailRows}}" wx:key="key">
+          <text class="score-detail__key">{{item.label}}</text>
+          <text class="score-detail__val">{{item.value}}</text>
+        </view>
+      </view>
+      <view class="score-detail__footer">
+        <view class="score-detail__btn ios-tap" bindtap="hideScoreDetail">我知道了</view>
+      </view>
+    </view>
+  </van-popup>
+</view>

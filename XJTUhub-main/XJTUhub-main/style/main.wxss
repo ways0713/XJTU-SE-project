@@ -1,0 +1,54 @@
+@import "./colorui/main.wxss";
+@import "./colorui/icon.wxss";
+@import "./colorui/animation.wxss";
+@import "./reset.wxss";
+
+page {
+  --theme: #0f766e;
+  --accent: #f59e0b;
+  --bg-page: #f4f7fb;
+  --bg-card: #ffffff;
+  --surface-soft: rgba(15, 23, 42, 0.05);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: rgba(15, 23, 42, 0.1);
+  --shadow-color: rgba(15, 23, 42, 0.08);
+}
+
+.bg-nav-theme {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+}
+
+.ios-page {
+  opacity: 0;
+  transform: translateY(14rpx) scale(0.994);
+  transition: opacity 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ios-page.is-ready {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.ios-btn {
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ios-btn:active {
+  transform: scale(0.97);
+  opacity: 0.92;
+}
+
+.ios-tap {
+  transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 180ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ios-tap:active {
+  transform: scale(0.98);
+  opacity: 0.95;
+}

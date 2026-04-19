@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "entry": "https://ehall.xjtu.edu.cn",
+    "fetchedAt": "2026-04-19T12:39:00.460Z",
+    "headless": false,
+    "manualLogin": false,
+    "traceOps": false,
+    "monitorOnly": false
+  },
+  "course": {
+    "opened": false,
+    "title": "",
+    "tables": [],
+    "api": [],
+    "note": "Could not open course app.",
+    "debug": {
+      "appName": "我的本研课表",
+      "fallbackName": "课表",
+      "clickedCard": false,
+      "clickedEnter": false,
+      "directOpened": false,
+      "urlBefore": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+      "urlAfter": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+      "appMeta": null,
+      "switchedToNewPage": false,
+      "targetPageUrl": "",
+      "directHitUrl": "",
+      "visibleMatches": [],
+      "clickedAppName": "",
+      "clickedAppMethod": ""
+    }
+  },
+  "score": {
+    "opened": false,
+    "title": "",
+    "tables": [],
+    "api": [],
+    "note": "Could not open score app.",
+    "debug": {
+      "appName": "成绩查询",
+      "fallbackName": "本研成绩查询",
+      "clickedCard": false,
+      "clickedEnter": false,
+      "directOpened": false,
+      "urlBefore": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+      "urlAfter": "https://ehall.xjtu.edu.cn/new/index.html?browser=no",
+      "appMeta": null,
+      "switchedToNewPage": false,
+      "targetPageUrl": "",
+      "directHitUrl": "",
+      "visibleMatches": [],
+      "clickedAppName": "",
+      "clickedAppMethod": ""
+    }
+  }
+}

@@ -1,0 +1,78 @@
+page {
+  background: var(--bg-page);
+}
+
+.container {
+  min-height: 100vh;
+  padding: 24rpx 20rpx calc(170rpx + env(safe-area-inset-bottom));
+}
+
+.card-shell {
+  border-radius: 22rpx;
+  border: 1rpx solid var(--border-color);
+  background: var(--bg-card);
+  box-shadow: 0 12rpx 28rpx -22rpx var(--shadow-color);
+}
+
+.hero {
+  padding: 24rpx;
+}
+
+.hero-title {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.hero-desc {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: var(--text-secondary);
+}
+
+.feature-list {
+  margin-top: 18rpx;
+}
+
+.feature-item {
+  padding: 22rpx;
+  margin-bottom: 14rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-left {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.feature-icon {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 16rpx;
+  background: var(--surface-soft);
+  color: var(--theme);
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.feature-desc {
+  margin-top: 6rpx;
+  font-size: 23rpx;
+  color: var(--text-secondary);
+}
+
+.feature-arrow {
+  color: var(--text-secondary);
+  font-size: 28rpx;
+}

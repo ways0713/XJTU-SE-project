@@ -1,0 +1,31 @@
+<view class="theme-{{themeMode}}">
+	<cu-custom bgColor="bg-nav-theme">
+		<view slot="content">我的</view>
+	</cu-custom>
+
+	<view class="container ios-page {{pageReady ? 'is-ready' : ''}}">
+	<view class="card user-card" wx:if="{{!hasLogin}}">
+		<view class="user-title"><text class="cuIcon-profile"></text> 游客模式</view>
+		<view class="user-desc">你当前未登录，可先浏览基础功能。登录后可查看个人数据。</view>
+		<button class="cu-btn ios-btn login-btn" bindtap="goLogin">去登录</button>
+	</view>
+
+	<view class="card user-card" wx:if="{{hasLogin}}">
+		<view class="user-title"><text class="cuIcon-profile"></text> 账号信息</view>
+		<view class="user-id">学号：{{stuId}}</view>
+		<view class="user-desc">你已登录，可访问课表、成绩、考勤和DDL模块。</view>
+	</view>
+
+	<view class="card" wx:if="{{hasLogin}}">
+		<view class="menu-item ios-tap" wx:for="{{menuList}}" wx:key="title" data-path="{{item.path}}" bindtap="navPage">
+			<view class="menu-left">
+				<text class="menu-icon {{item.icon}}"></text>
+				<text>{{item.title}}</text>
+			</view>
+			<text class="arrow cuIcon-right"></text>
+		</view>
+	</view>
+
+	<button wx:if="{{hasLogin}}" class="cu-btn ios-btn logout-btn" bindtap="logout">退出登录</button>
+	</view>
+</view>

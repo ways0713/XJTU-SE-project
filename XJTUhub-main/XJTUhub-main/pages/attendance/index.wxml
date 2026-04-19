@@ -1,0 +1,29 @@
+<view class="theme-{{themeMode}}">
+  <cu-custom bgColor="bg-nav-theme" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">考勤信息</view>
+  </cu-custom>
+
+  <view class="container ios-page {{pageReady ? 'is-ready' : ''}}">
+    <view class="tips card-shell">当前为初版演示数据，后续可接入教务考勤接口。</view>
+
+    <view class="list">
+      <view class="item card-shell ios-tap" wx:for="{{list}}" wx:key="courseName">
+        <view class="item-header">
+          <view class="course-name">{{item.courseName}}</view>
+          <view class="risk {{item.risk}}">
+            {{item.risk == 'danger' ? '高风险' : (item.risk == 'warning' ? '预警' : '正常')}}
+          </view>
+        </view>
+        <view class="meta">任课老师：{{item.teacher}}</view>
+        <view class="stats">
+          <view>缺勤：{{item.absences}}</view>
+          <view>迟到：{{item.late}}</view>
+          <view>请假：{{item.leave}}</view>
+        </view>
+      </view>
+    </view>
+
+    <button class="cu-btn sync-btn ios-btn" bindtap="mockSync">重新同步演示数据</button>
+  </view>
+</view>

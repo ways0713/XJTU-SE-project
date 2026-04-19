@@ -1,0 +1,31 @@
+<view class="container theme-{{themeMode}} ios-page {{pageReady ? 'is-ready' : ''}}">
+  <view class="login-shell">
+    <view class="action-row">
+      <view class="skip-btn ios-tap" bindtap="skipLogin">先逛逛</view>
+    </view>
+
+    <view class="header card">
+      <view class="brand-mark cuIcon-safe"></view>
+      <view class="brand-info">
+        <view class="brand-title">XJTUhub 登录</view>
+        <view class="brand-subtitle">校园助手 · 极简模式</view>
+      </view>
+    </view>
+
+    <view class="login card">
+      <view class="form-item">
+        <text class="field-icon cuIcon-profile"></text>
+        <input type="text" model:value="{{stuId}}" placeholder="请输入学号" />
+      </view>
+      <view class="form-item">
+        <text class="field-icon cuIcon-lock"></text>
+        <input type="password" model:value="{{password}}" placeholder="请输入密码" />
+      </view>
+      <view bindtap="switchStatus" class="checkbox-item">
+        <checkbox checked="{{saveCount}}" class="theme"></checkbox>
+        <view class="margin-left-sm">记住账号密码(仅本地存储)</view>
+      </view>
+      <button class="cu-btn ios-btn" bindtap="login">登录</button>
+    </view>
+  </view>
+</view>

@@ -926,12 +926,44 @@ async function waitForEhallPortal(page, timeoutMs) {
   return false
 }
 
+async function hasVisibleAny(page, selectors, perSelectorMax = 3) {
+  for (const sel of selectors || []) {
+    const locator = page.locator(sel)
+    const count = await locator.count().catch(() => 0)
+    const maxN = Math.min(count, perSelectorMax)
+    for (let i = 0; i < maxN; i++) {
+      const visible = await locator.nth(i).isVisible().catch(() => false)
+      if (visible) return true
+    }
+  }
+  return false
+}
+
+function isCasLoginUrl(rawUrl) {
+  const u = String(rawUrl || "")
+  return /login\.xjtu\.edu\.cn/i.test(u) || /\/cas\//i.test(u)
+}
+
 async function isLoggedInEhall(page) {
   const url = page.url()
   if (!isEhallPortalUrl(url)) return false
 
   // If we're already in role-selection/app pages, it means auth already passed.
   if (isSelectRoleUrl(url) || /\/jwapp\//i.test(url) || /\/new\/appShow/i.test(url)) return true
+
+  // If portal still shows Login button, it is definitely not logged in.
+  const loginHintSelectors = [
+    "a[href*='login.xjtu.edu.cn']",
+    "button:has-text('Login')",
+    "a:has-text('Login')",
+    "text=Login",
+    "button:has-text('登录')",
+    "a:has-text('登录')",
+    "text=登录",
+    "text=统一身份认证",
+  ]
+  const hasVisibleLoginHint = await hasVisibleAny(page, loginHintSelectors, 2)
+  if (hasVisibleLoginHint) return false
 
   const markers = [
     "#ampHeaderToolUserName",
@@ -942,11 +974,8 @@ async function isLoggedInEhall(page) {
     "#ampServiceSearchInput",
     ".appFlag[amp-appid]",
   ]
-
-  for (const sel of markers) {
-    const count = await page.locator(sel).count().catch(() => 0)
-    if (count > 0) return true
-  }
+  const hasVisibleMarkers = await hasVisibleAny(page, markers, 4)
+  if (hasVisibleMarkers) return true
 
   return false
 }
@@ -1018,6 +1047,28 @@ async function openLoginIfNeeded(page) {
   return true
 }
 
+async function ensureCasLoginPage(page, timeoutMs = WAIT_MS, context = null) {
+  // Already on CAS/login page.
+  if (isCasLoginUrl(page.url())) return page
+
+  const opened = await openLoginIfNeeded(page).catch(() => false)
+  if (!opened) return null
+
+  const start = Date.now()
+  while (Date.now() - start < timeoutMs) {
+    if (isCasLoginUrl(page.url())) return page
+
+    if (context) {
+      const pages = context.pages().slice().reverse()
+      const casPage = pages.find((p) => isCasLoginUrl(p.url()))
+      if (casPage) return casPage
+    }
+
+    await page.waitForTimeout(250)
+  }
+  return null
+}
+
 async function waitForLoggedIn(page, timeoutMs) {
   const start = Date.now()
   while (Date.now() - start < timeoutMs) {
@@ -1027,8 +1078,24 @@ async function waitForLoggedIn(page, timeoutMs) {
   return false
 }
 
+async function waitForAnyLoggedIn(context, timeoutMs) {
+  const start = Date.now()
+  while (Date.now() - start < timeoutMs) {
+    const pages = context.pages().slice().reverse()
+    for (const p of pages) {
+      if (await isLoggedInEhall(p)) return p
+    }
+    await new Promise((resolve) => setTimeout(resolve, 350))
+  }
+  return null
+}
+
 async function loginToEhall(page) {
+  const context = page.context()
+  let workingPage = page
+
   await page.goto(ENTRY_URL, { waitUntil: "domcontentloaded", timeout: WAIT_MS })
+  console.log(`[xjtu-crawler] Auto login start. url=${page.url()}`)
 
   if (MANUAL_LOGIN) {
     console.log("[xjtu-crawler] Manual login mode.")
@@ -1041,23 +1108,30 @@ async function loginToEhall(page) {
     } else {
       console.log("[xjtu-crawler] Non-interactive terminal detected, waiting for redirect...")
     }
-    const ok = await waitForLoggedIn(page, WAIT_MS * 60)
-    if (!ok) throw new Error("Manual login timeout. Did not reach logged-in ehall state in time.")
-    return
+    const okPage = await waitForAnyLoggedIn(context, WAIT_MS * 60)
+    if (!okPage) throw new Error("Manual login timeout. Did not reach logged-in ehall state in time.")
+    return okPage
   }
 
-  if (await isLoggedInEhall(page)) return
+  if (await isLoggedInEhall(page)) return page
 
   if (!USERNAME || !PASSWORD) {
     throw new Error("Missing credentials. Set XJTU_EHALL_USER/XJTU_EHALL_PASS or use XJTU_MANUAL_LOGIN=true.")
   }
 
-  // Force the expected flow: ehall home -> click Login -> CAS page -> fill account/password.
-  if (isPortalShellUrl(page.url())) {
-    const loginOpened = await openLoginIfNeeded(page).catch(() => false)
-    if (!loginOpened) {
-      throw new Error("Could not open CAS login page from ehall home.")
-    }
+  // Force the expected flow:
+  // ehall home -> click Login -> CAS page -> fill account/password -> back to logged-in ehall.
+  const casPage = await ensureCasLoginPage(workingPage, WAIT_MS, context)
+  if (!casPage) {
+    throw new Error("Could not reach CAS login page from ehall home.")
+  }
+  workingPage = casPage
+  console.log(`[xjtu-crawler] CAS login page ready. url=${workingPage.url()}`)
+
+  // Ensure we are on login form page before filling credentials.
+  const casReady = isCasLoginUrl(workingPage.url())
+  if (!casReady) {
+    throw new Error(`Unexpected page before credential fill: ${workingPage.url()}`)
   }
 
   const userSelectors = [
@@ -1085,31 +1159,36 @@ async function loginToEhall(page) {
   ]
 
   for (let attempt = 0; attempt < 3; attempt++) {
-    if (await isLoggedInEhall(page)) return
+    if (await isLoggedInEhall(workingPage)) return workingPage
 
-    if (isPortalShellUrl(page.url())) {
-      const loginOpened = await openLoginIfNeeded(page).catch(() => false)
-      if (!loginOpened) {
+    // If redirected back to ehall but still not logged in, reopen CAS and retry.
+    if (isPortalShellUrl(workingPage.url()) && !(await isLoggedInEhall(workingPage))) {
+      const casOpen = await ensureCasLoginPage(workingPage, 6000, context).catch(() => null)
+      if (!casOpen) {
         await page.waitForTimeout(500)
         continue
       }
-      await page.waitForTimeout(350)
+      workingPage = casOpen
     }
 
-    const u = await fillInRoots(page, userSelectors, USERNAME)
-    const p = await fillInRoots(page, passSelectors, PASSWORD)
+    console.log(`[xjtu-crawler] Auto login attempt ${attempt + 1}. url=${workingPage.url()}`)
+
+    const u = await fillInRoots(workingPage, userSelectors, USERNAME)
+    const p = await fillInRoots(workingPage, passSelectors, PASSWORD)
     if (!u || !p) {
-      await page.waitForLoadState("domcontentloaded", { timeout: 3000 }).catch(() => {})
-      await page.waitForTimeout(500)
+      await workingPage.waitForLoadState("domcontentloaded", { timeout: 3000 }).catch(() => {})
+      await workingPage.waitForTimeout(500)
       continue
     }
-    const clicked = await clickInRoots(page, buttonSelectors, 3000)
+    const clicked = await clickInRoots(workingPage, buttonSelectors, 3000)
     if (!clicked) throw new Error("Could not find login button automatically.")
-    await page.waitForLoadState("networkidle", { timeout: WAIT_MS }).catch(() => {})
-    if (await waitForLoggedIn(page, 4000)) return
+    await workingPage.waitForLoadState("networkidle", { timeout: WAIT_MS }).catch(() => {})
+
+    const loggedInPage = await waitForAnyLoggedIn(context, 20000)
+    if (loggedInPage) return loggedInPage
   }
 
-  throw new Error("Could not complete auto login.")
+  throw new Error(`Could not complete auto login. finalUrl=${workingPage.url()}`)
 }
 
 async function openServiceCard(page, appName, strictOnly = false) {
@@ -2070,9 +2149,10 @@ async function run() {
       ops.push({ type: "trace-start", url: page.url() })
     }
 
-    await loginToEhall(page)
+    const loggedInPage = await loginToEhall(page)
+    const mainPage = loggedInPage || page
 
-    if (ops) ops.push({ type: "after-login", url: page.url() })
+    if (ops) ops.push({ type: "after-login", url: mainPage.url() })
 
     if (MONITOR_ONLY) {
       console.log("[xjtu-crawler] Monitor-only mode.")
@@ -2193,10 +2273,10 @@ async function run() {
       }
     }
 
-    result.course = await collectCourseData(context, page)
+    result.course = await collectCourseData(context, mainPage)
     console.log("[xjtu-crawler] Course done. Closing course pages and returning to ehall home...")
-    const scoreStartPage = await closeCoursePagesAndReturnHome(context, page).catch(() => page)
-    result.score = await collectScoreData(context, scoreStartPage || page)
+    const scoreStartPage = await closeCoursePagesAndReturnHome(context, mainPage).catch(() => mainPage)
+    result.score = await collectScoreData(context, scoreStartPage || mainPage)
 
     ensureDir(OUTPUT_PATH)
     fs.writeFileSync(path.resolve(OUTPUT_PATH), JSON.stringify(result, null, 2), "utf-8")

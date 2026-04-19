@@ -15,11 +15,21 @@
     <view class="login card">
       <view class="form-item">
         <text class="field-icon cuIcon-profile"></text>
-        <input type="text" model:value="{{stuId}}" placeholder="请输入学号" />
+        <input
+          type="text"
+          value="{{stuId}}"
+          bindinput="onStuIdInput"
+          placeholder="请输入学号"
+        />
       </view>
       <view class="form-item">
         <text class="field-icon cuIcon-lock"></text>
-        <input type="password" model:value="{{password}}" placeholder="请输入密码" />
+        <input
+          type="password"
+          value="{{password}}"
+          bindinput="onPasswordInput"
+          placeholder="请输入密码"
+        />
       </view>
       <view bindtap="switchStatus" class="checkbox-item">
         <checkbox checked="{{saveCount}}" class="theme"></checkbox>

@@ -1,7 +1,6 @@
-
 let env = "develop"
 
-// 防止我们在上传代码的时候，没有将env改成production
+// Avoid accidentally using develop config in release build.
 const envVersion = wx.getAccountInfoSync().miniProgram.envVersion
 if (envVersion === "release" && env !== "production") {
   env = "production"
@@ -10,7 +9,9 @@ if (envVersion === "release" && env !== "production") {
 export default {
   env,
   baseUrl: {
-    develop: 'http://localhost:3000', 
-    production: 'http://api.xxx.com',
-  }
+    // Prefer LAN IP for WeChat DevTools / real-device debugging.
+    // If your IP changes, update this value.
+    develop: "http://192.168.1.102:3000",
+    production: "http://api.xxx.com",
+  },
 }

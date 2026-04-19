@@ -48,11 +48,41 @@ Page({
     }
   },
 
+  onStuIdInput(e) {
+    this.setData({
+      stuId: e.detail.value || "",
+    })
+  },
+
+  onPasswordInput(e) {
+    this.setData({
+      password: e.detail.value || "",
+    })
+  },
+
   login() {
-    const postData = {
-      stuId: this.data.stuId,
-      password: this.data.password,
+    const stuId = String(this.data.stuId || "").trim()
+    const password = String(this.data.password || "").trim()
+    if (!stuId) {
+      wx.showToast({
+        title: "请输入学号",
+        icon: "none",
+      })
+      return
     }
+    if (!password) {
+      wx.showToast({
+        title: "请输入密码",
+        icon: "none",
+      })
+      return
+    }
+
+    const postData = { stuId, password }
+    console.log("[login] submit", {
+      stuIdLen: stuId.length,
+      hasPassword: !!password,
+    })
 
     wx.showLoading({
       title: "登录中",
@@ -60,6 +90,10 @@ Page({
 
     loginRequest(postData)
       .then((res) => {
+        console.log("[login] response", {
+          code: res && res.code,
+          hasCookie: !!(res && res.data && res.data.cookie),
+        })
         wx.hideLoading()
         if (res.code == -1) {
           wx.showToast({
@@ -76,8 +110,9 @@ Page({
           wx.removeStorageSync("account")
         }
 
-        // 登录成功后，自动使用当前账号密码触发后台爬取
-        triggerXjtuCrawlerRequest(postData).catch(() => {})
+        triggerXjtuCrawlerRequest(postData).catch((err) => {
+          console.warn("[login] trigger crawler failed", err)
+        })
 
         wx.showToast({
           title: "登录成功",
@@ -88,8 +123,13 @@ Page({
           redirectAfterLogin(this.data.redirect)
         }, 1500)
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("[login] request failed", err)
         wx.hideLoading()
+        wx.showToast({
+          title: "登录失败，请重试",
+          icon: "none",
+        })
       })
   },
 

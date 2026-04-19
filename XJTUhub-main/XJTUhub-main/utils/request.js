@@ -63,18 +63,28 @@ export default function createRequest(options = {}) {
             return
           default:
             wx.showToast({
-              title: payload.msg || "服务开小差啦！",
+              title: payload.msg || "服务开小差了",
               icon: "none",
             })
             reject(new Error(payload.msg || "UNKNOWN_ERROR"))
             return
         }
       },
-      fail() {
-        wx.showToast({
-          title: "服务开小差啦！",
-          icon: "none",
+      fail(err) {
+        const errMsg = err && err.errMsg ? String(err.errMsg) : ""
+        const isDomainBlocked = errMsg.includes("url not in domain list")
+        console.error("[request] wx.request fail", {
+          url,
+          method: options.method || "GET",
+          errMsg,
+          errCode: err && err.errCode !== undefined ? err.errCode : "",
         })
+        if (!isDomainBlocked) {
+          wx.showToast({
+            title: "网络异常，请检查后端和域名配置",
+            icon: "none",
+          })
+        }
         reject(new Error("NETWORK_ERROR"))
       },
       complete() {
@@ -85,4 +95,3 @@ export default function createRequest(options = {}) {
     })
   })
 }
-

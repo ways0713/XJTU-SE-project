@@ -1,83 +1,44 @@
-const path = require("path")
-const SCHOOL_CODE = require("../util/config")("SCHOOL_CODE")
-const servicePath = `${path.resolve(__dirname, "../services")}/${SCHOOL_CODE}`
-const services = require(servicePath)
+const crypto = require("crypto")
 
-// 获取登录前需要的cookie
-// 如果需要输入验证码，先获取cookie，使用cookie来获取验证码
-const loginInit = async (ctx, next) => {
-  const { cookie, formData } = await services.loginInit()
-  ctx.result = {
-    cookie,
-    formData,
-  }
-  return next()
+function buildLocalToken(stuId) {
+  const random = crypto.randomBytes(8).toString("hex")
+  return `xjtu-${stuId}-${Date.now()}-${random}`
 }
 
-// 登录验证码
-const loginVerifyCode = async (ctx, next) => {
-  const { cookie } = ctx.request.query
-  if (!cookie) {
-    ctx.errMsg = "cookie不能为空"
-    return next()
-  }
-  const res = await services.getLoginVerifyCode(cookie)
-  ctx.set("content-type", "image/jpeg")
-  ctx.body = res.data
-  return next()
-}
-
-// 登录（不需要验证码的情况）
+// XJTU mode: mini-program login only stores account/password and returns a local token.
+// Real school auth is done by Playwright crawler with the same credentials.
 const login = async (ctx, next) => {
-  const { stuId, password } = ctx.request.body
-  if (!stuId || !password) {
+  const { stuId, password } = ctx.request.body || {}
+  const safeStuId = String(stuId || "").trim()
+  const safePassword = String(password || "").trim()
+
+  if (!safeStuId || !safePassword) {
     ctx.errMsg = "学号和密码不能为空"
     return next()
   }
-  try {
-    const loginResult = await services.login(stuId, password)
-    ctx.result = {
-      cookie: loginResult,
-    }
-    return next()
-  } catch (err) {
-    ctx.errMsg = err.message
-    return next()
+
+  ctx.result = {
+    cookie: buildLocalToken(safeStuId),
   }
+  return next()
 }
 
-// 登录（需要验证码的情况）
+// Keep verify endpoints for compatibility with existing frontend routes.
+const loginInit = async (ctx, next) => {
+  ctx.result = {
+    cookie: "",
+    formData: {},
+  }
+  return next()
+}
+
+const loginVerifyCode = async (ctx, next) => {
+  ctx.errMsg = "当前模式无需验证码"
+  return next()
+}
+
 const loginWithVerify = async (ctx, next) => {
-  let { stuId, password, cookie, verifyCode, formData } = ctx.request.body
-  if (!cookie) {
-    ctx.errMsg = "登录的cookie不能为空"
-    return next()
-  }
-  if (!verifyCode) {
-    ctx.errMsg = "验证码不能为空"
-    return next()
-  }
-  if (!stuId || !password) {
-    ctx.errMsg = "学号和密码不能为空"
-    return next()
-  }
-  formData = JSON.parse(formData)
-  try {
-    const loginResult = await services.login(
-      stuId,
-      password,
-      verifyCode,
-      cookie,
-      formData
-    )
-    ctx.result = {
-      cookie: loginResult,
-    }
-    return next()
-  } catch (err) {
-    ctx.errMsg = err.message
-    return next()
-  }
+  return login(ctx, next)
 }
 
 module.exports = {

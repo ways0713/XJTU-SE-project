@@ -57,6 +57,24 @@ Page({
     }
   },
 
+  onStuIdInput(e) {
+    this.setData({
+      stuId: e.detail.value || "",
+    })
+  },
+
+  onPasswordInput(e) {
+    this.setData({
+      password: e.detail.value || "",
+    })
+  },
+
+  onVerifyCodeInput(e) {
+    this.setData({
+      verifyCode: e.detail.value || "",
+    })
+  },
+
   initLogin() {
     initLoginRequest()
       .then((res) => {
@@ -66,7 +84,9 @@ Page({
         })
         this.downloadVerifyImg()
       })
-      .catch(() => {})
+      .catch((err) => {
+        console.warn("[login-verify] initLogin failed", err)
+      })
   },
 
   downloadVerifyImg() {
@@ -79,17 +99,53 @@ Page({
           verifyImageUrl: res.tempFilePath,
         })
       },
+      fail: (err) => {
+        console.warn("[login-verify] download captcha failed", err)
+      },
     })
   },
 
   login() {
+    const stuId = String(this.data.stuId || "").trim()
+    const password = String(this.data.password || "").trim()
+    const verifyCode = String(this.data.verifyCode || "").trim()
+
+    if (!stuId) {
+      wx.showToast({
+        title: "请输入学号",
+        icon: "none",
+      })
+      return
+    }
+    if (!password) {
+      wx.showToast({
+        title: "请输入密码",
+        icon: "none",
+      })
+      return
+    }
+    if (this.data.showVerify && !verifyCode) {
+      wx.showToast({
+        title: "请输入验证码",
+        icon: "none",
+      })
+      return
+    }
+
     const postData = {
-      stuId: this.data.stuId,
-      password: this.data.password,
-      verifyCode: this.data.verifyCode,
+      stuId,
+      password,
+      verifyCode,
       cookie: this.data.initData && this.data.initData.cookie,
       formData: JSON.stringify((this.data.initData && this.data.initData.formData) || {}),
     }
+
+    console.log("[login-verify] submit", {
+      stuIdLen: stuId.length,
+      hasPassword: !!password,
+      hasVerifyCode: !!verifyCode,
+      hasCookie: !!postData.cookie,
+    })
 
     wx.showLoading({
       title: "登录中",
@@ -97,6 +153,10 @@ Page({
 
     loginWithVerifyRequest(postData)
       .then((res) => {
+        console.log("[login-verify] response", {
+          code: res && res.code,
+          hasCookie: !!(res && res.data && res.data.cookie),
+        })
         wx.hideLoading()
         if (res.code == -1) {
           wx.showToast({
@@ -109,18 +169,16 @@ Page({
         wx.setStorageSync("token", res.data.cookie)
         if (this.data.saveCount) {
           wx.setStorageSync("account", {
-            stuId: this.data.stuId,
-            password: this.data.password,
+            stuId,
+            password,
           })
         } else {
           wx.removeStorageSync("account")
         }
 
-        // 登录成功后，自动使用当前账号密码触发后台爬取
-        triggerXjtuCrawlerRequest({
-          stuId: this.data.stuId,
-          password: this.data.password,
-        }).catch(() => {})
+        triggerXjtuCrawlerRequest({ stuId, password }).catch((err) => {
+          console.warn("[login-verify] trigger crawler failed", err)
+        })
 
         wx.showToast({
           title: "登录成功",
@@ -130,8 +188,13 @@ Page({
           redirectAfterLogin(this.data.redirect)
         }, 1500)
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("[login-verify] request failed", err)
         wx.hideLoading()
+        wx.showToast({
+          title: "登录失败，请重试",
+          icon: "none",
+        })
       })
   },
 

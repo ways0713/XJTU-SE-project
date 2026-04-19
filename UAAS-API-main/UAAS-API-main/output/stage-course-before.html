@@ -1,4 +1,811 @@
-<!DOCTYPE html><html class=" ieundefined"><head><style>body {transition: opacity ease-in 0.2s; } 
+<!DOCTYPE html><html class=" ieundefined"><head><style scope="amp-w-setting">.amp-wf-setting.amp-w-setting {
+  position: absolute;
+            width: 78px;
+            
+            top: 34px;
+            right: 0px;
+            padding: 4px 0;
+            background-color: #fff;
+
+            -webkit-transform: scale(0); 
+            -moz-transform: scale(0); 
+            -ms-transform: scale(0); 
+            -o-transform: scale(0); 
+
+            
+            transform: scale(0);
+            -webkit-transform-origin: top left;
+            transform-origin: top left;
+
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            z-index: 999999999;
+}
+
+.amp-wf-setting.amp-active.amp-w-setting {
+  -webkit-transform: scale(1);
+            transform: scale(1);
+
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+}</style><style scope="amp-w-setting-item">.amp-wf-setting-item.amp-w-setting-item {
+  position: relative;
+            width: 100%;
+            height: 28px;
+            line-height: 28px;
+            padding: 0 8px;
+            cursor: pointer;
+}</style><style scope="amp-w-frame">.amp-wf-frame.amp-w-frame {
+  position: relative;
+ 
+  
+  
+   
+  
+    overflow: hidden;
+}
+
+.amp-wf-head.amp-w-frame {
+  position: relative;
+    height: 32px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.amp-card-move-flag.amp-w-frame {
+  cursor: move;
+}
+
+.amp-wf-head-title.amp-w-frame {
+  padding: 9px 16px;
+    text-align: left;
+}
+
+.amp-wf-head.amp-w-frame:hover > .amp-wf-head-set.amp-w-frame,
+.amp-wf-head.amp-active.amp-w-frame > .amp-wf-head-set.amp-w-frame {
+  display: block;
+    background-color: rgba(255,255,255,.3);
+}
+
+.amp-wf-head.amp-w-frame:hover > .amp-wf-head-refresh.amp-w-frame {
+  display: block;
+    background-color: rgba(255,255,255,.3)
+}
+
+.amp-wf-head.amp-w-frame:hover > .amp-wf-head-sort.amp-w-frame,
+.amp-wf-head.amp-active.amp-w-frame > .amp-wf-head-sort.amp-w-frame {
+  display: block;
+}
+
+.amp-wf-head.amp-w-frame:hover > .amp-wf-head-refresh.amp-w-frame,
+.amp-wf-head.amp-active.amp-w-frame > .amp-wf-head-refresh.amp-w-frame {
+  display: block;
+}
+
+.amp-wf-head-set.amp-w-frame {
+  position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 32px;
+    padding: 8px 10px 0 0;
+    text-align: center;
+    cursor: pointer;
+   
+    display: none;
+}
+
+.amp-wf-head-set.amp-w-frame:before {
+  content: "";
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid transparent;
+}
+
+.amp-wf-head-set.amp-w-frame > i.amp-w-frame {
+  font-size: 12px;
+}
+
+.amp-wf-head-set.amp-w-frame>.icon-down.amp-w-frame {
+  position: absolute;
+    margin-top: 3px;
+    margin-left: 2px;
+}
+
+.amp-wf-head-sort.amp-w-frame {
+  position: absolute;
+    top: 0;
+    left: 258px;
+    width: 24px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    display: none;
+}
+
+.amp-wf-body.amp-w-frame {
+  position: relative;
+    width: 100%;
+    height: 208px;
+    overflow: hidden;
+}
+
+.amp-wsf-frame.amp-w-frame {
+  position: relative;
+}
+
+.amp-wsf-head.amp-w-frame {
+  position: relative;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 24px;
+    color: #fff;
+    background: rgba(transparent,0);
+}
+
+.amp-wf-head-refresh.amp-w-frame {
+  position: absolute;
+    top: 0;
+    width: 46px;
+    height: 32px;
+    line-height: 32px;
+    right: 56px;
+    display: none;
+    cursor: pointer;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.amp-wf-head-refresh.amp-w-frame .iconfont.amp-w-frame {
+  font-size: 14px;
+}</style><style scope="pc-card-html-4786696181714491-01">.widget-header.pc-card-html-4786696181714491-01 {
+  margin-bottom: 8px;
+    position: relative;
+}
+
+.widget-header.pc-card-html-4786696181714491-01 img.pc-card-html-4786696181714491-01 {
+  width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 8px;
+}
+
+.widget-header.pc-card-html-4786696181714491-01 .title.pc-card-html-4786696181714491-01 {
+  font-size: 16px;
+    color: #666666;
+    float: left;
+    margin-top: 2px;
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 {
+  float: left;
+    width: 50%;
+    height: 52px;
+    padding: 2px 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-image.pc-card-html-4786696181714491-01 {
+  float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-top: 11px;
+    text-align: center;
+    position: relative;
+}
+
+.widget-icon-recommend.pc-card-html-4786696181714491-01 {
+  width: 24px;
+    height: 24px;
+    background-position: -1008px 0;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-image.pc-card-html-4786696181714491-01 img.pc-card-html-4786696181714491-01 {
+  width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-information.pc-card-html-4786696181714491-01 {
+  padding-top: 0;
+    float: left;
+    width: calc(100% - 32px);
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-information.pc-card-html-4786696181714491-01 .widget-title.pc-card-html-4786696181714491-01,
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-information.pc-card-html-4786696181714491-01 .widget-classify.pc-card-html-4786696181714491-01 {
+  position: relative;
+    float: left;
+    font-size: 12px;
+    height: 50px;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-information.pc-card-html-4786696181714491-01 .widget-title.pc-card-html-4786696181714491-01,.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-information.pc-card-html-4786696181714491-01 .widget-classify.pc-card-html-4786696181714491-01 {
+  top:4px;
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-information.pc-card-html-4786696181714491-01 .widget-title.pc-card-html-4786696181714491-01 {
+  width: 65%;
+    color: #fff;
+    padding-right: 12px;
+    text-align: left;
+}
+
+.widget-recommend-item.pc-card-html-4786696181714491-01 .widget-information.pc-card-html-4786696181714491-01 .widget-classify.pc-card-html-4786696181714491-01 {
+  width: 35%;
+    text-align: right;
+}
+
+.widget-app-container.pc-card-html-4786696181714491-01 {
+  position: relative;
+    height: 122px;
+}
+
+.widget-app-container.pc-card-html-4786696181714491-01:after {
+  content:"";
+    display: table;
+    clear: both;
+}
+
+.right-side-left-line.pc-card-html-4786696181714491-01 {
+  content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #FE3F80;
+    top: 0;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.no-data.pc-card-html-4786696181714491-01 {
+  line-height: 36px;
+	text-align: center;
+}
+
+.no-data-none.pc-card-html-4786696181714491-01 {
+  display: none;
+	color: #999999;
+	line-height: 36px;
+	text-align: center;
+}
+
+.character-limit.pc-card-html-4786696181714491-01 {
+  overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.app-classify-h.pc-card-html-4786696181714491-01 {
+  height:18px;
+}
+
+.no-data.pc-card-html-4786696181714491-01 {
+  padding:16px;
+}
+
+.no-data-img.pc-card-html-4786696181714491-01 {
+  width:100px;
+    height:100px;
+}
+
+.no-data-span.pc-card-html-4786696181714491-01 {
+  display: block;
+}</style><style scope="pc-card-html-4786696181711234-01">.widget-header.pc-card-html-4786696181711234-01 {
+  margin-bottom: 8px;
+    position: relative;
+}
+
+.widget-header.pc-card-html-4786696181711234-01 img.pc-card-html-4786696181711234-01 {
+  width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 8px;
+}
+
+.widget-header.pc-card-html-4786696181711234-01 .title.pc-card-html-4786696181711234-01 {
+  font-size: 16px;
+    color: #666666;
+    float: left;
+    margin-top: 2px;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 {
+  float: left;
+    width: 50%;
+    height: 32px;
+    padding: 2px 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-image.pc-card-html-4786696181711234-01 {
+  float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-top: 3px;
+    text-align: center;
+    position: relative;
+}
+
+.widget-icon-recommend.pc-card-html-4786696181711234-01 {
+  width: 24px;
+    height: 24px;
+    background-position: -1008px 0;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-image.pc-card-html-4786696181711234-01 img.pc-card-html-4786696181711234-01 {
+  width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-information.pc-card-html-4786696181711234-01 {
+  padding-top: 0;
+    float: left;
+    width: calc(100% - 32px);
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-information.pc-card-html-4786696181711234-01 .widget-title.pc-card-html-4786696181711234-01,
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-information.pc-card-html-4786696181711234-01 .widget-classify.pc-card-html-4786696181711234-01 {
+  position: relative;
+    float: left;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-information.pc-card-html-4786696181711234-01 .widget-title.pc-card-html-4786696181711234-01,.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-information.pc-card-html-4786696181711234-01 .widget-classify.pc-card-html-4786696181711234-01 {
+  top:-1px;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-information.pc-card-html-4786696181711234-01 .widget-title.pc-card-html-4786696181711234-01 {
+  width: 100%;
+    color: #fff;
+    padding-right: 12px;
+    text-align: left;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 .widget-information.pc-card-html-4786696181711234-01 .widget-classify.pc-card-html-4786696181711234-01 {
+  width: 35%;
+    text-align: right;
+}
+
+.widget-app-container.pc-card-html-4786696181711234-01 {
+  position: relative;
+    height: 122px;
+}
+
+.widget-app-container.pc-card-html-4786696181711234-01:after {
+  content:"";
+    display: table;
+    clear: both;
+}
+
+.myfavorite-box-tab.pc-card-html-4786696181711234-01 {
+  width:120px;
+    height:100%;
+    float: left;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.15);
+}
+
+.myfavorite-box-tab.pc-card-html-4786696181711234-01 > ul.pc-card-html-4786696181711234-01 {
+  height:100%;
+}
+
+.myfavorite-box-tab.pc-card-html-4786696181711234-01 > ul.pc-card-html-4786696181711234-01 li.pc-card-html-4786696181711234-01 {
+  height:32px;
+   border-width: 1px 0 0 0;
+   border-style: solid;
+   line-height: 32px;
+   cursor: pointer;
+   padding: 0  0 0 16px;
+   position: relative;
+}
+
+.myfavorite-box-tab.pc-card-html-4786696181711234-01 > ul.pc-card-html-4786696181711234-01 li.pc-card-html-4786696181711234-01:nth-last-child(2) {
+  border-width: 1px 0 1px 0;
+   border-style: solid;
+}
+
+.myfavorite-box-tab.pc-card-html-4786696181711234-01 > ul.pc-card-html-4786696181711234-01 li.pc-card-html-4786696181711234-01 .amp-app-count.pc-card-html-4786696181711234-01 {
+  position: absolute;
+    right: 8px;
+}
+
+.card-myfavorite.pc-card-html-4786696181711234-01,.card-myfavorite-main.pc-card-html-4786696181711234-01,.myfavorite-card-box.pc-card-html-4786696181711234-01 {
+  width: 100%;
+    height:100%;
+    position: relative;
+}
+
+.myfavorite-card-box.pc-card-html-4786696181711234-01 {
+  position: absolute;
+}
+
+.card-myfavorite-creat-folder.pc-card-html-4786696181711234-01 {
+  border-width: 1px 0 1px 0!important;
+}
+
+.card-myfavorite-icon-wenjianjia.pc-card-html-4786696181711234-01 {
+  float:left;
+    font-size:12px;
+    margin: 0 4px 0 0;
+}
+
+.card-myfavorite-folderName.pc-card-html-4786696181711234-01 {
+  width:72px!important;
+}
+
+.myfavorite-box-content.pc-card-html-4786696181711234-01 {
+  width:420px;
+    height:100%;
+    float: left;
+}
+
+.card-myFavorite-content-item.pc-card-html-4786696181711234-01 {
+  width:100%;
+    height:100%;
+    overflow: auto;
+}
+
+.card-myFavorite-content-item[amp-isshow="amp-active"].pc-card-html-4786696181711234-01 {
+  display: block;
+}
+
+.card-myFavorite-content-item[amp-isshow="amp-hide"].pc-card-html-4786696181711234-01 {
+  display: none;
+}
+
+.widget-recommend-item.pc-card-html-4786696181711234-01 {
+  border-width: 0 0 0 0!important;
+}
+
+.widget-recommend-item-nodata.pc-card-html-4786696181711234-01 {
+  line-height:32px;
+}</style><style scope="pc-card-html-4786697535230905-01">.widget-header.pc-card-html-4786697535230905-01 {
+  margin-bottom: 8px;
+    position: relative;
+}
+
+.widget-header.pc-card-html-4786697535230905-01 img.pc-card-html-4786697535230905-01 {
+  width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 8px;
+}
+
+.widget-header.pc-card-html-4786697535230905-01 .title.pc-card-html-4786697535230905-01 {
+  font-size: 16px;
+    color: #666666;
+    float: left;
+    margin-top: 2px;
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 {
+  position: relative;
+    float: left;
+    width: 50%;
+    height: 52px;
+    padding: 2px 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-image.pc-card-html-4786697535230905-01 {
+  float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-top: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.widget-icon-recommend.pc-card-html-4786697535230905-01 {
+  width: 24px;
+    height: 24px;
+    background-position: -1008px 0;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-image.pc-card-html-4786697535230905-01 img.pc-card-html-4786697535230905-01 {
+  width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-information.pc-card-html-4786697535230905-01 {
+  padding-top: 0;
+    float: left;
+    width: calc(100% - 32px);
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-information.pc-card-html-4786697535230905-01 .widget-title.pc-card-html-4786697535230905-01,
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-information.pc-card-html-4786697535230905-01 .widget-classify.pc-card-html-4786697535230905-01 {
+  position: relative;
+    float: left;
+    font-size: 12px;
+    height: 50px;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-information.pc-card-html-4786697535230905-01 .widget-title.pc-card-html-4786697535230905-01 {
+  width: 65%;
+    color: #fff;
+    padding-right: 12px;
+    text-align: left;
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-information.pc-card-html-4786697535230905-01 .widget-classify.pc-card-html-4786697535230905-01 {
+  width: 35%;
+    text-align: right;
+}
+
+.widget-app-container.pc-card-html-4786697535230905-01 {
+  position: relative;
+    height: 122px;
+}
+
+.widget-app-container.pc-card-html-4786697535230905-01:after {
+  content:"";
+    display: table;
+    clear: both;
+}
+
+.right-side-left-line.pc-card-html-4786697535230905-01 {
+  content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #FE3F80;
+    top: 0;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.no-data.pc-card-html-4786697535230905-01 {
+  line-height: 36px;
+	text-align: center;
+}
+
+.no-data-none.pc-card-html-4786697535230905-01 {
+  display: none;
+	line-height: 36px;
+	text-align: center;
+}
+
+.character-limit.pc-card-html-4786697535230905-01 {
+  overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.app-classify-h.pc-card-html-4786697535230905-01 {
+  height:18px;
+}
+
+.no-data.pc-card-html-4786697535230905-01 {
+  padding:16px;
+}
+
+.no-data-img.pc-card-html-4786697535230905-01 {
+  width:100px;
+    height:100px;
+}
+
+.no-data-span.pc-card-html-4786697535230905-01 {
+  display: block;
+}
+
+.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-information.pc-card-html-4786697535230905-01 .widget-title.pc-card-html-4786697535230905-01,.widget-recommend-item.pc-card-html-4786697535230905-01 .widget-information.pc-card-html-4786697535230905-01 .widget-classify.pc-card-html-4786697535230905-01 {
+  top:4px;
+}</style><style scope="pc-card-html-5131446170220455-01">.widget-header.pc-card-html-5131446170220455-01 {
+  margin-bottom: 8px;
+    position: relative;
+}
+
+.widget-header.pc-card-html-5131446170220455-01 img.pc-card-html-5131446170220455-01 {
+  width: 22px;
+    height: 22px;
+    float: left;
+    margin-right: 8px;
+}
+
+.widget-header.pc-card-html-5131446170220455-01 .title.pc-card-html-5131446170220455-01 {
+  font-size: 16px;
+    color: #666666;
+    float: left;
+    margin-top: 2px;
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 {
+  position: relative;
+    float: left;
+    width: 50%;
+    height: 52px;
+    padding: 2px 16px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-image.pc-card-html-5131446170220455-01 {
+  float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-top: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.widget-icon-recommend.pc-card-html-5131446170220455-01 {
+  width: 24px;
+    height: 24px;
+    background-position: -1008px 0;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-image.pc-card-html-5131446170220455-01 img.pc-card-html-5131446170220455-01 {
+  width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-information.pc-card-html-5131446170220455-01 {
+  padding-top: 0;
+    float: left;
+    width: calc(100% - 32px);
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-information.pc-card-html-5131446170220455-01 .widget-title.pc-card-html-5131446170220455-01,
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-information.pc-card-html-5131446170220455-01 .widget-classify.pc-card-html-5131446170220455-01 {
+  position: relative;
+    float: left;
+    font-size: 12px;
+    height: 50px;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-information.pc-card-html-5131446170220455-01 .widget-title.pc-card-html-5131446170220455-01 {
+  width: 65%;
+    color: #fff;
+    padding-right: 12px;
+    text-align: left;
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-information.pc-card-html-5131446170220455-01 .widget-classify.pc-card-html-5131446170220455-01 {
+  width: 35%;
+    text-align: right;
+}
+
+.widget-app-container.pc-card-html-5131446170220455-01 {
+  position: relative;
+    height: 122px;
+}
+
+.widget-app-container.pc-card-html-5131446170220455-01:after {
+  content:"";
+    display: table;
+    clear: both;
+}
+
+.right-side-left-line.pc-card-html-5131446170220455-01 {
+  content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #FE3F80;
+    top: 0;
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.no-data.pc-card-html-5131446170220455-01 {
+  line-height: 36px;
+	text-align: center;
+}
+
+.no-data-none.pc-card-html-5131446170220455-01 {
+  display: none;
+	line-height: 36px;
+	text-align: center;
+}
+
+.character-limit.pc-card-html-5131446170220455-01 {
+  overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.app-classify-h.pc-card-html-5131446170220455-01 {
+  height:18px;
+}
+
+.no-data.pc-card-html-5131446170220455-01 {
+  padding:16px;
+}
+
+.no-data-img.pc-card-html-5131446170220455-01 {
+  width:100px;
+    height:100px;
+}
+
+.no-data-span.pc-card-html-5131446170220455-01 {
+  display: block;
+}
+
+.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-information.pc-card-html-5131446170220455-01 .widget-title.pc-card-html-5131446170220455-01,.widget-recommend-item.pc-card-html-5131446170220455-01 .widget-information.pc-card-html-5131446170220455-01 .widget-classify.pc-card-html-5131446170220455-01 {
+  top:4px;
+}</style><style>body {transition: opacity ease-in 0.2s; } 
 body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
 </style>
     <!-- <meta charset="utf-8" /> -->
@@ -143,7 +950,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
     <link type="text/css" rel="stylesheet" href="portal/css/ie.css">
     <![endif]-->
 
-</head>
+<link id="card-link-PC-CARD-HTML-4786696181714491-01" rel="import" href="pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/card.html"><link id="card-link-PC-CARD-HTML-4786696181711234-01" rel="import" href="pc_card/4786696181711234/PC-CARD-HTML-4786696181711234-01/card.html"><link id="card-link-PC-CARD-HTML-4786697535230905-01" rel="import" href="pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/card.html"><link id="card-link-PC-CARD-HTML-5131446170220455-01" rel="import" href="pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/card.html"></head>
 <body style="overflow: hidden;min-width: 1152px;">
 <!-- 主页面加载之前的提示页面-->
 <article style="min-width: 1152px;">
@@ -251,14 +1058,14 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
     <!--头部导航-->
     <nav class="amp-header-child amp-header-nav amp-clearfix-child amp-ml-8" id="ampHeaderNav">
-        <!--home页按钮--> <i id="ampPageHeaderHomeIcon" class="iconfont icon-home1 amp-active amp-tab-item amp-hover-slow-motion" data-menu-id="370c3bef-d631-48fc-9566-1122e2527bc9" data-title="办事大厅"></i>
-        <!--个人中心页按钮--> <i id="ampPageHeaderPersonalIcon" class="iconfont icon-pc1 amp-tab-item amp-hover-slow-motion" data-menu-id="e490407f-9620-4516-95c4-b7154da6371b" data-title="个人中心"></i>
+        <!--home页按钮--> <i id="ampPageHeaderHomeIcon" class="iconfont icon-home1 amp-tab-item amp-hover-slow-motion" data-menu-id="370c3bef-d631-48fc-9566-1122e2527bc9" data-title="办事大厅"></i>
+        <!--个人中心页按钮--> <i id="ampPageHeaderPersonalIcon" class="iconfont icon-pc1 amp-tab-item amp-hover-slow-motion amp-active" data-menu-id="e490407f-9620-4516-95c4-b7154da6371b" data-title="个人中心"></i>
         <!--      <i id="ampPageHeaderExpandIcon" class="iconfont icon-gongzuoquqiehuan amp-tab-item amp-i-hide amp-hover-slow-motion"></i>
     -->
     </nav>
 
 <!--拓展项-->
-<div id="ampExtend" class="amp-extend"></div>
+<div id="ampExtend" class="amp-extend" style="width: 0px;"></div>
 
 <!--搜索块-->
 <div id="ampPageHeaderSearch" class="amp-header-search amp-animate-left">
@@ -268,11 +1075,11 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         <!--搜索input框-->
         <input id="ampPageHeaderSearchInput" class="amp-pageheader-search-input" type="text" value="" maxlength="20">
         <!--搜索结果数-->
-        <span id="ampHeaderSearchResult">2 个多类型服务</span>
+        <span id="ampHeaderSearchResult">33 个多类型服务</span>
         <!--最新服务数-->
         <div id="ampHeaderNewAppLabel" class="amp-ml-8"></div>
     </div>
-    <div id="ampServiceSearch" class="amp-service-search-input ampServiceSearchFlag amp-hide amp-service-search-input-nologin">
+    <div id="ampServiceSearch" class="amp-service-search-input ampServiceSearchFlag amp-hide">
     <div class="amp-service-history-box amp-pull-left" id="ampServiceHistoryBox">
             <span class="amp-service-history amp-ml-12 amp-pull-left">历史</span>
             <i class="iconfont icon-down1 amp-pull-left"></i>
@@ -293,15 +1100,15 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
 <!--右侧工具块-->
 <nav class="amp-header-tool amp-header-child amp-pull-right amp-clearfix-child">
-    <div id="ampNoLoginTool" class="amp-header-no-login amp-clearfix-child amp-hover-slow-motion">
+    <div id="ampNoLoginTool" class="amp-hide amp-header-no-login amp-clearfix-child amp-hover-slow-motion">
         <!--登录按钮-->
         <div id="ampLoginBtn" class="amp-pull-right amp-pt-4 amp-hover-underline" data-i18n="login">登录</div>
         <!--人头图标-->
         <i class="iconfont icon-user1 amp-pull-right amp-mr-4"></i>
     </div>
 
-<div id="ampHasLoginTool" class="amp-hide amp-header-has-login amp-clearfix-child">
-    <div id="ampHeaderToolUserName" class="amp-pull-right amp-mt-4 amp-cursor-point amp-tool-username-lh"></div>
+<div id="ampHasLoginTool" class="amp-header-has-login amp-clearfix-child">
+    <div id="ampHeaderToolUserName" class="amp-pull-right amp-mt-4 amp-cursor-point amp-tool-username-lh">石翔</div>
     <img id="ampHeaderToolUser" width="28" height="28" class="amp-pull-right amp-mr-8 amp-cycle amp-user-photo" has-photo="0" src="portal/images/icons/user-role-teacher.png">
     <span id="ampHeaderToolSkin" class="amp-pull-right amp-mr-16 amp-mt-4">
         <i class="iconfont icon-skin amp-hover-slow-motion"></i>
@@ -313,7 +1120,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
 
     <!--中英文国际化切换-->
-    <div id="ampInternationTool" class="amp-internation-tool amp-internation-tool-hide amp-hide">
+    <div id="ampInternationTool" class="amp-internation-tool amp-internation-tool-hide">
       <!--  <img src="portal/images/header/language-2.png" width="21" height="21"/> -->
       <i class="iconfont icon-language"></i>
         <span class="amp-internation-zh-icon amp-hide ampInterZhIcon amp-mr-2 ampItemLang" data-lang="zh_CN">
@@ -337,7 +1144,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 </header>
 
 <!--办事大厅-->
-<div id="ampEhallBody" class="amp-l-position amp-ehall-body amp-animate-opacity ampLoadActiveFlag ampLoadedFlag">
+<div id="ampEhallBody" class="amp-l-position amp-ehall-body amp-animate-opacity amp-hide">
     <!--登录首页-->
     <!--
 登录首页
@@ -348,23 +1155,23 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 <!-- 背景图片-->
 	<!-- 	 <div id="ampLoginPageBgImg" class="amp-login-img"></div>  -->
 	<article id="ampLoginArticle" class="amp-login">	
-		<div id="ampLoginRoleNav" class="amp-login-content" style="padding-top: 195px; padding-bottom: 195px;">
+		<div id="ampLoginRoleNav" class="amp-login-content">
 			<header id="ampLoginHeader" class="amp-ehall-header amp-login-header amp-animated amp-animate-move-bottom-in">
 				<div id="ampLoginHeaderContent">
 					
-				<h3 class="amp-role-nav-h3">西安交通大学教务办事服务大厅</h3>
-				<span>Welcome to Xi'an Jiaotong University</span>
+				<h3 class="amp-role-nav-h3"></h3>
+				<span></span>
 				</div>
 				
 			</header>
-			<div id="ampHasNoLogin" class="amp-has-nologin-btn  amp-animated amp-animate-move-bottom-in amp-hover-slow-motion">
+			<div id="ampHasNoLogin" class="amp-has-nologin-btn  amp-animated amp-animate-move-bottom-in amp-hover-slow-motion amp-hide">
 				<!--中文标题-->
 				<span data-i18n="login" class="amp-no-login-zh">登录</span><span class="amp-no-login-en">Login</span>
 			</div>
-			<div id="ampHasLogin" class="amp-has-login-btn amp-hide amp-animated amp-animate-move-bottom-in">
+			<div id="ampHasLogin" class="amp-has-login-btn amp-animated amp-animate-move-bottom-in">
 				<!--中文标题-->
 				<span data-i18n="welcome">欢迎您,</span>
-				<span class="amp-username"></span>
+				<span class="amp-username">石翔</span>
 			</div>
 
 		</div>
@@ -386,112 +1193,36 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 <article class="amp-pt-header bh-slide amp-zIndex-lv1 bh-slide-animate-v" amp-page-flag="true" role="slide" slide-index="2" slide-direction="vertical" id="ampEhallSlideIndex" style="top: 720px; left: 0px; height: 720px; width: 1280px; opacity: 0;">
     <article id="ampEhallArticle" class="amp-ehall">
         <!--头部背景图-->
-        <header id="ampEhallHeader" class="amp-ehall-header amp-animated amp-animate-move-bottom-in" style="margin-top: 60px; margin-bottom: 60px;">
+        <header id="ampEhallHeader" class="amp-ehall-header amp-animated amp-animate-move-bottom-in">
             <div class="amp-hide amp-ehall-header-title" id="ampEhallHeaderContent">
-                <h3 class="amp-role-nav-h3">西安交通大学教务办事服务大厅</h3>
-                <span>Welcome to Xi'an Jiaotong University</span>
+                <h3 class="amp-role-nav-h3"></h3>
+                <span></span>
             </div>
 
         </header>
         <!--角色tab站位区-->
-        <div id="ampEhallRoleNavPlaceHolder" class="amp-role-nav-placeholder amp-animated amp-animate-move-bottom-in">
-    <nav id="ampEhallRoleNav" class="amp-ehall-nav amp-animate-top amp-zIndex-lv1 amp-hide">
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item " amp-role-id="1__0">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">学生办事</h3>
-        <!--英文标题-->
-        <div>Student Service</div>
-    </div>
-
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item " amp-role-id="1__1">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">教师办事</h3>
-        <!--英文标题-->
-        <div>Teacher Service</div>
-    </div>
-
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item amp-active" amp-role-id="1__2">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">游客浏览</h3>
-        <!--英文标题-->
-        <div>Guest Browsing</div>
-    </div>
-</nav>
-</div>
+        <div id="ampEhallRoleNavPlaceHolder" class="amp-role-nav-placeholder amp-animated amp-animate-move-bottom-in"></div>
         <!--分隔线-->
         <div class="amp-split amp-animated amp-animate-move-bottom-in" data-i18n="recommendedService">推荐服务</div>
         <!--推荐服务列表区-->
-        <section id="ampRecommendSection" class="amp-animated amp-animate-move-bottom-in"><div class="amp-animated ampPageBodyFlag amp-active" amp-role-id="1__2"><div class="amp-ehall-apps ampPageContentFlag"></div><div id="ampRecommendPage1__2" class="amp-apps-page "></div></div></section>
+        <section id="ampRecommendSection" class="amp-animated amp-animate-move-bottom-in"></section>
     </article>
 </article>
     <!--应用分类-->
     <!--办事大厅  应用分类模块-->
 
 <!--slide模块-->
-<article id="ampClassifyArticle" class="amp-pt-header bh-slide amp-classify amp-zIndex-lv1 bh-slide-animate-v" amp-page-flag="true" role="slide" slide-index="3" slide-direction="vertical" style="top: 720px; left: 0px; height: 720px; width: 1280px; opacity: 0; padding-top: 140px; padding-bottom: 96px;">
+<article id="ampClassifyArticle" class="amp-pt-header bh-slide amp-classify amp-zIndex-lv1 bh-slide-animate-v" amp-page-flag="true" role="slide" slide-index="3" slide-direction="vertical" style="top: 720px; left: 0px; height: 720px; width: 1280px; opacity: 0;">
 
     <!--角色tab站位区-->
-    <div id="ampClassifyRoleNavPlaceHolder" class="amp-role-nav-placeholder amp-animated amp-animate-move-bottom-in">
-    <nav id="ampClassifyRoleNav" class="amp-ehall-nav amp-animate-top amp-zIndex-lv1 amp-hide">
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item " amp-role-id="1__0">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">学生办事</h3>
-        <!--英文标题-->
-        <div>Student Service</div>
-    </div>
-
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item " amp-role-id="1__1">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">教师办事</h3>
-        <!--英文标题-->
-        <div>Teacher Service</div>
-    </div>
-
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item amp-active" amp-role-id="1__2">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">游客浏览</h3>
-        <!--英文标题-->
-        <div>Guest Browsing</div>
-    </div>
-</nav>
-</div>
+    <div id="ampClassifyRoleNavPlaceHolder" class="amp-role-nav-placeholder amp-animated amp-animate-move-bottom-in"></div>
 
     <!--应用分类列表去-->
-    <section id="ampClassifySection" class="amp-animated amp-animate-move-bottom-in"><div class="ampPageBodyFlag amp-active" amp-role-id="1__2"><div class="amp-classify ampPageContentFlag"></div><div id="ampClassifyPage1__2" class="amp-apps-page "></div></div></section>
+    <section id="ampClassifySection" class="amp-animated amp-animate-move-bottom-in"></section>
 
     <footer id="ampPageFooter" class="amp-page-footer">版权信息：© 2016 西安交通大学&amp;金智教育  苏ICP备10204514号</footer>
 </article>
-<div id="ampSlidePage" class="bh-slide-page amp-zIndex-lv1" style="top:calc(50% - 32px);"><div class="amp-active"></div><div class=""></div><div class=""></div></div>
-  <!--   <header id="ampLoginHeaderAnimateBlock" class="amp-ehall-login-header amp-ehall-header amp-animate-top amp-zIndex-lv1"> -->
-        <div id="ampTplHeader" class="amp-ehall-login-header amp-animate-top amp-zIndex-lv1 amp-hide"> 
-        <h3>西安交通大学教务办事服务大厅</h3>
-     <span>Welcome to Xi'an Jiaotong University</span>
-     </div>
-
-<!-- </header>-->
-    <nav id="ampEhallRoleNavAnimateBlock" class="amp-ehall-nav amp-animate-top amp-zIndex-lv1 amp-hide">
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item " amp-role-id="1__0">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">学生办事</h3>
-        <!--英文标题-->
-        <div>Student Service</div>
-    </div>
-
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item " amp-role-id="1__1">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">教师办事</h3>
-        <!--英文标题-->
-        <div>Teacher Service</div>
-    </div>
-
-    <div class="text-center amp-hover-slow-motion amp-ehall-nav-item amp-active" amp-role-id="1__2">
-        <!--中文标题-->
-        <h3 class="amp-role-nav-h3">游客浏览</h3>
-        <!--英文标题-->
-        <div>Guest Browsing</div>
-    </div>
-</nav>
-</div>
+<div id="ampSlidePage" class="bh-slide-page amp-zIndex-lv1" style="top:calc(50% - 32px);"><div class="amp-active"></div><div class=""></div><div class=""></div></div></div>
 <!--创建桌面-->
  <!--创建桌面--> 
 
@@ -597,9 +1328,9 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 <!--个人中心-->
 <!--个人中心模块-->
 
-<article id="ampPersonalArticle" class="amp-height-no-header amp-personal amp-zIndex-lv1 amp-animate-opacity amp-hide" amp-page-flag="true">
+<article id="ampPersonalArticle" class="amp-height-no-header amp-personal amp-zIndex-lv1 amp-animate-opacity ampLoadActiveFlag amp-active ampLoadedFlag" amp-page-flag="true">
     <!--左侧栏-->
-    <aside id="ampPersonalAsideLeft" amp-position="left" class="amp-tab amp-aside-box amp-mini amp-personal-aside-left amp-hide amp-pt-16 amp-animated amp-animate-move-left-in amp-zIndex-lv1">
+    <aside id="ampPersonalAsideLeft" amp-position="left" class="amp-tab amp-aside-box amp-mini amp-personal-aside-left amp-pt-16 amp-animated amp-animate-move-left-in amp-zIndex-lv1">
         <div id="ampPersonalAsideLeftMini" amp-role="ampAsideBoxMini" class="amp-aside-box-mini">
             <div class="amp-aside-box-mini-cont">
                 <div amp-id="myFavorite" class="amp-aside-box-mini-item amp-hover-slow-motion">
@@ -619,15 +1350,15 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
         <div id="ampPersonalAsideLeftNormal" class="amp-aside-box-normal">
             <div id="ampPersonalAsideLeftTabHead" class="amp-clearfix-child  amp-personcenter-asideleft-tabhead">
-                <div class="amp-tab-item amp-active amp-left-tab-item" amp-id="myFavorite">
+                <div class="amp-tab-item amp-active amp-left-tab-item" amp-id="myFavorite" style="width: 138.667px;">
                     <i class="iconfont icon-aixin1 amp-mr-16"></i>
                     <span data-i18n="myFavorites">我的收藏</span>
                 </div>
-                <div class="amp-tab-item amp-left-tab-item" amp-id="allCanUseApps">
+                <div class="amp-tab-item amp-left-tab-item" amp-id="allCanUseApps" style="width: 138.667px;">
                     <i class="iconfont icon-liebiao1 amp-mr-16"></i>
                     <span data-i18n="availableApps">可用应用</span>
                 </div>
-                <div class="amp-tab-item amp-left-tab-item" amp-id="canUseCards">
+                <div class="amp-tab-item amp-left-tab-item" amp-id="canUseCards" style="width: 138.667px;">
                     <i class="iconfont icon-yingyong1 amp-mr-16"></i>
                     <span data-i18n="availableCards">可用卡片</span>
                 </div>
@@ -635,42 +1366,693 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
             <div id="ampPersonalAsideLeftTabContent" class="amp-tab-content amp-relative-height-inherit amp-personalcenter-asideContent-bg">
                 <div id="ampPersonalAsideLeftMyFavorite" amp-id="myFavorite" class="amp-clearfix-child amp-personal-asideleft-myfavorite">
-                </div>
-                <div id="ampPersonalAsideLeftAllCanUseApps" class="amp-hide amp-relative-height-inherit" amp-id="allCanUseApps"></div>
-                <div id="ampPersonalAsideLeftCanUseCards" class="amp-hide amp-relative-height-inherit amp-personal-asideleft-canuse-card" amp-id="canUseCards"></div>
+    <div class="amp-category-tab">
+        <ul id="myFavoriteTabListId">
+<li class="amp-hover-slow-motion amp-active" amp-id="0" amp-folder="false">
+  <i class="iconfont icon-wenjianjia amp-pull-left amp-mr-4 amp-hide"></i>
+    <span class="amp-left-aside-canuseapp-name">收藏夹</span>
+    <span class="amp-app-count">0</span>
+    <span class="amp-app-operateBtn amp-hide"><!-- <i class="iconfont icon-shanchu1"></i> -->...</span>
+    <div class="amp-app-operate amp-hide">
+    <span class="amp-app-rename">重命名</span>
+    <span class="amp-app-delete">删除</span>
+    </div>
+</li>
+
+<li class="amp-hover-slow-motion myfavorite-create-folder" amp-id="create"> <i class="iconfont icon-jia5 amp-pull-left amp-mr-4"></i>
+    <span class="amp-left-aside-canuseapp-name">新建文件夹</span>
+</li>
+</ul>
+        <div id="ampMyFavoriteCategoryTabContent" class="amp-category-tabcontent" tabindex="3" style="overflow-y: hidden; outline: none;">
+    <div class="amp-category-content-item amp-active " amp-classify="0" id="ampCategoryContentMyFavoriteItem0">
+       
+         <div class="amp-app-single amp-clearfix-child amp-hover-slow-motion amp-favorite-icon-jia">
+             <!--应用图片-->
+             <i class="iconfont icon-jia5 amp-pull-left"></i>
+             <!--标题-->
+             <h5 class="amp-str-cut">添加应用</h5>
+
+         </div>
+</div>
+
+    <div class="amp-category-content-item  " amp-classify="create" id="ampCategoryContentMyFavoriteItemcreate"></div>
+</div>
+    </div>
+
+    <div class="amp-myfavorite-set" id="ampMyfavoriteSetBtn">
+        <ul>
+            <li class="amp-hover-slow-motion favoriteArrangeFlag" amp-id="favoriteset"> 
+            <i class="iconfont icon-shezhi1 amp-mr-8"></i>
+                <span>整理</span>
+            </li>
+            <li class="amp-hover-slow-motion amp-hide amp-myfavorite-set-save favoriteSaveFlag" amp-id="favoriteset"> 
+            <i class="iconfont icon-32gougou1 amp-mr-8"></i>
+                <span>保存</span>
+            </li>
+            <li class="amp-hover-slow-motion amp-hide favoriteCancelFlag" amp-id="favoriteset">
+                <i class="iconfont icon-chacha1 amp-mr-8"></i>
+                <span>取消</span>
+            </li>
+        </ul>
+
+    </div>
+</div>
+                <div id="ampPersonalAsideLeftAllCanUseApps" class="amp-hide amp-relative-height-inherit" amp-id="allCanUseApps">
+       <div class="amp-canUseApp-search"> <i id="ampPersonalAsideLeftAllCanUseAppsSearchIcon" class="iconfont icon-sousuo"></i>
+            <input id="ampPersonalAsideLeftAllCanUseAppsSearchInput" type="text" value="" placeholder="搜索可用服务" maxlength="20">
+            <span id="ampPersonalAsideleftCanuseappDelete"> <i id="ampPersonalAsideLeftAllCanUseAppsDeleteIcon" class="iconfont icon-chacha1"></i>
+            </span>
+        </div>
+    <div class="amp-category-tab">
+
+        <ul id="ampPersonalAsideLeftAllCanUseAppsTabUl">
+<li class="  amp-hover-slow-motion  " amp-id="all"><span class="amp-left-aside-canuseapp-name" title="全部">全部</span><span class="amp-app-count">31</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__4291b260-41d1-4642-85ee-9413d3cf6ef8"><span class="amp-left-aside-canuseapp-name" title="本科导师">本科导师</span><span class="amp-app-count">1</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__0dade298-079c-4d56-95ae-4d0719a43af9"><span class="amp-left-aside-canuseapp-name" title="资源中心">资源中心</span><span class="amp-app-count">2</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__34efc92b-1047-4048-9d96-998d00c4feb1"><span class="amp-left-aside-canuseapp-name" title="课程中心">课程中心</span><span class="amp-app-count">1</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__ec173347-1b7d-4794-ad1c-91ee7d35369c"><span class="amp-left-aside-canuseapp-name" title="培养中心">培养中心</span><span class="amp-app-count">2</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__aa57d50b-995c-4511-9d2e-ec39e1dff114"><span class="amp-left-aside-canuseapp-name" title="学籍中心">学籍中心</span><span class="amp-app-count">4</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__ba018c8e-855e-45d6-b73b-d3c3c3b1f75c"><span class="amp-left-aside-canuseapp-name" title="开课中心">开课中心</span><span class="amp-app-count">3</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__5de5d4df-8b76-410f-a6b6-0df1ea179194"><span class="amp-left-aside-canuseapp-name" title="选课中心">选课中心</span><span class="amp-app-count">2</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__63f79b52-507f-4281-956f-c091866f2733"><span class="amp-left-aside-canuseapp-name" title="考务中心">考务中心</span><span class="amp-app-count">5</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__c5ad4634-63c7-4676-a2bc-181d3161cfda"><span class="amp-left-aside-canuseapp-name" title="成绩中心">成绩中心</span><span class="amp-app-count">2</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__a81394e1-7b36-4e83-9d6c-a012913ca773"><span class="amp-left-aside-canuseapp-name" title="质量评价">质量评价</span><span class="amp-app-count">1</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__701ae1a5-f079-4d58-bc16-a976db0e165b"><span class="amp-left-aside-canuseapp-name" title="综合审查">综合审查</span><span class="amp-app-count">4</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__dd9e9bd6-2aca-4450-8c30-f721eae2b7d5"><span class="amp-left-aside-canuseapp-name" title="辅修管理">辅修管理</span><span class="amp-app-count">1</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__792c1716-4dd3-43a5-836d-0374cc87ddcb"><span class="amp-left-aside-canuseapp-name" title="交流管理">交流管理</span><span class="amp-app-count">1</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__6366e17c-83d4-4b3e-a9ca-35a7d98c288f"><span class="amp-left-aside-canuseapp-name" title="本研平台">本研平台</span><span class="amp-app-count">2</span>
+</li>
+
+<li class="  amp-hover-slow-motion  " amp-id="2__9c00c304-28ad-4c08-bbf7-4d79bf59c998"><span class="amp-left-aside-canuseapp-name" title="教务">教务</span><span class="amp-app-count">12</span>
+</li>
+</ul>
+        <div id="ampPersonalAsideLeftAllCanUseAppsTabContent" class="amp-category-tabcontent" tabindex="4" style="overflow-y: hidden; outline: none;">
+        <!--     <div class="amp-canUseApp-search">
+            <i id="ampPersonalAsideLeftAllCanUseAppsSearchIcon" class="iconfont icon-sousuo"></i>
+            <input id="ampPersonalAsideLeftAllCanUseAppsSearchInput" type="text" value="" placeholder="搜索可用服务" maxlength="20">
+            <span id="ampPersonalAsideleftCanuseappDelete"> <i id="ampPersonalAsideLeftAllCanUseAppsDeleteIcon" class="iconfont icon-chacha1"></i></span>
+        </div> -->
+
+            
+    <div class="amp-category-content-item  " amp-classify="all" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__4291b260-41d1-4642-85ee-9413d3cf6ef8" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__0dade298-079c-4d56-95ae-4d0719a43af9" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__34efc92b-1047-4048-9d96-998d00c4feb1" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__ec173347-1b7d-4794-ad1c-91ee7d35369c" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__aa57d50b-995c-4511-9d2e-ec39e1dff114" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__ba018c8e-855e-45d6-b73b-d3c3c3b1f75c" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__5de5d4df-8b76-410f-a6b6-0df1ea179194" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__63f79b52-507f-4281-956f-c091866f2733" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__c5ad4634-63c7-4676-a2bc-181d3161cfda" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__a81394e1-7b36-4e83-9d6c-a012913ca773" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__701ae1a5-f079-4d58-bc16-a976db0e165b" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__dd9e9bd6-2aca-4450-8c30-f721eae2b7d5" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__792c1716-4dd3-43a5-836d-0374cc87ddcb" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__6366e17c-83d4-4b3e-a9ca-35a7d98c288f" id=""></div>
+
+    <div class="amp-category-content-item  " amp-classify="2__9c00c304-28ad-4c08-bbf7-4d79bf59c998" id=""></div>
+
+        </div>
+    </div>
+</div>
+                <div id="ampPersonalAsideLeftCanUseCards" class="amp-hide amp-relative-height-inherit amp-personal-asideleft-canuse-card" amp-id="canUseCards">
+  <div class="amp-canUseApp-search"> <i id="ampPersonalAsideLeftAllCanUseCardsSearchIcon" class="iconfont icon-sousuo"></i>
+      <input id="ampPersonalAsideLeftAllCanUseCardsSearchInput" type="text" value="" placeholder="搜索可用卡片" maxlength="20">
+      <span id="ampPersonalAsideleftCanusecardDelete"> <i id="ampPersonalAsideLeftAllCanUseCardsDeleteIcon" class="iconfont icon-chacha1"></i>
+      </span>
+  </div>
+    <div class="amp-category-tab">
+        <ul id="canUseTabListId">
+<li class="amp-active  amp-hover-slow-motion @hasSubCategoryFlag @subCategoryState" amp-id="all"><span class="amp-left-aside-canuseapp-name" title="全部">全部</span><span class="amp-app-count">0</span>
+</li>
+</ul>
+        <div id="ampCategoryTabContent" class="amp-category-tabcontent">
+    <div class="amp-category-content-item  " id="ampCategoryContentCanUseItemall" amp-id="all"></div>
+</div>
+    </div>
+</div>
 
             </div>
-        </div>
+        <div id="ascrail2003" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 0px; left: -6px; height: 100px; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 4px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div><div id="ascrail2004" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 0px; left: -6px; height: 0px; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 4px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div></div>
 
         <div id="ampPersonalAsideLeftClose" class="amp-aside-box-close amp-hover-slow-motion" amp-role="ampAsideBoxClose"></div>
     </aside>
 
     <!--中间栏-->
     <section id="ampPersonalMainWidgetSection" class="amp-personal-center amp-animate-personal-center" amp-left-state="mini" amp-right-state="mini">
-        <div id="ampDesktopNav" class="amp-desktop-nav amp-tab amp-clearfix-child amp-animate-personal-center"></div>
+        <div id="ampDesktopNav" class="amp-desktop-nav amp-tab amp-clearfix-child amp-animate-personal-center" style="padding-left: 24px;"><div class="amp-tab-item amp-left-tab-item amp-active" amp-desktop-id="072647bb-bd79-4e80-ad35-d570ec4e447f" amp-desktop-type="0" title="学生默认页面">学生默认页面</div>
+    <div class="amp-tab-item amp-left-tab-item amp-desktop-nav-icon ampDesktopAddFlag amp-desktop-nav-btn ampDesktopBtn amp-hover-slow-motion" id="ampDesktopAddBtn"><i class="iconfont icon-jia"></i></div>
+    <div class="amp-tab-item amp-left-tab-item amp-desktop-nav-icon ampDesktopSetFlag amp-desktop-nav-btn ampDesktopBtn amp-hover-slow-motion"><i class="iconfont icon-set"></i></div>
+</div>
 
-        <div id="ampDesktopContent" class="amp-tab-content amp-desktop-content amp-animate-personal-center amp-clearfix"></div>
+        <div id="ampDesktopContent" class="amp-tab-content amp-desktop-content amp-animate-personal-center amp-clearfix" tabindex="1" style="overflow-y: hidden; outline: none; padding-left: 24px;"><div id="ampTabContentItem0" class="amp-tab-content-item amp-active amp-animated amp-animate-move-bottom-in" amp-desktop-id="072647bb-bd79-4e80-ad35-d570ec4e447f" amp-desktop-type="0">
+    <div class="amp-widget amp-widget-only-drag PC-CARD-HTML-4786696181714491-01 undefined undefined ampLoadingCompleteFlag" widget-id="PC-CARD-HTML-4786696181714491-01" widget-wid="x6615994b52b4c918fc1204c4f3e2ett" app-id="4786696181714491" app-key="4786696181714491-TJZXYY_V2.2.0"><pc-card-html-4786696181714491-01 widget_title="推荐&amp;最新应用" thumbnail="remind.png" target_platform="WEB" widget_title_enus="Recommended &amp; new apps">
+     <amp-w-frame has-scroll="true" class="style-scope pc-card-html-4786696181714491-01">
+         
+             <div class="amp-wf-frame style-scope amp-w-frame" style="">
+                 
+
+                     <div class="amp-wf-head amp-card-wf-head amp-card-wf-head-hover amp-card-move-flag style-scope amp-w-frame">
+                         <div class="amp-wf-head-title style-scope amp-w-frame">推荐&amp;最新应用</div>
+
+                          <i class="iconfont icon-drag amp-wf-head-sort amp-icon-bg-color style-scope amp-w-frame"></i>
+                         <template is="dom-if" class="style-scope amp-w-frame"></template>
+                        <!--  <template  is="dom-if" if="{{isShowRefreshFlag}}">
+                             <div class="amp-wf-head-refresh">
+                              <i class="iconfont icon-ordinaryrefresh amp-icon-bg-color"></i> -->
+                                <!--  <img src="../../public/img/refresh.png"/>  -->
+                          <!--    </div>
+                         </template> -->
+
+                         <div class="amp-wf-head-set style-scope amp-w-frame"> <i class="iconfont icon-set amp-icon-bg-color style-scope amp-w-frame"></i>
+                             <i class="iconfont icon-down amp-icon-bg-color style-scope amp-w-frame"></i>
+                         </div>
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+                 
+                     <div class="amp-wf-body style-scope amp-w-frame" style="">
+                         
+    	<div id="widget-recommendAndNew-01" class="style-scope pc-card-html-4786696181714491-01">
+			 
+            <div class="clearfix active style-scope pc-card-html-4786696181714491-01">
+    		
+            <widget-app-item class="style-scope pc-card-html-4786696181714491-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="4768651907791216" amp-appkey="4768651907791216-4.0.3_TR2" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="1" amp-url="appShow?appId=4768651907791216" amp-title="我的教学任务" amp-img="http://ehall.xjtu.edu.cn/resources/app/4768651907791216/4.0.3_TR2/icon_72.png?_=1714460824000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.3_TR2" amp-category="开课中心/教务">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-4786696181714491-01">
+                      <div class="widget-image style-scope pc-card-html-4786696181714491-01">
+                          <img class="style-scope pc-card-html-4786696181714491-01" src="http://ehall.xjtu.edu.cn/resources/app/4768651907791216/4.0.3_TR2/icon_72.png?_=1714460824000"></div>
+                      <div class="widget-information style-scope pc-card-html-4786696181714491-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-4786696181714491-01" data-fav-icon-r="0" title="我的教学任务">我的教学任务</div>
+                          <div class="widget-classify style-scope pc-card-html-4786696181714491-01" title="开课中心 / 教务">开课中心 / 教务...</div>
+                      </div>
+                  </div>
+           
+        </div>
+    </widget-app-item>
+              
+	    	
+            <widget-app-item class="style-scope pc-card-html-4786696181714491-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="4770397878132218" amp-appkey="4770397878132218-4.0.3_TR2" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="1" amp-url="appShow?appId=4770397878132218" amp-title="我的本研课表" amp-img="http://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.3_TR2" amp-category="开课中心/教务">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-4786696181714491-01">
+                      <div class="widget-image style-scope pc-card-html-4786696181714491-01">
+                          <img class="style-scope pc-card-html-4786696181714491-01" src="http://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000"></div>
+                      <div class="widget-information style-scope pc-card-html-4786696181714491-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-4786696181714491-01" data-fav-icon-r="0" title="我的本研课表">我的本研课表</div>
+                          <div class="widget-classify style-scope pc-card-html-4786696181714491-01" title="开课中心 / 教务">开课中心 / 教务...</div>
+                      </div>
+                  </div>
+           
+        </div>
+    </widget-app-item>
+              
+	    	
+            <widget-app-item class="style-scope pc-card-html-4786696181714491-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="4766960573884517" amp-appkey="4766960573884517-4.0.3_TR3" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="1" amp-url="appShow?appId=4766960573884517" amp-title="全校课表查询" amp-img="http://ehall.xjtu.edu.cn/resources/app/4766960573884517/4.0.3_TR3/icon_72.png?_=1714460775000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.3_TR3" amp-category="开课中心/教务">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-4786696181714491-01">
+                      <div class="widget-image style-scope pc-card-html-4786696181714491-01">
+                          <img class="style-scope pc-card-html-4786696181714491-01" src="http://ehall.xjtu.edu.cn/resources/app/4766960573884517/4.0.3_TR3/icon_72.png?_=1714460775000"></div>
+                      <div class="widget-information style-scope pc-card-html-4786696181714491-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-4786696181714491-01" data-fav-icon-r="0" title="全校课表查询">全校课表查询</div>
+                          <div class="widget-classify style-scope pc-card-html-4786696181714491-01" title="开课中心 / 教务">开课中心 / 教务...</div>
+                      </div>
+                  </div>
+           
+        </div>
+    </widget-app-item>
+              
+	    	
+            <widget-app-item class="style-scope pc-card-html-4786696181714491-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="6588187938512421" amp-appkey="6588187938512421-4.0.0_TR1" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="0" amp-url="appShow?appId=6588187938512421" amp-title="本科导师管理" amp-img="http://ehall.xjtu.edu.cn/resources/app/6588187938512421/4.0.0_TR1/icon_72.png?_=1714460739000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.0_TR1" amp-category="本科导师">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-4786696181714491-01">
+                      <div class="widget-image style-scope pc-card-html-4786696181714491-01">
+                          <img class="style-scope pc-card-html-4786696181714491-01" src="http://ehall.xjtu.edu.cn/resources/app/6588187938512421/4.0.0_TR1/icon_72.png?_=1714460739000"></div>
+                      <div class="widget-information style-scope pc-card-html-4786696181714491-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-4786696181714491-01" data-fav-icon-r="0" title="本科导师管理">本科导师管理</div>
+                          <div class="widget-classify style-scope pc-card-html-4786696181714491-01" title="本科导师">本科导师</div>
+                      </div>
+                  </div>
+           
+        </div>
+    </widget-app-item>
+              
+	    	<template is="dom-repeat" as="appItem" class="style-scope pc-card-html-4786696181714491-01"></template>
+        </div>
+	     <div class="no-data style-scope pc-card-html-4786696181714491-01" style="display: none;">
+                      <img class="no-data-img style-scope pc-card-html-4786696181714491-01" src="https://ehall.xjtu.edu.cn/new/pc_card/4786696181714491/PC-CARD-HTML-4786696181714491-01/resources/img/no-data.png">                    
+                      <span class="no-data-span style-scope pc-card-html-4786696181714491-01">暂无推荐&amp;最新应用</span>
+                    </div><template is="dom-if" class="style-scope pc-card-html-4786696181714491-01"></template>
+       	</div>
+       
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+             </div>
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+     </amp-w-frame>
+        <amp-w-setting class="style-scope pc-card-html-4786696181714491-01">
+        <div class="amp-wf-setting amp-color-gray-lv1 amp-animate-trans-fast style-scope amp-w-setting">
+            
+            <!--   <template is="dom-if" if="{{flag}}" >
+                <amp-w-setting-item amp-w-role="openapp">打开应用</amp-w-setting-item>
+            </template> -->
+            <amp-w-setting-item amp-w-role="delete" class="deleteCard style-scope amp-w-setting">
+        <div class="amp-wf-setting-item style-scope amp-w-setting-item amp-bg-color-primary-hover-lv4">
+            @deleteCard
+        </div>
+    </amp-w-setting-item>
+        </div>
+    </amp-w-setting>
+    </pc-card-html-4786696181714491-01>
+    
+</div>
+
+    <div class="amp-widget amp-widget-only-drag PC-CARD-HTML-4786696181711234-01 undefined undefined ampLoadingCompleteFlag" widget-id="PC-CARD-HTML-4786696181711234-01" widget-wid="c696ee5bd556477bb254dea88c641ca6" app-id="4786696181711234" app-key="4786696181711234-WDSC_V1.0.0"><pc-card-html-4786696181711234-01 widget_title="我的收藏" thumbnail="remind.png" target_platform="WEB" widget_title_enus="My Favorites">
+    <amp-w-frame class="style-scope pc-card-html-4786696181711234-01">
+         
+             <div class="amp-wf-frame style-scope amp-w-frame" style="">
+                 
+
+                     <div class="amp-wf-head amp-card-wf-head amp-card-wf-head-hover amp-card-move-flag style-scope amp-w-frame">
+                         <div class="amp-wf-head-title style-scope amp-w-frame">我的收藏</div>
+
+                          <i class="iconfont icon-drag amp-wf-head-sort amp-icon-bg-color style-scope amp-w-frame"></i>
+                         <template is="dom-if" class="style-scope amp-w-frame"></template>
+                        <!--  <template  is="dom-if" if="{{isShowRefreshFlag}}">
+                             <div class="amp-wf-head-refresh">
+                              <i class="iconfont icon-ordinaryrefresh amp-icon-bg-color"></i> -->
+                                <!--  <img src="../../public/img/refresh.png"/>  -->
+                          <!--    </div>
+                         </template> -->
+
+                         <div class="amp-wf-head-set style-scope amp-w-frame"> <i class="iconfont icon-set amp-icon-bg-color style-scope amp-w-frame"></i>
+                             <i class="iconfont icon-down amp-icon-bg-color style-scope amp-w-frame"></i>
+                         </div>
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+                 
+                     <div class="amp-wf-body style-scope amp-w-frame" style="">
+                         
+      <div id="card-myfavorite-01" class="card-myfavorite style-scope pc-card-html-4786696181711234-01">
+        <div class="myfavorite-card-box style-scope pc-card-html-4786696181711234-01">
+          <div class="myfavorite-box-tab amp-myfavorite-tab style-scope pc-card-html-4786696181711234-01" tabindex="5" style="overflow-y: hidden; outline: none;">
+            <ul class="style-scope pc-card-html-4786696181711234-01">
+              
+                <li class="amp-hover-slow-motion amp-divider-color amp-bg-color-primary-hover-lv3 card-myfavorite-li style-scope pc-card-html-4786696181711234-01" amp-type="amp-active" amp-id="0">
+
+                  <template is="dom-if" class="style-scope pc-card-html-4786696181711234-01"></template>
+
+                  <span class="amp-left-aside-canuseapp-name card-myfavorite-folderName style-scope pc-card-html-4786696181711234-01">收藏夹</span>
+                  <span class="amp-app-count style-scope pc-card-html-4786696181711234-01">0</span>
+                </li>
+              <template is="dom-repeat" as="appItem" class="style-scope pc-card-html-4786696181711234-01"></template>
+            </ul>
+
+          </div>
+          <div class="myfavorite-box-content style-scope pc-card-html-4786696181711234-01" id="cardMyFavoriteContent">
+            
+              <div class="card-myFavorite-content-item style-scope pc-card-html-4786696181711234-01" has-scroll="true" amp-isshow="amp-active" amp-classify="0" tabindex="6" style="overflow-y: hidden; outline: none;">
+
+                <template is="dom-repeat" as="appItem" class="style-scope pc-card-html-4786696181711234-01"></template>
+
+                
+                  <div class="widget-recommend-item amp-bg-color-primary-hover-lv4 widget-recommend-item-nodata amp-favorite-icon-jia style-scope pc-card-html-4786696181711234-01">
+                    <div class="widget-nodata style-scope pc-card-html-4786696181711234-01"> <i class="iconfont icon-jia5 amp-pull-left amp-mr-8 style-scope pc-card-html-4786696181711234-01"></i>
+                      <div class="widget-information style-scope pc-card-html-4786696181711234-01">
+                        <div class="widget-title appTitleFlag style-scope pc-card-html-4786696181711234-01" title="添加应用">添加应用</div>
+                      </div>
+                    </div>
+                  </div>
+                <template is="dom-if" class="style-scope pc-card-html-4786696181711234-01"></template>
+
+              </div>
+            <template is="dom-repeat" as="appItem" class="style-scope pc-card-html-4786696181711234-01"></template>
+          </div>
+        <div id="ascrail2005" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 0px; left: 114px; height: 208px; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 4px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div><div id="ascrail2006" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 208px; left: 414px; height: 208px; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 4px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div></div>
+      </div>
+    
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+             </div>
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+     </amp-w-frame>
+    <amp-w-setting class="style-scope pc-card-html-4786696181711234-01">
+        <div class="amp-wf-setting amp-color-gray-lv1 amp-animate-trans-fast style-scope amp-w-setting">
+            
+            <!--   <template is="dom-if" if="{{flag}}" >
+                <amp-w-setting-item amp-w-role="openapp">打开应用</amp-w-setting-item>
+            </template> -->
+            <amp-w-setting-item amp-w-role="delete" class="deleteCard style-scope amp-w-setting">
+        <div class="amp-wf-setting-item style-scope amp-w-setting-item amp-bg-color-primary-hover-lv4">
+            @deleteCard
+        </div>
+    </amp-w-setting-item>
+        </div>
+    </amp-w-setting>
+  </pc-card-html-4786696181711234-01>
+    
+</div>
+
+    <div class="amp-widget amp-widget-only-drag PC-CARD-HTML-4786697535230905-01 undefined undefined" widget-id="PC-CARD-HTML-4786697535230905-01" widget-wid="x6615994b52b4c918fc1204c4f3e2ess" app-id="4786697535230905" app-key="4786697535230905-RMYY_V2.2.0"><pc-card-html-4786697535230905-01 widget_title="热门应用" thumbnail="remind.png" target_platform="WEB" widget_title_enus="Hot apps">
+     <amp-w-frame has-scroll="true" class="style-scope pc-card-html-4786697535230905-01">
+         
+             <div class="amp-wf-frame style-scope amp-w-frame" style="">
+                 
+
+                     <div class="amp-wf-head amp-card-wf-head amp-card-wf-head-hover amp-card-move-flag style-scope amp-w-frame">
+                         <div class="amp-wf-head-title style-scope amp-w-frame">热门应用</div>
+
+                          <i class="iconfont icon-drag amp-wf-head-sort amp-icon-bg-color style-scope amp-w-frame"></i>
+                         <template is="dom-if" class="style-scope amp-w-frame"></template>
+                        <!--  <template  is="dom-if" if="{{isShowRefreshFlag}}">
+                             <div class="amp-wf-head-refresh">
+                              <i class="iconfont icon-ordinaryrefresh amp-icon-bg-color"></i> -->
+                                <!--  <img src="../../public/img/refresh.png"/>  -->
+                          <!--    </div>
+                         </template> -->
+
+                         <div class="amp-wf-head-set style-scope amp-w-frame"> <i class="iconfont icon-set amp-icon-bg-color style-scope amp-w-frame"></i>
+                             <i class="iconfont icon-down amp-icon-bg-color style-scope amp-w-frame"></i>
+                         </div>
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+                 
+                     <div class="amp-wf-body style-scope amp-w-frame" style="">
+                         
+    	<div id="widget-hot-01" class="style-scope pc-card-html-4786697535230905-01">
+			<div class="style-scope pc-card-html-4786697535230905-01">
+    		<template is="dom-repeat" as="appItem" class="style-scope pc-card-html-4786697535230905-01"></template>
+        </div>
+	     
+                    <div class="no-data style-scope pc-card-html-4786697535230905-01">
+                      <img class="no-data-img style-scope pc-card-html-4786697535230905-01" src="https://ehall.xjtu.edu.cn/new/pc_card/4786697535230905/PC-CARD-HTML-4786697535230905-01/resources/img/no-data.png">                    
+                      <span class="no-data-span style-scope pc-card-html-4786697535230905-01">暂无热门应用</span>
+                    </div>
+        <template is="dom-if" class="style-scope pc-card-html-4786697535230905-01"></template>
+       	</div>
+       
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+             </div>
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+     </amp-w-frame>
+       <amp-w-setting class="style-scope pc-card-html-4786697535230905-01">
+        <div class="amp-wf-setting amp-color-gray-lv1 amp-animate-trans-fast style-scope amp-w-setting">
+            
+            <!--   <template is="dom-if" if="{{flag}}" >
+                <amp-w-setting-item amp-w-role="openapp">打开应用</amp-w-setting-item>
+            </template> -->
+            <amp-w-setting-item amp-w-role="delete" class="deleteCard style-scope amp-w-setting">
+        <div class="amp-wf-setting-item style-scope amp-w-setting-item amp-bg-color-primary-hover-lv4">
+            @deleteCard
+        </div>
+    </amp-w-setting-item>
+        </div>
+    </amp-w-setting>
+    </pc-card-html-4786697535230905-01>
+    
+</div>
+
+    <div class="amp-widget amp-widget-only-drag PC-CARD-HTML-5131446170220455-01 undefined undefined ampLoadingCompleteFlag" widget-id="PC-CARD-HTML-5131446170220455-01" widget-wid="7032e43e-ee75-48e4-b7e3-3527cd59ed36" app-id="5131446170220455" app-key="5131446170220455-ZJSY_V1.0.0"><pc-card-html-5131446170220455-01 widget_title="最近使用" thumbnail="remind.png" target_platform="WEB" widget_title_enus="Recent apps">
+     <amp-w-frame has-scroll="true" class="style-scope pc-card-html-5131446170220455-01">
+         
+             <div class="amp-wf-frame style-scope amp-w-frame" style="">
+                 
+
+                     <div class="amp-wf-head amp-card-wf-head amp-card-wf-head-hover amp-card-move-flag style-scope amp-w-frame">
+                         <div class="amp-wf-head-title style-scope amp-w-frame">最近使用</div>
+
+                          <i class="iconfont icon-drag amp-wf-head-sort amp-icon-bg-color style-scope amp-w-frame"></i>
+                         <template is="dom-if" class="style-scope amp-w-frame"></template>
+                        <!--  <template  is="dom-if" if="{{isShowRefreshFlag}}">
+                             <div class="amp-wf-head-refresh">
+                              <i class="iconfont icon-ordinaryrefresh amp-icon-bg-color"></i> -->
+                                <!--  <img src="../../public/img/refresh.png"/>  -->
+                          <!--    </div>
+                         </template> -->
+
+                         <div class="amp-wf-head-set style-scope amp-w-frame"> <i class="iconfont icon-set amp-icon-bg-color style-scope amp-w-frame"></i>
+                             <i class="iconfont icon-down amp-icon-bg-color style-scope amp-w-frame"></i>
+                         </div>
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+                 
+                     <div class="amp-wf-body style-scope amp-w-frame" style="">
+                         
+    	<div id="widget-hot-01" class="style-scope pc-card-html-5131446170220455-01">
+			<div class="style-scope pc-card-html-5131446170220455-01">
+    		
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="4770397878132218" amp-appkey="4770397878132218-4.0.3_TR2" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="1" amp-url="appShow?appId=4770397878132218" amp-title="我的本研课表" amp-img="http://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.3_TR2" amp-category="开课中心/教务">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/4770397878132218/4.0.3_TR2/icon_72.png?_=1714460863000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="我的本研课表">我的本研课表</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title="开课中心 / 教务">开课中心 / 教务...</div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="4768574631264620" amp-appkey="4768574631264620-4.0.3_TR2" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="0" amp-url="appShow?appId=4768574631264620" amp-title="成绩查询" amp-img="http://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.3_TR2" amp-category="成绩中心/教务">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/4768574631264620/4.0.3_TR2/icon_72.png?_=1714460831000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="成绩查询">成绩查询</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title="成绩中心 / 教务">成绩中心 / 教务...</div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="4862759070414449" amp-appkey="4862759070414449-xsshksbm_V4.0.1_TR1" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="1" amp-url="appShow?appId=4862759070414449" amp-title="学生社会考试报名" amp-img="http://ehall.xjtu.edu.cn/resources/app/4862759070414449/xsshksbm_V4.0.1_TR1/icon_72.png?_=1714460871000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="xsshksbm_V4.0.1_TR1" amp-category="教务/考务中心">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/4862759070414449/xsshksbm_V4.0.1_TR1/icon_72.png?_=1714460871000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="学生社会考试报名">学生社会考试报名</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title="教务 / 考务中心">教务 / 考务中心...</div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="6119475925497288" amp-appkey="6119475925497288-1.0_R1" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="0" amp-url="appShow?appId=6119475925497288" amp-title="西安交通大学_留校学生分析应用" amp-img="http://ehall.xjtu.edu.cn/resources/app/6119475925497288/1.0_R1/icon_72.png?_=1714460791000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="1.0_R1" amp-category="">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/6119475925497288/1.0_R1/icon_72.png?_=1714460791000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="西安交通大学_留校学生分析应用">西安交通大学_留校学生分析应用</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title=""> </div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="5591103004184670" amp-appkey="5591103004184670-1.0_TR1" amp-full-screen="" amp-hasdescription="0" amp-descriptionauth="0" amp-url="appShow?appId=5591103004184670" amp-title="本研成绩查询" amp-img="http://ehall.xjtu.edu.cn/resources/app/5591103004184670/1.0_TR1/icon_72.png?_=1714460839000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="1.0_TR1" amp-category="本研平台">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/5591103004184670/1.0_TR1/icon_72.png?_=1714460839000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="本研成绩查询">本研成绩查询</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title="本研平台">本研平台</div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="4766859113956613" amp-appkey="4766859113956613-xsfacx_V4.0.6_TR2" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="0" amp-url="appShow?appId=4766859113956613" amp-title="个人方案查询" amp-img="http://ehall.xjtu.edu.cn/resources/app/4766859113956613/xsfacx_V4.0.6_TR2/icon_72.png?_=1714460762000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="xsfacx_V4.0.6_TR2" amp-category="培养中心/教务">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/4766859113956613/xsfacx_V4.0.6_TR2/icon_72.png?_=1714460762000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="个人方案查询">个人方案查询</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title="培养中心 / 教务">培养中心 / 教务...</div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="6588187938512421" amp-appkey="6588187938512421-4.0.0_TR1" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="0" amp-url="appShow?appId=6588187938512421" amp-title="本科导师管理" amp-img="http://ehall.xjtu.edu.cn/resources/app/6588187938512421/4.0.0_TR1/icon_72.png?_=1714460739000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.0_TR1" amp-category="本科导师">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/6588187938512421/4.0.0_TR1/icon_72.png?_=1714460739000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="本科导师管理">本科导师管理</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title="本科导师">本科导师</div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	
+         <widget-app-item class="style-scope pc-card-html-5131446170220455-01">
+        <div class="appFlag style-scope widget-app-item" amp-appid="5856333445645704" amp-appkey="5856333445645704-4.0.0_TR1" amp-full-screen="" amp-hasdescription="1" amp-descriptionauth="0" amp-url="appShow?appId=5856333445645704" amp-title="网上评教" amp-img="http://ehall.xjtu.edu.cn/resources/app/5856333445645704/4.0.0_TR1/icon_72.png?_=1714460862000" amp-favorite="false" amp-haspermission="true" amp-unviewabledescription="false" amp-type="0" amp-opening="true" amp-maintaining="false" amp-hashead="1" amp-isthirdparty="0" amp-version="4.0.0_TR1" amp-category="质量评价">
+            
+                  <div class="widget-recommend-item amp-bg-color-white-lv5 amp-bg-color-primary-hover-lv4 style-scope pc-card-html-5131446170220455-01">
+                      <div class="widget-image style-scope pc-card-html-5131446170220455-01">
+                          <img class="style-scope pc-card-html-5131446170220455-01" src="http://ehall.xjtu.edu.cn/resources/app/5856333445645704/4.0.0_TR1/icon_72.png?_=1714460862000"></div>
+                      <div class="widget-information style-scope pc-card-html-5131446170220455-01">
+                          <div class="widget-title appTitleFlag style-scope pc-card-html-5131446170220455-01" data-fav-icon-r="0" title="网上评教">网上评教</div>
+                          <div class="widget-classify style-scope pc-card-html-5131446170220455-01" title="质量评价">质量评价</div>
+                      </div>
+                  </div>
+          
+        </div>
+    </widget-app-item>
+             
+	    	<template is="dom-repeat" as="appItem" class="style-scope pc-card-html-5131446170220455-01"></template>
+        </div>
+	     <div class="no-data style-scope pc-card-html-5131446170220455-01" style="display: none;">
+                      <img class="no-data-img style-scope pc-card-html-5131446170220455-01" src="https://ehall.xjtu.edu.cn/new/pc_card/5131446170220455/PC-CARD-HTML-5131446170220455-01/resources/img/no-data.png">                    
+                      <span class="no-data-span style-scope pc-card-html-5131446170220455-01">暂无最近使用</span>
+                    </div><template is="dom-if" class="style-scope pc-card-html-5131446170220455-01"></template>
+       	</div>
+       
+                     </div>
+                 <template is="dom-if" class="style-scope amp-w-frame"></template>
+             </div>
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+
+         <template is="dom-if" class="style-scope amp-w-frame"></template>
+     </amp-w-frame>
+       <amp-w-setting class="style-scope pc-card-html-5131446170220455-01">
+        <div class="amp-wf-setting amp-color-gray-lv1 amp-animate-trans-fast style-scope amp-w-setting">
+            
+            <!--   <template is="dom-if" if="{{flag}}" >
+                <amp-w-setting-item amp-w-role="openapp">打开应用</amp-w-setting-item>
+            </template> -->
+            <amp-w-setting-item amp-w-role="delete" class="deleteCard style-scope amp-w-setting">
+        <div class="amp-wf-setting-item style-scope amp-w-setting-item amp-bg-color-primary-hover-lv4">
+            @deleteCard
+        </div>
+    </amp-w-setting-item>
+        </div>
+    </amp-w-setting>
+    </pc-card-html-5131446170220455-01>
+    
+</div>
+
+    <div class="amp-widget amp-animated amp-widget-add amp-widget-card-center amp-card-hasno-drag  amp-desktop-tool ampLoadingCompleteFlag amp-tool-hide">
+        <div class="amp-widget-add-icon amp-mb-8">
+               <i class="iconfont icon-jia5"></i>
+        </div>
+        <div class="amp-widget-add-tool" ;="">添加应用卡片</div>
+    </div>
+
+    <div class="amp-widget amp-animated  amp-animate-move-bottom-in  amp-widget-drag      amp-card-hasno-drag amp-widget-drag-hide amp-widget-card-center ampLoadingCompleteFlag ampLoadingDragCompleteFlag amp-desktop-tool amp-tool-hide">
+        <div class="amp-widget-drag-icon amp-mb-8"> <i class="iconfont icon-download"></i>
+        </div>
+        <div class="amp-widget-drag-desc">从左侧选择需要的应用卡片</div>
+    </div>
+</div></div>
         <div id="msg_end" style="height:0px; overflow:hidden"></div>
-    </section>
+    <div id="ascrail2001" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 0px; left: -6px; height: 0px; display: none; opacity: 1;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 4px; height: 20px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div></section>
 
     <!--右侧栏-->
-    <aside id="ampPersonalAsideRight" amp-position="right" class="amp-aside-box amp-mini amp-personal-aside-right amp-hide amp-mt-16 amp-animated amp-animate-move-right-in amp-zIndex-lv10">
+    <aside id="ampPersonalAsideRight" amp-position="right" class="amp-aside-box amp-mini amp-personal-aside-right amp-mt-16 amp-animated amp-animate-move-right-in amp-zIndex-lv10">
         <!--右侧mini状态-->
         <div amp-role="ampAsideBoxMini" class="amp-aside-box-mini">
             <div id="ampPersonalAsideRightMini" class="amp-aside-box-mini-cont">
-                <div amp-id="task" class="amp-aside-box-mini-item amp-aside-box-hide amp-hover-slow-motion" id="dbTask">
+                <div amp-id="task" class="amp-aside-box-mini-item amp-hover-slow-motion" id="dbTask">
                     <label class="amp-tag amp-m-4 amp-hide"></label>
                     <i class="iconfont icon-daiban"></i>
                     <div class="amp-str-cut" data-i18n="ToDo">待办任务</div>
                     <span class="amp-task-count" id="ampDbTaskCount"></span>
                 </div>
-                <div amp-id="task" class="amp-aside-box-mini-item amp-aside-box-hide amp-hover-slow-motion" id="lcgzTask">
+                <div amp-id="task" class="amp-aside-box-mini-item amp-hover-slow-motion" id="lcgzTask">
                     <label class="amp-tag amp-m-4 amp-hide"></label>
                     <i class="iconfont icon-liucheng"></i>
                     <div class="amp-str-cut" data-i18n="process">我发起的</div>
                      <span class="amp-task-count amp-hide" id="ampLcgzTaskCount"></span>
                 </div>
-                <div amp-id="task" class="amp-aside-box-mini-item amp-aside-box-hide amp-hover-slow-motion" id="zqfwTask">
+                <div amp-id="task" class="amp-aside-box-mini-item amp-hover-slow-motion" id="zqfwTask">
                     <label class="amp-tag amp-m-4 amp-hide"></label>
                     <i class="iconfont icon-daibantixing"></i>
                     <div class="amp-str-cut" data-i18n="cycleService">周期服务</div>
@@ -739,11 +2121,11 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
                         <span amp-type="allRead" class="amp-mr-8" data-i18n="readAll">全部标记为已读</span>
                         <span amp-type="goMessageCenter" data-i18n="messageCenter">消息中心 &gt;</span>
                     </div>
-                    <div class="amp-personal-message" id="ampTagMessages"></div>
+                    <div class="amp-personal-message" id="ampTagMessages" tabindex="2" style="overflow-y: hidden; outline: none;"></div>
                 </div>
 
             </div>
-        </div>
+        <div id="ascrail2002" class="nicescroll-rails nicescroll-rails-vr" style="width: 6px; z-index: 1000; cursor: default; position: absolute; top: 0px; left: -6px; height: 0px; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 4px; height: 0px; background-color: rgb(66, 66, 66); border: 1px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 5px;"></div></div></div>
 
         <div id="ampPersonalAsideRightClose" class="amp-aside-box-close amp-hover-slow-motion" amp-role="ampAsideBoxClose"></div>
 
@@ -821,14 +2203,14 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
 <!--背景图-->
 <!--  <div id="ampPageLoginBgImg" class="amp-page-login-bg-img amp-login-img"></div> -->
-<div id="ampPageBgImg" class="amp-page-bg-img amp-login-img" style="opacity: 0.5;"></div>
+<div id="ampPageBgImg" class="amp-page-bg-img amp-login-img amp-page-img"></div>
 
 <!--背景透明遮罩层-->
 <div id="ampPageBgCover" class="amp-page-bg-cover amp-hide"></div>
 
 
-<input id="analysisUserName" value="other" type="hidden">
-<input id="analysisUserId" value="guest" type="hidden">
+<input id="analysisUserName" value="石翔" type="hidden">
+<input id="analysisUserId" value="2233211113" type="hidden">
 <!--各种模板-->
 <!--各种html模板-->
 
@@ -2238,4 +3620,110 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
            </li>
        </ul>
    </div>
+
+    <div id="ampHeaderUserInfo" class="amp-header-user-info amp-animate-trans-fast">
+        <section class="amp-clearfix-child">
+            <div class="user-photo-box">
+                <img id="user-photo" src="portal/images/icons/user-role-teacher.png" has-photo="false">    
+            <!--   <div class="user-photo-hover bh-emapAvartar-btn" id="userPhotoHover"><span>@photoText</span></div> -->
+            </div>
+
+            <div class="user-photo-info">
+                <div class="amp-header-user-info-name amp-str-cut">石翔</div>
+            </div>
+        </section>
+         
+        
+        
+        <div id="ampHeaderUserInfoLogoutBtn" class="amp-bg-color-danger-lv1 amp-color-white-lv1 amp-animate-all-fast">安全退出</div>
+    </div>
+
+    <div id="ampHeaderHelpInfo" class="amp-header-help-info amp-animate-trans-fast">
+      <span>帮助</span>
+      <ul>
+          <li class="amp-help-feedback" id="ampHelpFeedbak">问题反馈</li>
+          <li class="amp-help-bootpage" id="ampHelpBootpage">重放引导动画</li>
+          <li class="amp-help-faq" id="ampHelpBootFaq">查看更多帮助(FAQ)</li>
+      </ul>
+        
+    </div>
+
+    <div id="ampHeaderUserSkin" class="amp-header-user-skin amp-animate-trans-fast">
+        <div class="skin-head"> <i class="iconfont icon-chacha  amp-pull-right amp-skin-close"></i>
+            <h3 class="amp-pull-left">皮肤</h3>
+        </div>
+
+        <div class="bh-switch fontsize12">
+            <label class="bh-switch-label">护眼模式：</label>
+            <input id="skinSwitch" class="mui-switch mui-switch-animbg" type="checkbox" checked="">
+            <label class="bh-switch-helper"></label>
+            <label id="skinSwitchText" class="bh-switch-text" open-text="打开" close-text="关闭">开启</label>
+        </div>
+
+        <!-- 存放皮肤的位置-->
+        <div class="skin-content amp-pt-16" id="ampSkinContent">
+     <div class="amp-skin-item ampSkinCheckFlag" amp-skin="teal">
+         <img src="portal/images/theme/teal-gauss-small.jpg" width="100" height="56">
+         <div class="skin-item-name skin-item-name-teal"><span>水鸭绿</span></div>
+         <div class="skin-item-footer">
+           <span></span><span></span><span></span><span></span>
+         </div>  
+         <div class="skin-item-check">选用皮肤</div>
+         <span class="amp-skin-use"><i class="iconfont icon-shiyongzhong1 amp-mr-4"></i>使用中</span>
+    </div> 
+
+     <div class="amp-skin-item ampSkinCheckFlag" amp-skin="indigo">
+         <img src="portal/images/theme/indigo-gauss-small.jpg" width="100" height="56">
+         <div class="skin-item-name skin-item-name-indigo"><span>靛蓝</span></div>
+         <div class="skin-item-footer">
+           <span></span><span></span><span></span><span></span>
+         </div>  
+         <div class="skin-item-check">选用皮肤</div>
+         <span class="amp-skin-use"><i class="iconfont icon-shiyongzhong1 amp-mr-4"></i>使用中</span>
+    </div> 
+
+     <div class="amp-skin-item ampSkinCheckFlag" amp-skin="millennium">
+         <img src="portal/images/theme/millennium-gauss-small.jpg" width="100" height="56">
+         <div class="skin-item-name skin-item-name-millennium"><span>千禧绿</span></div>
+         <div class="skin-item-footer">
+           <span></span><span></span><span></span><span></span>
+         </div>  
+         <div class="skin-item-check">选用皮肤</div>
+         <span class="amp-skin-use"><i class="iconfont icon-shiyongzhong1 amp-mr-4"></i>使用中</span>
+    </div> 
+
+     <div class="amp-skin-item ampSkinUseFlag" amp-skin="cherry">
+         <img src="portal/images/theme/cherry-gauss-small.jpg" width="100" height="56">
+         <div class="skin-item-name skin-item-name-cherry"><span>樱桃红</span></div>
+         <div class="skin-item-footer">
+           <span></span><span></span><span></span><span></span>
+         </div>  
+         <div class="skin-item-check">选用皮肤</div>
+         <span class="amp-skin-use"><i class="iconfont icon-shiyongzhong1 amp-mr-4"></i>使用中</span>
+    </div> 
+
+     <div class="amp-skin-item ampSkinCheckFlag" amp-skin="magenta">
+         <img src="portal/images/theme/magenta-gauss-small.jpg" width="100" height="56">
+         <div class="skin-item-name skin-item-name-magenta"><span>绛紫</span></div>
+         <div class="skin-item-footer">
+           <span></span><span></span><span></span><span></span>
+         </div>  
+         <div class="skin-item-check">选用皮肤</div>
+         <span class="amp-skin-use"><i class="iconfont icon-shiyongzhong1 amp-mr-4"></i>使用中</span>
+    </div> 
+
+     <div class="amp-skin-item ampSkinCheckFlag" amp-skin="golden">
+         <img src="portal/images/theme/golden-gauss-small.jpg" width="100" height="56">
+         <div class="skin-item-name skin-item-name-golden"><span>香槟金</span></div>
+         <div class="skin-item-footer">
+           <span></span><span></span><span></span><span></span>
+         </div>  
+         <div class="skin-item-check">选用皮肤</div>
+         <span class="amp-skin-use"><i class="iconfont icon-shiyongzhong1 amp-mr-4"></i>使用中</span>
+    </div> 
+</div>
+
+        <div class="bh-skin-layer"></div>
+
+    </div>
 </body></html>

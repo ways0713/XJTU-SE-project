@@ -15,15 +15,30 @@
     <view class="login card">
       <view class="form-item">
         <text class="field-icon cuIcon-profile"></text>
-        <input type="text" model:value="{{stuId}}" placeholder="请输入学号" />
+        <input
+          type="text"
+          value="{{stuId}}"
+          bindinput="onStuIdInput"
+          placeholder="请输入学号"
+        />
       </view>
       <view class="form-item">
         <text class="field-icon cuIcon-lock"></text>
-        <input type="password" model:value="{{password}}" placeholder="请输入密码" />
+        <input
+          type="password"
+          value="{{password}}"
+          bindinput="onPasswordInput"
+          placeholder="请输入密码"
+        />
       </view>
       <view wx:if="{{showVerify}}" class="form-item">
         <text class="field-icon cuIcon-form"></text>
-        <input type="text" model:value="{{verifyCode}}" placeholder="请输入验证码" />
+        <input
+          type="text"
+          value="{{verifyCode}}"
+          bindinput="onVerifyCodeInput"
+          placeholder="请输入验证码"
+        />
         <image bindtap="downloadVerifyImg" class="verify-img" src="{{verifyImageUrl}}"></image>
       </view>
       <view bindtap="switchStatus" class="checkbox-item">

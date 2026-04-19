@@ -89,11 +89,19 @@ function runCrawlerInBackground({ stuId, password }) {
   }
 
   child.stdout.on("data", (chunk) => {
-    logs = appendTailText(logs, String(chunk || ""))
+    const text = String(chunk || "")
+    logs = appendTailText(logs, text)
+    if ((process.env.XJTU_DEBUG || "").toLowerCase() === "true") {
+      process.stdout.write(text)
+    }
   })
 
   child.stderr.on("data", (chunk) => {
-    logs = appendTailText(logs, String(chunk || ""))
+    const text = String(chunk || "")
+    logs = appendTailText(logs, text)
+    if ((process.env.XJTU_DEBUG || "").toLowerCase() === "true") {
+      process.stderr.write(text)
+    }
   })
 
   child.on("error", (err) => {

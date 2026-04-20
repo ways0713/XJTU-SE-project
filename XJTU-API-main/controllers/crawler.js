@@ -1,7 +1,10 @@
 const fs = require("fs")
 const path = require("path")
 const { spawn } = require("child_process")
-const { getMappedCrawlerData } = require("../util/xjtuEhallAdapter")
+const {
+  readMappedCrawlerData,
+  syncLatestCrawlerOutputToMongo,
+} = require("../services/crawlerDataService")
 
 const PROJECT_ROOT = path.resolve(__dirname, "..")
 const CRAWLER_SCRIPT = path.resolve(PROJECT_ROOT, "scripts", "xjtu-ehall-crawler.js")
@@ -14,6 +17,7 @@ const SUPPORTED_TARGETS = new Set([TARGET_ALL, TARGET_COURSE, TARGET_SCORE])
 
 const crawlState = {
   running: false,
+  activeStuId: "",
   startedAt: 0,
   finishedAt: 0,
   lastSuccessAt: 0,
@@ -32,10 +36,11 @@ function normalizeTarget(target) {
   return SUPPORTED_TARGETS.has(safe) ? safe : TARGET_ALL
 }
 
-function buildSummary() {
-  const mapped = getMappedCrawlerData()
+async function buildSummary(stuId = "") {
+  const mapped = await readMappedCrawlerData(stuId)
   if (!mapped) {
     return {
+      stuId: String(stuId || "").trim(),
       target: crawlState.activeTarget,
       courseCount: 0,
       scoreTermCount: 0,
@@ -44,6 +49,7 @@ function buildSummary() {
   }
 
   return {
+    stuId: String(stuId || "").trim(),
     target: crawlState.activeTarget,
     courseCount: Array.isArray(mapped.courseList) ? mapped.courseList.length : 0,
     scoreTermCount: Array.isArray(mapped.scoreList) ? mapped.scoreList.length : 0,
@@ -64,9 +70,11 @@ function setFailed(reason, logs = "") {
 }
 
 function runCrawlerInBackground({ stuId, password, target = TARGET_ALL }) {
+  const safeStuId = String(stuId || "").trim()
   const safeTarget = normalizeTarget(target)
 
   crawlState.running = true
+  crawlState.activeStuId = safeStuId
   crawlState.startedAt = Date.now()
   crawlState.finishedAt = 0
   crawlState.lastError = ""
@@ -78,7 +86,7 @@ function runCrawlerInBackground({ stuId, password, target = TARGET_ALL }) {
     windowsHide: true,
     env: {
       ...process.env,
-      XJTU_EHALL_USER: String(stuId || "").trim(),
+      XJTU_EHALL_USER: safeStuId,
       XJTU_EHALL_PASS: String(password || "").trim(),
       XJTU_CRAWL_TARGET: safeTarget,
       XJTU_MANUAL_LOGIN: "false",
@@ -100,6 +108,7 @@ function runCrawlerInBackground({ stuId, password, target = TARGET_ALL }) {
     finished = true
     clearTimeout(timer)
     crawlState.running = false
+    crawlState.activeStuId = ""
     crawlState.finishedAt = Date.now()
     handler()
   }
@@ -136,7 +145,7 @@ function runCrawlerInBackground({ stuId, password, target = TARGET_ALL }) {
   }, CRAWL_TIMEOUT_MS)
 
   child.on("close", (code) => {
-    finish(() => {
+    finish(async () => {
       if (timedOut) {
         setFailed(`爬虫超时（${CRAWL_TIMEOUT_MS}ms）`, logs)
         return
@@ -152,8 +161,16 @@ function runCrawlerInBackground({ stuId, password, target = TARGET_ALL }) {
       crawlState.lastSuccessAt = Date.now()
       crawlState.lastError = ""
       crawlState.lastLogs = String(logs || "")
+      await syncLatestCrawlerOutputToMongo(safeStuId).catch(() => false)
+
       crawlState.lastSummary = {
-        ...buildSummary(),
+        ...(await buildSummary(safeStuId).catch(() => ({
+          stuId: safeStuId,
+          target: safeTarget,
+          courseCount: 0,
+          scoreTermCount: 0,
+          rawScoreTermCount: 0,
+        }))),
         target: safeTarget,
         finishedAt: toIso(crawlState.lastSuccessAt),
       }
@@ -222,15 +239,26 @@ const triggerXjtuScoreCrawler = async (ctx, next) => triggerByTarget(ctx, next, 
 
 // GET /crawl/xjtu/status
 const getXjtuCrawlerStatus = async (ctx, next) => {
+  const token = String((ctx.request && ctx.request.headers && ctx.request.headers.token) || "")
+  const m = token.match(/xjtu-(\d+)-/i)
+  const authStuId = m ? m[1] : ""
   ctx.result = {
-    running: crawlState.running,
+    running: crawlState.running && (!authStuId || authStuId === crawlState.activeStuId),
     target: crawlState.activeTarget || TARGET_ALL,
     startedAt: toIso(crawlState.startedAt),
     finishedAt: toIso(crawlState.finishedAt),
     lastSuccessAt: toIso(crawlState.lastSuccessAt),
     lastError: crawlState.lastError || "",
     lastLogs: crawlState.lastLogs || "",
-    summary: crawlState.lastSummary || buildSummary(),
+    summary:
+      (crawlState.lastSummary && crawlState.lastSummary.stuId === authStuId ? crawlState.lastSummary : null) ||
+      (await buildSummary(authStuId).catch(() => null)) || {
+        stuId: authStuId,
+        target: crawlState.activeTarget || TARGET_ALL,
+        courseCount: 0,
+        scoreTermCount: 0,
+        rawScoreTermCount: 0,
+      },
   }
   return next()
 }

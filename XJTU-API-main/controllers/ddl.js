@@ -1,5 +1,7 @@
 const CACHE_KEY = "__XJTU_DDL_LIST__"
 const { getMappedSyxtDdlData, sanitizeStuId } = require("../util/syxtDdlAdapter")
+const { isMongoEnabled } = require("../db/mongo")
+const ddlRepo = require("../repositories/ddlRepo")
 
 function getDefaultList() {
   return [
@@ -37,8 +39,20 @@ function getListFromMemory() {
 const getList = async (ctx, next) => {
   const token = (ctx.request && ctx.request.headers && ctx.request.headers.token) || ""
   const stuIdFromToken = sanitizeStuId(String(token || "").match(/xjtu-(\d+)-/i)?.[1] || "")
+
+  if (isMongoEnabled() && stuIdFromToken) {
+    const mongoList = await ddlRepo.listByStuId(stuIdFromToken).catch(() => null)
+    if (Array.isArray(mongoList) && mongoList.length) {
+      ctx.result = mongoList
+      return next()
+    }
+  }
+
   const mapped = getMappedSyxtDdlData(stuIdFromToken)
   if (mapped && Array.isArray(mapped.list) && mapped.list.length) {
+    if (isMongoEnabled() && stuIdFromToken) {
+      await ddlRepo.replaceByStuId(stuIdFromToken, mapped.list).catch(() => false)
+    }
     ctx.result = mapped.list
     return next()
   }
@@ -50,6 +64,8 @@ const getList = async (ctx, next) => {
 const updateItem = async (ctx, next) => {
   const id = ctx.params.id
   const { done } = ctx.request.body || {}
+  const token = (ctx.request && ctx.request.headers && ctx.request.headers.token) || ""
+  const stuIdFromToken = sanitizeStuId(String(token || "").match(/xjtu-(\d+)-/i)?.[1] || "")
   if (!id) {
     ctx.errCode = -1
     ctx.errMsg = "DDL id不能为空"
@@ -60,6 +76,15 @@ const updateItem = async (ctx, next) => {
     ctx.errMsg = "done字段必须为boolean"
     return next()
   }
+
+  if (isMongoEnabled() && stuIdFromToken) {
+    const updated = await ddlRepo.updateDoneByStuId(stuIdFromToken, id, done).catch(() => null)
+    if (updated) {
+      ctx.result = updated
+      return next()
+    }
+  }
+
   const list = getListFromMemory()
   const item = list.find((i) => i.id === id)
   if (!item) {

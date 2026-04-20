@@ -4,8 +4,9 @@
   "description": "XJTU academic affairs API (unofficial, for learning only)",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "nodemon --ignore output --ignore output/** ./bin/www",
     "crawl:xjtu": "node ./scripts/xjtu-ehall-crawler.js",
+    "migrate:mongo": "node ./scripts/migrate-json-to-mongo.js",
     "crawl:xjtu:attendance": "node ./scripts/xjtu-bkkq-crawler.js",
     "crawl:syxt-ddl": "node ./scripts/xjtu-syxt-ddl-crawler.js",
     "test": "pm2 start ecosystem.config.js --env test",
@@ -30,6 +31,7 @@
     "koa-session": "^6.4.0",
     "log4js": "^6.9.1",
     "md5": "^2.3.0",
+    "mongodb": "^6.21.0",
     "playwright": "^1.59.1"
   },
   "devDependencies": {

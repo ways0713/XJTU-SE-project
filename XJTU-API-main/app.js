@@ -7,8 +7,19 @@ const fs = require("fs")
 
 const { loggerMiddleware } = require("./middlewares/logger")
 const { responseHandler, errorHandler } = require("./middlewares/response")
+const { connectMongo } = require("./db/mongo")
+const crawlerRepo = require("./repositories/crawlerRepo")
+const ddlRepo = require("./repositories/ddlRepo")
+const resourceRepo = require("./repositories/resourceRepo")
 
 const app = new Koa()
+
+connectMongo()
+  .then(async (db) => {
+    if (!db) return
+    await Promise.all([crawlerRepo.ensureIndexes(), ddlRepo.ensureIndexes(), resourceRepo.ensureIndexes()])
+  })
+  .catch(() => {})
 
 app.use(loggerMiddleware)
 

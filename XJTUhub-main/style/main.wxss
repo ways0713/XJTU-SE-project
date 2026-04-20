@@ -4,7 +4,7 @@
 @import "./reset.wxss";
 
 page {
-  --theme: #0f766e;
+  --theme: #2563eb;
   --accent: #f59e0b;
   --bg-page: #f4f7fb;
   --bg-card: #ffffff;

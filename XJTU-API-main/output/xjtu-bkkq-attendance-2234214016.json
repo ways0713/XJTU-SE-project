@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "entry": "http://bkkq.xjtu.edu.cn/",
+    "fetchedAt": "2026-04-20T18:03:25.144Z",
+    "headless": false,
+    "source": "bkkq-attendance-crawler",
+    "count": 12,
+    "currentUrl": "http://bkkq.xjtu.edu.cn/attendance-student-pc/#/home?token=eyJ0eXAiOiJKc29uV2ViVG9rZW4iLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpc3N1c2VyIiwiYXVkIjoiYXVkaWVuY2UiLCJ1c2VyX2lkIjoiMjIzNDIxNDAxNiIsInJvbGVfaWQiOiJzdHVkZW50Iiwic3R1ZGVudCI6eyJwYWdlU2l6ZSI6MTAsImN1cnJlbnQiOjEsIm9mZnNldCI6MCwib3JkZXJCeUZpZWxkIjpudWxsLCJvcmRlckJ5VHlwZSI6bnVsbCwiaWQiOjEzODg3MSwiYWNjb3VudCI6IjIyMzQyMTQwMTYiLCJzbm8iOiIyMjM0MjE0MDE2IiwiaWROdW1iZXIiOm51bGwsImNhcmRJZCI6IjI2MDY4Mzk2MTQiLCJjYXJkQWNjb3VudCI6bnVsbCwiZXhhbU51bWJlciI6ImV4YW1fbnVtYmVyIiwicGFzc3dvcmQiOiI2OTU1RDcyOUQ1M0RBNkYzMTMyQ0NCQjJBMzI2MTYxNSIsIm5hbWUiOiLosKLpm6jpmLMiLCJzZXgiOjEsImJpcnRoZGF0ZSI6bnVsbCwiY291bnRyeUNvZGUiOm51bGwsIm5hdGlvbkNvZGUiOm51bGwsInBvbGl0aWNzU3RhdHVzQ29kZSI6bnVsbCwiaWRlbnRpdHlDb2RlIjoiMCIsImlkZW50aXR5IjoiMjAiLCJjYW1wdXNDb2RlIjoiMSIsImNhbXB1c05hbWUiOiLlhbTluobmoKHljLoiLCJlbnRlclNjaG9vbERhdGUiOm51bGwsImxlYXZlU2Nob29sRGF0ZSI6bnVsbCwiZ3JhZGUiOjIwMjMsImFjYWRlbXlDb2RlIjpudWxsLCJhY2FkZW15TmFtZSI6bnVsbCwiZGVwYXJ0bWVudENvZGUiOiIxMzQzMDAwMCIsImRlcGFydG1lbnROYW1lIjoi55S15a2Q5LiO5L-h5oGv5a2m6YOoIiwicHJvZmVzc2lvbkNvZGUiOm51bGwsInByb2Zlc3Npb25OYW1lIjpudWxsLCJjbGFzc0NvZGUiOm51bGwsImNsYXNzTmFtZSI6bnVsbCwic2Nob29saW5nTGVuIjpudWxsLCJvcmlnaW4iOm51bGwsInBob25lTnVtYmVyIjpudWxsLCJlbWFpbCI6bnVsbCwicXEiOm51bGwsIndlY2hhdCI6bnVsbCwiZmxhZyI6bnVsbCwicGljdHVyZUlkIjpudWxsLCJzdGFuZGFyZENvdW50cnlCZWFuIjpudWxsLCJzdGFuZGFyZE5hdGlvbkJlYW4iOm51bGwsInN0YW5kYXJkUG9saXRpY3NTdGF0dXNCZWFuIjpudWxsLCJiYXNlSWRlbnRpdHlCZWFuIjpudWxsLCJiYXNlQ2FtcHVzQmVhbiI6bnVsbCwiYmFzZURlcGFydG1lbnRCZWFuIjpudWxsLCJiYXNlUHJvZmVzc2lvbkJlYW4iOm51bGwsImJhc2VDbGFzc0JlYW4iOm51bGwsImZpbGVCZWFuIjpudWxsLCJ3aGVyZUxpc3QiOm51bGx9LCJ1c2VyX25hbWUiOiLosKLpm6jpmLMiLCJuaWNrX25hbWUiOiLosKLpm6jpmLMiLCJhY2NvdW50IjoiMjIzNDIxNDAxNiIsImV4cCI6MTc3Njc5ODAwMCwibmJmIjoxNzc2NzA4MjU3fQ.GsS7Hz7LBePr5wLbvvoshRzv_pxMa8x30qMatwk8EFw&uuid=263a14d2-4dec-4bf0-86d2-840373bbeac0",
+    "term": "本学期",
+    "apiCaptureCount": 11
+  },
+  "attendance": [
+    {
+      "id": "att-1",
+      "courseName": "软件定义网络",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 8,
+      "actualAttend": 8,
+      "normalCount": 8,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "软件定义网络 8 8 8 0 0 0 100.00%"
+    },
+    {
+      "id": "att-2",
+      "courseName": "软件定义网络",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 3,
+      "actualAttend": 3,
+      "normalCount": 3,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "软件定义网络 3 3 3 0 0 0 100.00%"
+    },
+    {
+      "id": "att-3",
+      "courseName": "软件定义网络",
+      "teacher": "",
+      "term": "本周",
+      "shouldAttend": 1,
+      "actualAttend": 1,
+      "normalCount": 1,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "软件定义网络 1 1 1 0 0 0 100.00%"
+    },
+    {
+      "id": "att-4",
+      "courseName": "软件工程",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 12,
+      "actualAttend": 11,
+      "normalCount": 11,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "91.67%",
+      "raw": "软件工程 12 11 11 0 0 1 91.67%"
+    },
+    {
+      "id": "att-5",
+      "courseName": "软件工程",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 5,
+      "actualAttend": 4,
+      "normalCount": 4,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "80.00%",
+      "raw": "软件工程 5 4 4 0 0 1 80.00%"
+    },
+    {
+      "id": "att-6",
+      "courseName": "数据库系统",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 9,
+      "actualAttend": 8,
+      "normalCount": 8,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "88.89%",
+      "raw": "数据库系统 9 8 8 0 0 1 88.89%"
+    },
+    {
+      "id": "att-7",
+      "courseName": "数据库系统",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 3,
+      "actualAttend": 2,
+      "normalCount": 2,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "66.67%",
+      "raw": "数据库系统 3 2 2 0 0 1 66.67%"
+    },
+    {
+      "id": "att-8",
+      "courseName": "形式语言与编译",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 12,
+      "actualAttend": 12,
+      "normalCount": 12,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "形式语言与编译 12 12 12 0 0 0 100.00%"
+    },
+    {
+      "id": "att-9",
+      "courseName": "形式语言与编译",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 5,
+      "actualAttend": 5,
+      "normalCount": 5,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "形式语言与编译 5 5 5 0 0 0 100.00%"
+    },
+    {
+      "id": "att-10",
+      "courseName": "形式语言与编译",
+      "teacher": "",
+      "term": "本周",
+      "shouldAttend": 1,
+      "actualAttend": 1,
+      "normalCount": 1,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "形式语言与编译 1 1 1 0 0 0 100.00%"
+    },
+    {
+      "id": "att-11",
+      "courseName": "Rust语言程序设计",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 4,
+      "actualAttend": 4,
+      "normalCount": 4,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "Rust语言程序设计 4 4 4 0 0 0 100.00%"
+    },
+    {
+      "id": "att-12",
+      "courseName": "Rust语言程序设计",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 1,
+      "actualAttend": 1,
+      "normalCount": 1,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "Rust语言程序设计 1 1 1 0 0 0 100.00%"
+    }
+  ],
+  "attendanceByTab": {
+    "week": [
+      {
+        "id": "att-1",
+        "courseName": "软件定义网络",
+        "teacher": "",
+        "term": "本周",
+        "shouldAttend": 1,
+        "actualAttend": 1,
+        "normalCount": 1,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "软件定义网络 1 1 1 0 0 0 100.00%"
+      },
+      {
+        "id": "att-2",
+        "courseName": "形式语言与编译",
+        "teacher": "",
+        "term": "本周",
+        "shouldAttend": 1,
+        "actualAttend": 1,
+        "normalCount": 1,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "形式语言与编译 1 1 1 0 0 0 100.00%"
+      }
+    ],
+    "month": [
+      {
+        "id": "att-1",
+        "courseName": "软件定义网络",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 3,
+        "actualAttend": 3,
+        "normalCount": 3,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "软件定义网络 3 3 3 0 0 0 100.00%"
+      },
+      {
+        "id": "att-2",
+        "courseName": "软件工程",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 5,
+        "actualAttend": 4,
+        "normalCount": 4,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "80.00%",
+        "raw": "软件工程 5 4 4 0 0 1 80.00%"
+      },
+      {
+        "id": "att-3",
+        "courseName": "数据库系统",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 3,
+        "actualAttend": 2,
+        "normalCount": 2,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "66.67%",
+        "raw": "数据库系统 3 2 2 0 0 1 66.67%"
+      },
+      {
+        "id": "att-4",
+        "courseName": "形式语言与编译",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 5,
+        "actualAttend": 5,
+        "normalCount": 5,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "形式语言与编译 5 5 5 0 0 0 100.00%"
+      },
+      {
+        "id": "att-5",
+        "courseName": "Rust语言程序设计",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 1,
+        "actualAttend": 1,
+        "normalCount": 1,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "Rust语言程序设计 1 1 1 0 0 0 100.00%"
+      }
+    ],
+    "term": [
+      {
+        "id": "att-1",
+        "courseName": "软件定义网络",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 8,
+        "actualAttend": 8,
+        "normalCount": 8,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "软件定义网络 8 8 8 0 0 0 100.00%"
+      },
+      {
+        "id": "att-2",
+        "courseName": "软件工程",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 12,
+        "actualAttend": 11,
+        "normalCount": 11,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "91.67%",
+        "raw": "软件工程 12 11 11 0 0 1 91.67%"
+      },
+      {
+        "id": "att-3",
+        "courseName": "数据库系统",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 9,
+        "actualAttend": 8,
+        "normalCount": 8,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "88.89%",
+        "raw": "数据库系统 9 8 8 0 0 1 88.89%"
+      },
+      {
+        "id": "att-4",
+        "courseName": "形式语言与编译",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 12,
+        "actualAttend": 12,
+        "normalCount": 12,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "形式语言与编译 12 12 12 0 0 0 100.00%"
+      },
+      {
+        "id": "att-5",
+        "courseName": "Rust语言程序设计",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 4,
+        "actualAttend": 4,
+        "normalCount": 4,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "Rust语言程序设计 4 4 4 0 0 0 100.00%"
+      }
+    ]
+  },
+  "summary": {
+    "shouldAttend": 45,
+    "normalCount": 43,
+    "late": 0,
+    "leave": 0,
+    "absences": 2,
+    "hasAny": true
+  },
+  "raw": {
+    "domCount": 12,
+    "apiCount": 0,
+    "apiCaptureCount": 11,
+    "hasSummary": true,
+    "tables": [
+      {
+        "headers": [
+          "课程名称",
+          "应到",
+          "实到",
+          "正常",
+          "迟到",
+          "请假",
+          "缺勤",
+          "到课率"
+        ],
+        "rows": []
+      },
+      {
+        "headers": [],
+        "rows": [
+          [
+            "数据库系统",
+            "9",
+            "8",
+            "8",
+            "0",
+            "0",
+            "1",
+            "88.89%"
+          ],
+          [
+            "Rust语言程序设计",
+            "4",
+            "4",
+            "4",
+            "0",
+            "0",
+            "0",
+            "100.00%"
+          ],
+          [
+            "形式语言与编译",
+            "12",
+            "12",
+            "12",
+            "0",
+            "0",
+            "0",
+            "100.00%"
+          ],
+          [
+            "软件定义网络",
+            "8",
+            "8",
+            "8",
+            "0",
+            "0",
+            "0",
+            "100.00%"
+          ],
+          [
+            "软件工程",
+            "12",
+            "11",
+            "11",
+            "0",
+            "0",
+            "1",
+            "91.67%"
+          ]
+        ]
+      }
+    ]
+  }
+}

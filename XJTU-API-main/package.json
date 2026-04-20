@@ -6,6 +6,8 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "crawl:xjtu": "node ./scripts/xjtu-ehall-crawler.js",
+    "crawl:xjtu:attendance": "node ./scripts/xjtu-bkkq-crawler.js",
+    "crawl:syxt-ddl": "node ./scripts/xjtu-syxt-ddl-crawler.js",
     "test": "pm2 start ecosystem.config.js --env test",
     "pro": "pm2 start ecosystem.config.js --env pro",
     "logs": "pm2 logs",

@@ -7,6 +7,10 @@ const PROJECT_ROOT = path.resolve(__dirname, "..")
 const CRAWLER_SCRIPT = path.resolve(PROJECT_ROOT, "scripts", "xjtu-ehall-crawler.js")
 const CRAWL_TIMEOUT_MS = Number(process.env.XJTU_CRAWL_TIMEOUT_MS || 240000)
 const LOG_TAIL_LIMIT = 8000
+const TARGET_ALL = "all"
+const TARGET_COURSE = "course"
+const TARGET_SCORE = "score"
+const SUPPORTED_TARGETS = new Set([TARGET_ALL, TARGET_COURSE, TARGET_SCORE])
 
 const crawlState = {
   running: false,
@@ -16,16 +20,23 @@ const crawlState = {
   lastError: "",
   lastSummary: null,
   lastLogs: "",
+  activeTarget: TARGET_ALL,
 }
 
 function toIso(ts) {
   return ts ? new Date(ts).toISOString() : ""
 }
 
+function normalizeTarget(target) {
+  const safe = String(target || "").trim().toLowerCase()
+  return SUPPORTED_TARGETS.has(safe) ? safe : TARGET_ALL
+}
+
 function buildSummary() {
   const mapped = getMappedCrawlerData()
   if (!mapped) {
     return {
+      target: crawlState.activeTarget,
       courseCount: 0,
       scoreTermCount: 0,
       rawScoreTermCount: 0,
@@ -33,6 +44,7 @@ function buildSummary() {
   }
 
   return {
+    target: crawlState.activeTarget,
     courseCount: Array.isArray(mapped.courseList) ? mapped.courseList.length : 0,
     scoreTermCount: Array.isArray(mapped.scoreList) ? mapped.scoreList.length : 0,
     rawScoreTermCount: Array.isArray(mapped.rawScoreList) ? mapped.rawScoreList.length : 0,
@@ -51,12 +63,15 @@ function setFailed(reason, logs = "") {
   crawlState.lastLogs = String(logs || "")
 }
 
-function runCrawlerInBackground({ stuId, password }) {
+function runCrawlerInBackground({ stuId, password, target = TARGET_ALL }) {
+  const safeTarget = normalizeTarget(target)
+
   crawlState.running = true
   crawlState.startedAt = Date.now()
   crawlState.finishedAt = 0
   crawlState.lastError = ""
   crawlState.lastLogs = ""
+  crawlState.activeTarget = safeTarget
 
   const child = spawn(process.execPath, [CRAWLER_SCRIPT], {
     cwd: PROJECT_ROOT,
@@ -65,6 +80,7 @@ function runCrawlerInBackground({ stuId, password }) {
       ...process.env,
       XJTU_EHALL_USER: String(stuId || "").trim(),
       XJTU_EHALL_PASS: String(password || "").trim(),
+      XJTU_CRAWL_TARGET: safeTarget,
       XJTU_MANUAL_LOGIN: "false",
       XJTU_MONITOR_ONLY: "false",
       XJTU_TRACE_OPS: "false",
@@ -138,32 +154,41 @@ function runCrawlerInBackground({ stuId, password }) {
       crawlState.lastLogs = String(logs || "")
       crawlState.lastSummary = {
         ...buildSummary(),
+        target: safeTarget,
         finishedAt: toIso(crawlState.lastSuccessAt),
       }
     })
   })
 }
 
-// POST /crawl/xjtu/trigger
-const triggerXjtuCrawler = async (ctx, next) => {
+function validateTriggerInput(ctx) {
   const { stuId, password } = ctx.request.body || {}
   const safeStuId = String(stuId || "").trim()
   const safePassword = String(password || "").trim()
 
   if (!safeStuId || !safePassword) {
     ctx.errMsg = "学号和密码不能为空"
-    return next()
+    return null
   }
 
   if (!fs.existsSync(CRAWLER_SCRIPT)) {
     ctx.errMsg = "爬虫脚本不存在，无法启动任务"
-    return next()
+    return null
   }
 
+  return { stuId: safeStuId, password: safePassword }
+}
+
+async function triggerByTarget(ctx, next, target) {
+  const creds = validateTriggerInput(ctx)
+  if (!creds) return next()
+
+  const safeTarget = normalizeTarget(target)
   if (crawlState.running) {
     ctx.result = {
       started: false,
       running: true,
+      target: crawlState.activeTarget || TARGET_ALL,
       message: "爬虫任务正在执行中",
       startedAt: toIso(crawlState.startedAt),
     }
@@ -171,20 +196,35 @@ const triggerXjtuCrawler = async (ctx, next) => {
   }
 
   crawlState.lastSummary = null
-  runCrawlerInBackground({ stuId: safeStuId, password: safePassword })
+  runCrawlerInBackground({
+    stuId: creds.stuId,
+    password: creds.password,
+    target: safeTarget,
+  })
   ctx.result = {
     started: true,
     running: true,
+    target: safeTarget,
     message: "已触发后台爬取任务",
     startedAt: toIso(crawlState.startedAt),
   }
   return next()
 }
 
+// POST /crawl/xjtu/trigger (legacy: crawl all)
+const triggerXjtuCrawler = async (ctx, next) => triggerByTarget(ctx, next, TARGET_ALL)
+
+// POST /crawl/xjtu/course/trigger
+const triggerXjtuCourseCrawler = async (ctx, next) => triggerByTarget(ctx, next, TARGET_COURSE)
+
+// POST /crawl/xjtu/score/trigger
+const triggerXjtuScoreCrawler = async (ctx, next) => triggerByTarget(ctx, next, TARGET_SCORE)
+
 // GET /crawl/xjtu/status
 const getXjtuCrawlerStatus = async (ctx, next) => {
   ctx.result = {
     running: crawlState.running,
+    target: crawlState.activeTarget || TARGET_ALL,
     startedAt: toIso(crawlState.startedAt),
     finishedAt: toIso(crawlState.finishedAt),
     lastSuccessAt: toIso(crawlState.lastSuccessAt),
@@ -197,5 +237,8 @@ const getXjtuCrawlerStatus = async (ctx, next) => {
 
 module.exports = {
   triggerXjtuCrawler,
+  triggerXjtuCourseCrawler,
+  triggerXjtuScoreCrawler,
   getXjtuCrawlerStatus,
 }
+

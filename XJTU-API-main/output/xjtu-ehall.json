@@ -1,12 +1,14 @@
 {
   "meta": {
     "entry": "https://ehall.xjtu.edu.cn",
-    "fetchedAt": "2026-04-20T08:17:51.052Z",
+    "fetchedAt": "2026-04-20T18:03:19.130Z",
     "headless": false,
     "manualLogin": false,
     "traceOps": false,
-    "monitorOnly": false
+    "monitorOnly": false,
+    "crawlTarget": "score"
   },
+  "error": "page.waitForTimeout: Target page, context or browser has been closed",
   "course": {
     "opened": true,
     "title": "课表查看2025-2026学年 第二学期更改",
@@ -118,7 +120,7 @@
         }
       },
       {
-        "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/wdkb-4770397878132218.do?v=09429905530824867",
+        "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/wdkb-4770397878132218.do?v=020044102121462481",
         "status": 200,
         "data": {
           "APP_ID": "4770397878132218",
@@ -215,7 +217,7 @@
               "extParams": {
                 "code": 1,
                 "totalPage": 0,
-                "logId": "9484452adc404bb798274d42627904e5"
+                "logId": "4427ba10229b41da954940df022c9c69"
               }
             }
           }
@@ -327,7 +329,7 @@
               "extParams": {
                 "code": 1,
                 "totalPage": 0,
-                "logId": "5b31f1378fb54ad3a3d26e4bc01dcc1e"
+                "logId": "f048fe629d424c5081e26001b05863fc"
               }
             }
           }
@@ -351,7 +353,7 @@
                   "XSLBDM": null,
                   "BY10": null,
                   "ZC": 8,
-                  "XQJ": 1,
+                  "XQJ": 2,
                   "XXXQ": null,
                   "WID": "fc496e9768a047d7b861c84dbc8290cf",
                   "ORDERFILTER": null,
@@ -363,13 +365,13 @@
                   "BY3": null,
                   "BY6": null,
                   "BY5": null,
-                  "RQ": "2026-04-20 00:00:00"
+                  "RQ": "2026-04-21 00:00:00"
                 }
               ],
               "extParams": {
                 "code": 1,
                 "totalPage": 0,
-                "logId": "945cd92e84bc4fa4bf471b6b7b50ba0e"
+                "logId": "98d390d7df2e4165a0d8e2d448001bb9"
               }
             }
           }
@@ -880,7 +882,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "5367b1d72d44423fa3a5458fcc913c3e"
+                "logId": "37f3e4fcc3b54fe1852a73914c6b4753"
               }
             }
           }
@@ -930,7 +932,7 @@
               "extParams": {
                 "code": 1,
                 "totalPage": 1,
-                "logId": "4b83668f77444442a6f573c83ddd0daf"
+                "logId": "218b0cebdb4a4999916433bda312fafb"
               }
             }
           }
@@ -1009,7 +1011,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "278efcc115f04a5f881d204e19e1018c"
+                "logId": "d7c315d8a56a4741b0cfb0ccb9301a88"
               }
             }
           }
@@ -1078,7 +1080,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "ac4230fb6d664b87a86aa9537620d803"
+                "logId": "524c737c4af946bc9b8587d75ec90544"
               }
             }
           }
@@ -1987,7 +1989,7 @@
         }
       },
       {
-        "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/cjcx-4768574631264620.do?v=018448751798317398",
+        "url": "https://ehall.xjtu.edu.cn/jwapp/sys/funauthapp/api/getAppConfig/cjcx-4768574631264620.do?v=020655917210377472",
         "status": 200,
         "data": {
           "APP_ID": "4768574631264620",
@@ -2078,7 +2080,7 @@
                 "code": 0,
                 "totalPage": 0,
                 "isPjMsg": "2025-2026学年 第二学期学期的需评教才能查看成绩",
-                "logId": "898c5ccd123c4c6d9199ae181fa9d35e"
+                "logId": "c6f9514532cc40cdb628fc882c5f12a6"
               }
             }
           }
@@ -2098,7 +2100,7 @@
                 "msg": "0",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "c04f73dbdc0a4f5ab007a11b056950a3"
+                "logId": "6f786be8c41d4ce4b723c219bad9e79a"
               }
             }
           }
@@ -2151,7 +2153,7 @@
                 "msg": "操作成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "69113a4c75ae465e918d9d42d90c40b8"
+                "logId": "565960a1bd534bbfb92d78000cb3c244"
               }
             }
           }
@@ -2222,7 +2224,7 @@
                 "msg": "查询系统参数成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "6ff4c45a06184b60b84656f86c4dacff"
+                "logId": "689f88a2c40d488ea4bbd5298d56d0d7"
               }
             }
           }
@@ -9687,7 +9689,7 @@
                 "msg": "操作成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "e8781e433af24ddaae471ad4671e96bd"
+                "logId": "f105bcbd8b3d410287858ed0c52ac677"
               }
             }
           }
@@ -16524,7 +16526,7 @@
                 "msg": "查询系统参数成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "40046c3ad3bd4396bcf8cb0224bfef05"
+                "logId": "033769098bec4c6c8c1d38d3d7ed9b58"
               }
             }
           }
@@ -24192,7 +24194,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "7daa30d5bb974cbbbfe901f8526a34b5"
+                "logId": "cceb9e040f164e809015e04953f7d8fe"
               }
             }
           }
@@ -25084,7 +25086,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "f06d04b56ce843bbbc11d7a2d43871ed"
+                "logId": "e3ad37cb359c4307b5cd645f2900df2d"
               }
             }
           }
@@ -25130,7 +25132,7 @@
                 "msg": "查询系统参数成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "b3dcf1ac09964218b4f082f94e9e7f1f"
+                "logId": "abef6e9d46d74acda5eb91d60f01a6ff"
               }
             }
           }
@@ -32798,7 +32800,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "13a7a2ba74314fbfb087ab5c66ddfa0b"
+                "logId": "ce01443ddbde42a8b5ab2106b644c175"
               }
             }
           }
@@ -33690,7 +33692,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "c796285fcc4f4e1dbf2240b5208d748c"
+                "logId": "df465b6d9ba34b0bb59f068b368b115d"
               }
             }
           }
@@ -34582,7 +34584,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "d881b087c7eb4d699c7bcf3d56850ebc"
+                "logId": "d0f106d6f7154441b94f47a50de52c2d"
               }
             }
           }
@@ -35474,7 +35476,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "613b92e1db434fa899c3be2714d75108"
+                "logId": "0af1582379a44e48b3359bf3f131c1d2"
               }
             }
           }
@@ -36366,7 +36368,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "f327e10aff4149f8b7ac8490c6c7ba69"
+                "logId": "bacd250014cd4b0a9dcb1e88db146a27"
               }
             }
           }
@@ -36997,7 +36999,7 @@
                 "msg": "查询成功",
                 "code": 1,
                 "totalPage": 0,
-                "logId": "caadc2b0ea354b91ae0ca1559eebeaba"
+                "logId": "a7c0e8505f5c42308aa183e84f8a3019"
               }
             }
           }

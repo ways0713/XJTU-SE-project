@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "entry": "http://bkkq.xjtu.edu.cn/",
+    "fetchedAt": "2026-04-20T16:57:28.324Z",
+    "headless": false,
+    "source": "bkkq-attendance-crawler",
+    "count": 10,
+    "currentUrl": "http://bkkq.xjtu.edu.cn/attendance-student-pc/#/home?token=eyJ0eXAiOiJKc29uV2ViVG9rZW4iLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpc3N1c2VyIiwiYXVkIjoiYXVkaWVuY2UiLCJ1c2VyX2lkIjoiMjIzMzIxMTExMyIsInJvbGVfaWQiOiJzdHVkZW50Iiwic3R1ZGVudCI6eyJwYWdlU2l6ZSI6MTAsImN1cnJlbnQiOjEsIm9mZnNldCI6MCwib3JkZXJCeUZpZWxkIjpudWxsLCJvcmRlckJ5VHlwZSI6bnVsbCwiaWQiOjEzNzcwOSwiYWNjb3VudCI6IjIyMzMyMTExMTMiLCJzbm8iOiIyMjMzMjExMTEzIiwiaWROdW1iZXIiOm51bGwsImNhcmRJZCI6IjU4MTY5NzUyNSIsImNhcmRBY2NvdW50IjpudWxsLCJleGFtTnVtYmVyIjoiZXhhbV9udW1iZXIiLCJwYXNzd29yZCI6IjY5NTVENzI5RDUzREE2RjMxMzJDQ0JCMkEzMjYxNjE1IiwibmFtZSI6Iuefs-e_lCIsInNleCI6MSwiYmlydGhkYXRlIjpudWxsLCJjb3VudHJ5Q29kZSI6bnVsbCwibmF0aW9uQ29kZSI6bnVsbCwicG9saXRpY3NTdGF0dXNDb2RlIjpudWxsLCJpZGVudGl0eUNvZGUiOiIwIiwiaWRlbnRpdHkiOiIyMCIsImNhbXB1c0NvZGUiOiIxIiwiY2FtcHVzTmFtZSI6IuWFtOW6huagoeWMuiIsImVudGVyU2Nob29sRGF0ZSI6bnVsbCwibGVhdmVTY2hvb2xEYXRlIjpudWxsLCJncmFkZSI6MjAyMywiYWNhZGVteUNvZGUiOm51bGwsImFjYWRlbXlOYW1lIjpudWxsLCJkZXBhcnRtZW50Q29kZSI6IjEzNDMwMDAwIiwiZGVwYXJ0bWVudE5hbWUiOiLnlLXlrZDkuI7kv6Hmga_lrabpg6giLCJwcm9mZXNzaW9uQ29kZSI6bnVsbCwicHJvZmVzc2lvbk5hbWUiOm51bGwsImNsYXNzQ29kZSI6bnVsbCwiY2xhc3NOYW1lIjpudWxsLCJzY2hvb2xpbmdMZW4iOm51bGwsIm9yaWdpbiI6bnVsbCwicGhvbmVOdW1iZXIiOm51bGwsImVtYWlsIjpudWxsLCJxcSI6bnVsbCwid2VjaGF0IjpudWxsLCJmbGFnIjpudWxsLCJwaWN0dXJlSWQiOm51bGwsInN0YW5kYXJkQ291bnRyeUJlYW4iOm51bGwsInN0YW5kYXJkTmF0aW9uQmVhbiI6bnVsbCwic3RhbmRhcmRQb2xpdGljc1N0YXR1c0JlYW4iOm51bGwsImJhc2VJZGVudGl0eUJlYW4iOm51bGwsImJhc2VDYW1wdXNCZWFuIjpudWxsLCJiYXNlRGVwYXJ0bWVudEJlYW4iOm51bGwsImJhc2VQcm9mZXNzaW9uQmVhbiI6bnVsbCwiYmFzZUNsYXNzQmVhbiI6bnVsbCwiZmlsZUJlYW4iOm51bGwsIndoZXJlTGlzdCI6bnVsbH0sInVzZXJfbmFtZSI6Iuefs-e_lCIsIm5pY2tfbmFtZSI6Iuefs-e_lCIsImFjY291bnQiOiIyMjMzMjExMTEzIiwiZXhwIjoxNzc2Nzk4MDAwLCJuYmYiOjE3NzY3MDQzMDB9.Rhe4jGqrzOmdKefJk0IjvVjdxr3MxkgaUThasFJ1q7E&uuid=8c697eda-73df-44a7-ae1e-932dac660bdb",
+    "term": "本学期",
+    "apiCaptureCount": 15
+  },
+  "attendance": [
+    {
+      "id": "att-1",
+      "courseName": "软件定义网络",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 8,
+      "actualAttend": 8,
+      "normalCount": 8,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "软件定义网络 8 8 8 0 0 0 100.00%"
+    },
+    {
+      "id": "att-2",
+      "courseName": "软件定义网络",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 3,
+      "actualAttend": 3,
+      "normalCount": 3,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "软件定义网络 3 3 3 0 0 0 100.00%"
+    },
+    {
+      "id": "att-3",
+      "courseName": "软件定义网络",
+      "teacher": "",
+      "term": "本周",
+      "shouldAttend": 1,
+      "actualAttend": 1,
+      "normalCount": 1,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "软件定义网络 1 1 1 0 0 0 100.00%"
+    },
+    {
+      "id": "att-4",
+      "courseName": "软件工程",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 12,
+      "actualAttend": 11,
+      "normalCount": 11,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "91.67%",
+      "raw": "软件工程 12 11 11 0 0 1 91.67%"
+    },
+    {
+      "id": "att-5",
+      "courseName": "软件工程",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 5,
+      "actualAttend": 4,
+      "normalCount": 4,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "80.00%",
+      "raw": "软件工程 5 4 4 0 0 1 80.00%"
+    },
+    {
+      "id": "att-6",
+      "courseName": "数据库系统",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 9,
+      "actualAttend": 8,
+      "normalCount": 8,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "88.89%",
+      "raw": "数据库系统 9 8 8 0 0 1 88.89%"
+    },
+    {
+      "id": "att-7",
+      "courseName": "数据库系统",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 3,
+      "actualAttend": 2,
+      "normalCount": 2,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "66.67%",
+      "raw": "数据库系统 3 2 2 0 0 1 66.67%"
+    },
+    {
+      "id": "att-8",
+      "courseName": "形式语言与编译",
+      "teacher": "",
+      "term": "本学期",
+      "shouldAttend": 12,
+      "actualAttend": 11,
+      "normalCount": 11,
+      "late": 0,
+      "leave": 0,
+      "absences": 1,
+      "attendanceRate": "91.67%",
+      "raw": "形式语言与编译 12 11 11 0 0 1 91.67%"
+    },
+    {
+      "id": "att-9",
+      "courseName": "形式语言与编译",
+      "teacher": "",
+      "term": "本月",
+      "shouldAttend": 5,
+      "actualAttend": 5,
+      "normalCount": 5,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "形式语言与编译 5 5 5 0 0 0 100.00%"
+    },
+    {
+      "id": "att-10",
+      "courseName": "形式语言与编译",
+      "teacher": "",
+      "term": "本周",
+      "shouldAttend": 1,
+      "actualAttend": 1,
+      "normalCount": 1,
+      "late": 0,
+      "leave": 0,
+      "absences": 0,
+      "attendanceRate": "100.00%",
+      "raw": "形式语言与编译 1 1 1 0 0 0 100.00%"
+    }
+  ],
+  "attendanceByTab": {
+    "week": [
+      {
+        "id": "att-1",
+        "courseName": "软件定义网络",
+        "teacher": "",
+        "term": "本周",
+        "shouldAttend": 1,
+        "actualAttend": 1,
+        "normalCount": 1,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "软件定义网络 1 1 1 0 0 0 100.00%"
+      },
+      {
+        "id": "att-2",
+        "courseName": "形式语言与编译",
+        "teacher": "",
+        "term": "本周",
+        "shouldAttend": 1,
+        "actualAttend": 1,
+        "normalCount": 1,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "形式语言与编译 1 1 1 0 0 0 100.00%"
+      }
+    ],
+    "month": [
+      {
+        "id": "att-1",
+        "courseName": "软件定义网络",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 3,
+        "actualAttend": 3,
+        "normalCount": 3,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "软件定义网络 3 3 3 0 0 0 100.00%"
+      },
+      {
+        "id": "att-2",
+        "courseName": "软件工程",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 5,
+        "actualAttend": 4,
+        "normalCount": 4,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "80.00%",
+        "raw": "软件工程 5 4 4 0 0 1 80.00%"
+      },
+      {
+        "id": "att-3",
+        "courseName": "数据库系统",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 3,
+        "actualAttend": 2,
+        "normalCount": 2,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "66.67%",
+        "raw": "数据库系统 3 2 2 0 0 1 66.67%"
+      },
+      {
+        "id": "att-4",
+        "courseName": "形式语言与编译",
+        "teacher": "",
+        "term": "本月",
+        "shouldAttend": 5,
+        "actualAttend": 5,
+        "normalCount": 5,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "形式语言与编译 5 5 5 0 0 0 100.00%"
+      }
+    ],
+    "term": [
+      {
+        "id": "att-1",
+        "courseName": "软件定义网络",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 8,
+        "actualAttend": 8,
+        "normalCount": 8,
+        "late": 0,
+        "leave": 0,
+        "absences": 0,
+        "attendanceRate": "100.00%",
+        "raw": "软件定义网络 8 8 8 0 0 0 100.00%"
+      },
+      {
+        "id": "att-2",
+        "courseName": "软件工程",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 12,
+        "actualAttend": 11,
+        "normalCount": 11,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "91.67%",
+        "raw": "软件工程 12 11 11 0 0 1 91.67%"
+      },
+      {
+        "id": "att-3",
+        "courseName": "数据库系统",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 9,
+        "actualAttend": 8,
+        "normalCount": 8,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "88.89%",
+        "raw": "数据库系统 9 8 8 0 0 1 88.89%"
+      },
+      {
+        "id": "att-4",
+        "courseName": "形式语言与编译",
+        "teacher": "",
+        "term": "本学期",
+        "shouldAttend": 12,
+        "actualAttend": 11,
+        "normalCount": 11,
+        "late": 0,
+        "leave": 0,
+        "absences": 1,
+        "attendanceRate": "91.67%",
+        "raw": "形式语言与编译 12 11 11 0 0 1 91.67%"
+      }
+    ]
+  },
+  "summary": {
+    "shouldAttend": 41,
+    "normalCount": 38,
+    "late": 0,
+    "leave": 0,
+    "absences": 3,
+    "hasAny": true
+  },
+  "raw": {
+    "domCount": 10,
+    "apiCount": 0,
+    "apiCaptureCount": 15,
+    "hasSummary": true,
+    "tables": [
+      {
+        "headers": [
+          "课程名称",
+          "应到",
+          "实到",
+          "正常",
+          "迟到",
+          "请假",
+          "缺勤",
+          "到课率"
+        ],
+        "rows": []
+      },
+      {
+        "headers": [],
+        "rows": [
+          [
+            "数据库系统",
+            "9",
+            "8",
+            "8",
+            "0",
+            "0",
+            "1",
+            "88.89%"
+          ],
+          [
+            "形式语言与编译",
+            "12",
+            "11",
+            "11",
+            "0",
+            "0",
+            "1",
+            "91.67%"
+          ],
+          [
+            "软件定义网络",
+            "8",
+            "8",
+            "8",
+            "0",
+            "0",
+            "0",
+            "100.00%"
+          ],
+          [
+            "软件工程",
+            "12",
+            "11",
+            "11",
+            "0",
+            "0",
+            "1",
+            "91.67%"
+          ]
+        ]
+      }
+    ]
+  }
+}

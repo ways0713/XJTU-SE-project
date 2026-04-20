@@ -1,4 +1,5 @@
 const CACHE_KEY = "__XJTU_DDL_LIST__"
+const { getMappedSyxtDdlData, sanitizeStuId } = require("../util/syxtDdlAdapter")
 
 function getDefaultList() {
   return [
@@ -34,6 +35,14 @@ function getListFromMemory() {
 }
 
 const getList = async (ctx, next) => {
+  const token = (ctx.request && ctx.request.headers && ctx.request.headers.token) || ""
+  const stuIdFromToken = sanitizeStuId(String(token || "").match(/xjtu-(\d+)-/i)?.[1] || "")
+  const mapped = getMappedSyxtDdlData(stuIdFromToken)
+  if (mapped && Array.isArray(mapped.list) && mapped.list.length) {
+    ctx.result = mapped.list
+    return next()
+  }
+
   ctx.result = getListFromMemory()
   return next()
 }

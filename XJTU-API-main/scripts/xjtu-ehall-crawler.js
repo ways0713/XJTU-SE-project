@@ -35,6 +35,12 @@ try {
 
 const ENTRY_URL = "https://ehall.xjtu.edu.cn"
 const OUTPUT_PATH = process.env.XJTU_OUTPUT || "./output/xjtu-ehall.json"
+const TARGET_ALL = "all"
+const TARGET_COURSE = "course"
+const TARGET_SCORE = "score"
+const CRAWL_TARGET = String(process.env.XJTU_CRAWL_TARGET || TARGET_ALL)
+  .trim()
+  .toLowerCase()
 const USERNAME = process.env.XJTU_EHALL_USER || process.env.XJTU_USER || ""
 const PASSWORD = process.env.XJTU_EHALL_PASS || process.env.XJTU_PASS || ""
 const HEADLESS = (process.env.XJTU_HEADLESS || "true").toLowerCase() !== "false"
@@ -48,6 +54,13 @@ const MONITOR_ONLY = (process.env.XJTU_MONITOR_ONLY || (TRACE_OPS ? "true" : "fa
 const OPS_OUTPUT_PATH = process.env.XJTU_OPS_OUTPUT || "./output/xjtu-ops-log.json"
 const MAX_OP_EVENTS = Number(process.env.XJTU_MAX_OP_EVENTS || 4000)
 const MONITOR_WAIT_MS = Number(process.env.XJTU_MONITOR_WAIT_MS || 600000)
+
+function normalizeTarget(target) {
+  if (target === TARGET_COURSE || target === TARGET_SCORE || target === TARGET_ALL) return target
+  return TARGET_ALL
+}
+
+const SAFE_CRAWL_TARGET = normalizeTarget(CRAWL_TARGET)
 
 const TXT = {
   loginZh: "\u767b\u5f55",
@@ -91,6 +104,41 @@ function nowIso() {
 function clipText(s, maxLen = 200) {
   const t = String(s || "")
   return t.length > maxLen ? `${t.slice(0, maxLen)}...` : t
+}
+
+function readExistingOutput(filePath) {
+  try {
+    if (!fs.existsSync(path.resolve(filePath))) return null
+    const raw = fs.readFileSync(path.resolve(filePath), "utf-8")
+    const parsed = JSON.parse(raw)
+    if (!parsed || typeof parsed !== "object") return null
+    return parsed
+  } catch (_) {
+    return null
+  }
+}
+
+function pickFinalSection(target, currentResult, existingResult) {
+  if (target === TARGET_COURSE) {
+    return {
+      course: currentResult.course,
+      score: existingResult && Object.prototype.hasOwnProperty.call(existingResult, "score")
+        ? existingResult.score
+        : null,
+    }
+  }
+  if (target === TARGET_SCORE) {
+    return {
+      course: existingResult && Object.prototype.hasOwnProperty.call(existingResult, "course")
+        ? existingResult.course
+        : null,
+      score: currentResult.score,
+    }
+  }
+  return {
+    course: currentResult.course,
+    score: currentResult.score,
+  }
 }
 
 async function dumpDebugPage(page, label) {
@@ -2136,6 +2184,7 @@ async function run() {
       manualLogin: MANUAL_LOGIN,
       traceOps: TRACE_OPS,
       monitorOnly: MONITOR_ONLY,
+      crawlTarget: SAFE_CRAWL_TARGET,
     },
     course: null,
     score: null,
@@ -2273,13 +2322,37 @@ async function run() {
       }
     }
 
-    result.course = await collectCourseData(context, mainPage)
-    console.log("[xjtu-crawler] Course done. Closing course pages and returning to ehall home...")
-    const scoreStartPage = await closeCoursePagesAndReturnHome(context, mainPage).catch(() => mainPage)
-    result.score = await collectScoreData(context, scoreStartPage || mainPage)
+    if (SAFE_CRAWL_TARGET === TARGET_COURSE) {
+      console.log("[xjtu-crawler] Target mode: course")
+      result.course = await collectCourseData(context, mainPage)
+    } else if (SAFE_CRAWL_TARGET === TARGET_SCORE) {
+      console.log("[xjtu-crawler] Target mode: score")
+      result.score = await collectScoreData(context, mainPage)
+    } else {
+      console.log("[xjtu-crawler] Target mode: all")
+      result.course = await collectCourseData(context, mainPage)
+      console.log("[xjtu-crawler] Course done. Closing course pages and returning to ehall home...")
+      const scoreStartPage = await closeCoursePagesAndReturnHome(context, mainPage).catch(() => mainPage)
+      result.score = await collectScoreData(context, scoreStartPage || mainPage)
+    }
+
+    const existingOutput = readExistingOutput(OUTPUT_PATH)
+    const mergedSections = pickFinalSection(SAFE_CRAWL_TARGET, result, existingOutput)
+    const finalOutput = {
+      ...(existingOutput && typeof existingOutput === "object" ? existingOutput : {}),
+      meta: {
+        ...((existingOutput && existingOutput.meta && typeof existingOutput.meta === "object")
+          ? existingOutput.meta
+          : {}),
+        ...result.meta,
+      },
+      course: mergedSections.course,
+      score: mergedSections.score,
+      error: "",
+    }
 
     ensureDir(OUTPUT_PATH)
-    fs.writeFileSync(path.resolve(OUTPUT_PATH), JSON.stringify(result, null, 2), "utf-8")
+    fs.writeFileSync(path.resolve(OUTPUT_PATH), JSON.stringify(finalOutput, null, 2), "utf-8")
     if (ops) {
       ops.save(OPS_OUTPUT_PATH, {
         pages: context.pages().map((p, idx) => ({ index: idx, url: p.url() })),
@@ -2290,22 +2363,25 @@ async function run() {
     console.log(`[xjtu-crawler] Done. Output: ${path.resolve(OUTPUT_PATH)}`)
   } catch (err) {
     console.error("[xjtu-crawler] Failed:", err.message)
+    const existingOutput = readExistingOutput(OUTPUT_PATH)
+    const failedOutput = {
+      ...(existingOutput && typeof existingOutput === "object" ? existingOutput : {}),
+      meta: {
+        ...((existingOutput && existingOutput.meta && typeof existingOutput.meta === "object")
+          ? existingOutput.meta
+          : {}),
+        entry: ENTRY_URL,
+        fetchedAt: nowIso(),
+        headless: HEADLESS,
+        manualLogin: MANUAL_LOGIN,
+        crawlTarget: SAFE_CRAWL_TARGET,
+      },
+      error: err.message,
+    }
     ensureDir(OUTPUT_PATH)
     fs.writeFileSync(
       path.resolve(OUTPUT_PATH),
-      JSON.stringify(
-        {
-          meta: {
-            entry: ENTRY_URL,
-            fetchedAt: nowIso(),
-            headless: HEADLESS,
-            manualLogin: MANUAL_LOGIN,
-          },
-          error: err.message,
-        },
-        null,
-        2
-      ),
+      JSON.stringify(failedOutput, null, 2),
       "utf-8"
     )
     process.exitCode = 1
